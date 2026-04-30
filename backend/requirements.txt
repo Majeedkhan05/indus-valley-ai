@@ -1,0 +1,22 @@
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.9
+
+# Embedding + retrieval
+sentence-transformers>=2.7.0
+faiss-cpu>=1.8.0
+numpy>=1.26.0
+
+# PDF + CSV
+pypdf>=4.0.0
+
+# CLIP image matching
+torch>=2.1.0
+transformers>=4.40.0
+Pillow>=10.0.0
+
+# HTTP for Ollama
+requests>=2.31.0
+
+# Pydantic for the FastAPI schemas
+pydantic>=2.5.0

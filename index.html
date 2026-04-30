@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Indus Valley AI — AI Hub Projects · Decoding an ancient civilization through intelligence</title>
+<meta name="description" content="A domain-specific AI dedicated to the Indus Valley Civilization. Seal interpretation, motif analysis, urban-planning insights, and research-grade scholarship — by AI Hub. Created by Mohammed Majeed Khan." />
+<meta name="theme-color" content="#0F0F0F" />
+<meta property="og:title" content="Indus Valley AI · AI Hub Projects" />
+<meta property="og:description" content="A domain-specific AI for the Indus Valley Civilization. Seals, motifs, cities, script — research-grade." />
+<meta property="og:type" content="website" />
+
+<link rel="icon" type="image/png" href="assets/logo.png" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F0F0F'/%3E%3Cpath d='M14 44 V20 L24 36 L34 20 V44' stroke='%23D4AF37' stroke-width='3.5' fill='none' stroke-linejoin='round' stroke-linecap='round'/%3E%3Ccircle cx='44' cy='32' r='8' stroke='%23C2A878' stroke-width='3' fill='none'/%3E%3Ccircle cx='44' cy='32' r='2' fill='%23D4AF37'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- noise overlay -->
+<div class="grain" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<!-- custom cursor -->
+<div class="cursor" aria-hidden="true">
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+</div>
+
+<!-- spotlight that follows cursor -->
+<div class="spotlight" aria-hidden="true"></div>
+
+<!-- progress bar -->
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- scroll spine — connects the sections vertically -->
+<aside class="spine" aria-hidden="true">
+  <div class="spine-line"><div class="spine-fill"></div></div>
+  <ul class="spine-nodes">
+    <li data-spine="hero" data-label="Hero"></li>
+    <li data-spine="about" data-label="About"></li>
+    <li data-spine="chat" data-label="The AI"></li>
+    <li data-spine="pillars" data-label="Capabilities"></li>
+    <li data-spine="seals" data-label="Seals"></li>
+    <li data-spine="cities" data-label="Cities"></li>
+    <li data-spine="routes" data-label="Trade routes"></li>
+    <li data-spine="motifs" data-label="Motifs"></li>
+    <li data-spine="script" data-label="Script"></li>
+    <li data-spine="analysis" data-label="Analysis"></li>
+    <li data-spine="research" data-label="Research"></li>
+  </ul>
+</aside>
+
+<!-- drop overlay shown when files are dragged onto the page -->
+<div class="drop-zone" data-drop-zone aria-hidden="true">
+  <div class="drop-card">
+    <div class="drop-rune">⌖</div>
+    <h3>Drop a seal, script, or artefact</h3>
+    <p>I'll analyze it and tell you what's known.</p>
+  </div>
+</div>
+
+<!-- ========== NAV ========== -->
+<header class="nav" aria-label="Primary">
+  <div class="nav-inner">
+    <a href="#top" class="brand" aria-label="AI Hub home">
+      <span class="brand-mark logo-wrap">
+        <img src="assets/logo.png" alt="AI Hub" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+        <svg viewBox="0 0 64 64" aria-hidden="true" class="logo-fallback" style="display:none">
+          <rect width="64" height="64" rx="14" fill="#0F0F0F" stroke="#C2A878" stroke-opacity=".25"/>
+          <path d="M14 44 V20 L24 36 L34 20 V44" stroke="#D4AF37" stroke-width="3.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+          <circle cx="44" cy="32" r="8" stroke="#C2A878" stroke-width="3" fill="none"/>
+          <circle cx="44" cy="32" r="2" fill="#D4AF37"/>
+        </svg>
+      </span>
+      <span class="brand-name">AI&nbsp;Hub<em>·Projects</em></span>
+    </a>
+
+    <nav class="nav-links" aria-label="Main">
+      <a href="#chat">AI</a>
+      <a href="#seals">Seals</a>
+      <a href="#cities">Cities</a>
+      <a href="#motifs">Motifs</a>
+      <a href="#script">Script</a>
+      <a href="#research">Research</a>
+    </nav>
+
+    <a href="#chat" class="btn btn-pill">
+      <span>Open the AI</span>
+      <span class="dotlive" aria-hidden="true"></span>
+    </a>
+
+    <button class="nav-burger" type="button" aria-label="Menu" data-nav-toggle>
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" aria-labelledby="hero-title">
+    <canvas id="seal-canvas" aria-hidden="true"></canvas>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-dust" aria-hidden="true"></div>
+
+    <div class="hero-eyebrow">
+      <span class="pulse"></span>
+      <span>AI Hub Projects · 2026 · Created by Mohammed Majeed Khan</span>
+    </div>
+
+    <div class="hero-copy">
+      <h1 id="hero-title" class="display">
+        Indus Valley <em>AI.</em>
+      </h1>
+      <p class="hero-tag">
+        Decoding an ancient civilization<br/>through intelligence.
+      </p>
+      <p class="hero-lead">
+        A domain-restricted AI trained for one purpose: to read,
+        interpret, and contextualize the Indus Valley Civilization.
+        Seals. Motifs. Script. Cities. Trade. Burials. Authority.
+        Research-grade — open to everyone, free.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#chat" class="btn btn-primary">
+          Ask the AI <span aria-hidden="true">→</span>
+        </a>
+        <a href="#seals" class="btn btn-ghost">Browse the seals</a>
+      </div>
+
+      <dl class="hero-kpi" aria-label="Highlights">
+        <div>
+          <dt>Civilization span</dt>
+          <dd>3300<span> – 1300 BCE</span></dd>
+        </div>
+        <div>
+          <dt>Documented sites</dt>
+          <dd>1,500<span>+</span></dd>
+        </div>
+        <div>
+          <dt>Real seal corpus</dt>
+          <dd>4,000<span>+ artefacts</span></dd>
+        </div>
+      </dl>
+    </div>
+
+    <div class="hero-floor" aria-hidden="true"></div>
+    <div class="scroll-cue" aria-hidden="true">
+      <span></span> Scroll
+    </div>
+  </section>
+
+  <!-- ========== TICKER ========== -->
+  <section class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Mohenjo-daro</span><em>◆</em>
+      <span>Harappa</span><em>◆</em>
+      <span>Dholavira</span><em>◆</em>
+      <span>Lothal</span><em>◆</em>
+      <span>Rakhigarhi</span><em>◆</em>
+      <span>Kalibangan</span><em>◆</em>
+      <span>Banawali</span><em>◆</em>
+      <span>Surkotada</span><em>◆</em>
+      <span>Chanhudaro</span><em>◆</em>
+      <span>Mehrgarh</span><em>◆</em>
+      <span>Mohenjo-daro</span><em>◆</em>
+      <span>Harappa</span><em>◆</em>
+      <span>Dholavira</span><em>◆</em>
+      <span>Lothal</span><em>◆</em>
+      <span>Rakhigarhi</span><em>◆</em>
+      <span>Kalibangan</span><em>◆</em>
+      <span>Banawali</span><em>◆</em>
+      <span>Surkotada</span><em>◆</em>
+      <span>Chanhudaro</span><em>◆</em>
+      <span>Mehrgarh</span><em>◆</em>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT / WHY ========== -->
+  <section class="about" id="about">
+    <div class="section-head">
+      <p class="eyebrow">01 — About this system</p>
+      <h2 class="h-lg">
+        A focused AI for a single,<br/>
+        <em>extraordinary</em> civilization.
+      </h2>
+      <p class="section-sub">
+        Most AI is a generalist. <strong>Indus Valley AI</strong> isn't —
+        it answers only on the Indus / Harappan world. That constraint
+        is the point: scoped knowledge, cited sources, no hallucinated
+        empires.
+      </p>
+    </div>
+
+    <ul class="about-points">
+      <li>
+        <span class="about-num">01</span>
+        <div>
+          <strong>Domain-locked.</strong>
+          <p>Out-of-scope queries are politely declined and redirected
+          back to the civilization. No drift, no invented history.</p>
+        </div>
+      </li>
+      <li>
+        <span class="about-num">02</span>
+        <div>
+          <strong>Source-aware.</strong>
+          <p>Answers reference real publications — Yajnadevam's
+          <em>Indus Inscriptions</em>, the <em>Authority Structure</em>
+          paper, indusscript.net corpus, ASI reports.</p>
+        </div>
+      </li>
+      <li>
+        <span class="about-num">03</span>
+        <div>
+          <strong>Interpretive, not declarative.</strong>
+          <p>The Indus script is undeciphered. The system flags
+          consensus, debate, and open questions — never one
+          confidently false answer.</p>
+        </div>
+      </li>
+      <li>
+        <span class="about-num">04</span>
+        <div>
+          <strong>Free, in service of research.</strong>
+          <p>Built by AI Hub for students, scholars, and the curious
+          — anywhere in the world.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ========== AI CHAT — THE CENTERPIECE ========== -->
+  <section class="chat-section" id="chat" aria-labelledby="chat-title">
+    <div class="section-head">
+      <p class="eyebrow">02 — The AI</p>
+      <h2 id="chat-title" class="h-lg">
+        Ask anything <em>— about the Indus.</em>
+      </h2>
+      <p class="section-sub">
+        Ask about a seal, a city, a motif, a burial, a trade route,
+        a script sign. The AI cites its references and tells you what
+        is settled, what is debated, and what is unknown.
+      </p>
+    </div>
+
+    <div class="chat-shell" data-chat>
+      <div class="chat-glass">
+
+        <header class="chat-head">
+          <div class="chat-id">
+            <span class="chat-dot" aria-hidden="true"></span>
+            <div>
+              <p class="chat-name">Indus Valley AI</p>
+              <p class="chat-sub">Domain: Indus / Harappan Civilization · 3300–1300 BCE</p>
+            </div>
+          </div>
+          <div class="chat-status-group">
+            <div class="chat-badge" data-nano-badge title="On-device Gemini Nano (Chrome 127+ with flags)">
+              <span class="nano-dot"></span>
+              <span data-nano-text>Detecting on-device model…</span>
+            </div>
+            <div class="chat-status" data-chat-status>
+              <span class="dotlive"></span> Online
+            </div>
+          </div>
+        </header>
+
+        <div class="chat-stream" data-chat-stream role="log" aria-live="polite">
+          <article class="msg msg-bot">
+            <div class="msg-avatar logo-wrap" aria-hidden="true">
+              <img src="assets/logo.png" alt="" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+              <svg viewBox="0 0 64 64" class="logo-fallback" style="display:none"><rect width="64" height="64" rx="14" fill="#0F0F0F"/><path d="M14 44 V20 L24 36 L34 20 V44" stroke="#D4AF37" stroke-width="3.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/><circle cx="44" cy="32" r="8" stroke="#C2A878" stroke-width="3" fill="none"/><circle cx="44" cy="32" r="2" fill="#D4AF37"/></svg>
+            </div>
+            <div class="msg-bubble">
+              <p>Welcome. I'm <strong>Indus Valley AI</strong> — a focused system on the Indus / Harappan civilization (c. 3300–1300 BCE).</p>
+              <p>Try one of these to begin, or type your own:</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="chat-paths" data-chat-paths>
+          <span class="chat-paths-label">Learning paths</span>
+          <button data-path="seals">Walk me through the seals</button>
+          <button data-path="cities">Tour the ten cities</button>
+          <button data-path="script">Teach me the script</button>
+          <button data-path="trade">Trace the trade routes</button>
+          <button data-path="decline">How did it end?</button>
+        </div>
+
+        <div class="chat-quick" data-chat-quick>
+          <button data-q="What is the unicorn motif on Indus seals?">Unicorn motif</button>
+          <button data-q="How is Dholavira different from Mohenjo-daro?">Dholavira vs Mohenjo-daro</button>
+          <button data-q="Is the Indus script deciphered?">Indus script status</button>
+          <button data-q="Tell me about the Great Bath of Mohenjo-daro">The Great Bath</button>
+          <button data-q="What did the Indus people trade with Mesopotamia?">Trade with Mesopotamia</button>
+          <button data-q="Who was the 'priest-king' figure?">Priest-king statue</button>
+          <button data-q="What is the fish sign in the Indus script?">Fish sign</button>
+          <button data-q="Tell me about the 4.2k climate event and Indus decline">4.2k climate event</button>
+          <button data-q="What did the Daimabad bronze hoard contain?">Daimabad hoard</button>
+          <button data-q="What is Shortugai?">Shortugai outpost</button>
+        </div>
+
+        <div class="chat-attach" data-chat-attach hidden>
+          <img data-attach-thumb alt="" />
+          <div class="chat-attach-info">
+            <p data-attach-name></p>
+            <p class="mono" data-attach-meta></p>
+          </div>
+          <button type="button" data-attach-clear aria-label="Remove attachment">✕</button>
+        </div>
+
+        <form class="chat-input" data-chat-form>
+          <button type="button" class="chat-attach-btn" data-attach-trigger aria-label="Attach an image, script, or document">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M21 11.5 L12 20.5 a5 5 0 0 1 -7 -7 L14 4.5 a3.5 3.5 0 0 1 5 5 L10.5 18 a2 2 0 0 1 -3 -3 L15 7.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <input type="file" data-chat-file accept="image/*,.txt,.md,.json,.csv" hidden />
+          <input
+            type="text"
+            data-chat-input
+            placeholder="Ask anything · or drop a seal / script / artefact image…"
+            autocomplete="off"
+            spellcheck="true"
+            maxlength="500"
+          />
+          <button type="submit" class="chat-send" aria-label="Send">
+            <span>Send</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M3 12 L21 3 L17 12 L21 21 Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </button>
+        </form>
+
+        <p class="chat-foot">
+          Strictly Indus-domain · Drop images for analysis · On-device Gemini Nano enrichment when available · Video gen redirects to Google AI Studio (your tokens)
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURE PILLARS ========== -->
+  <section class="pillars" aria-labelledby="pillars-title">
+    <div class="section-head">
+      <p class="eyebrow">03 — Capabilities</p>
+      <h2 id="pillars-title" class="h-md">What this AI is <em>actually</em> good at.</h2>
+    </div>
+
+    <div class="pillars-grid">
+      <article class="pillar">
+        <div class="pillar-glyph" aria-hidden="true">
+          <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="26" stroke="#C2A878" stroke-width="1.5" fill="none"/><path d="M20 36 Q26 22 32 30 T44 36 M16 44 H48" stroke="#D4AF37" stroke-width="1.5" fill="none" stroke-linecap="round"/><circle cx="40" cy="26" r="2" fill="#D4AF37"/></svg>
+        </div>
+        <h3>Seal interpretation</h3>
+        <p>Identify motif, posture, register, and sign sequence on Indus seals. Pulls from a corpus of 4,000+ documented artefacts.</p>
+      </article>
+      <article class="pillar">
+        <div class="pillar-glyph" aria-hidden="true">
+          <svg viewBox="0 0 64 64"><path d="M14 50 L32 14 L50 50 Z" stroke="#C2A878" stroke-width="1.5" fill="none"/><path d="M22 38 H42 M26 30 H38" stroke="#D4AF37" stroke-width="1.5"/></svg>
+        </div>
+        <h3>Animal motif analysis</h3>
+        <p>Unicorn, zebu, elephant, tiger, rhinoceros, water buffalo, gharial — frequency, context, and proposed symbolism.</p>
+      </article>
+      <article class="pillar">
+        <div class="pillar-glyph" aria-hidden="true">
+          <svg viewBox="0 0 64 64"><rect x="14" y="14" width="36" height="36" stroke="#C2A878" stroke-width="1.5" fill="none"/><path d="M22 22 H42 M22 30 H42 M22 38 H34 M22 46 H42" stroke="#D4AF37" stroke-width="1.5"/></svg>
+        </div>
+        <h3>City comparison</h3>
+        <p>Mohenjo-daro vs Harappa vs Dholavira vs Lothal vs Rakhigarhi — layout, drainage, water systems, fortification.</p>
+      </article>
+      <article class="pillar">
+        <div class="pillar-glyph" aria-hidden="true">
+          <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="20" stroke="#C2A878" stroke-width="1.5" fill="none"/><path d="M32 12 V52 M12 32 H52 M18 18 L46 46 M46 18 L18 46" stroke="#D4AF37" stroke-width="1" opacity=".55"/></svg>
+        </div>
+        <h3>Trade & maritime networks</h3>
+        <p>Carnelian to Ur, lapis to Egypt, Meluhha in cuneiform. The Indus was the first global trade civilization.</p>
+      </article>
+      <article class="pillar">
+        <div class="pillar-glyph" aria-hidden="true">
+          <svg viewBox="0 0 64 64"><path d="M14 50 V18 H32 L40 26 V50 Z M32 18 V26 H40" stroke="#C2A878" stroke-width="1.5" fill="none" stroke-linejoin="round"/><path d="M22 36 H38 M22 42 H38" stroke="#D4AF37" stroke-width="1.5"/></svg>
+        </div>
+        <h3>Script & sign sequences</h3>
+        <p>Sign frequencies from indusscript.net, positional analysis, debates on logo-syllabic vs non-linguistic readings.</p>
+      </article>
+      <article class="pillar">
+        <div class="pillar-glyph" aria-hidden="true">
+          <svg viewBox="0 0 64 64"><path d="M32 12 L52 24 V44 L32 56 L12 44 V24 Z" stroke="#C2A878" stroke-width="1.5" fill="none" stroke-linejoin="round"/><circle cx="32" cy="34" r="6" stroke="#D4AF37" stroke-width="1.5" fill="none"/></svg>
+        </div>
+        <h3>Authority & society</h3>
+        <p>How an apparently un-monarchic civilization governed itself — citing the <em>Authority Structure</em> hypothesis.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========== SEAL GALLERY ========== -->
+  <section class="seals" id="seals" aria-labelledby="seals-title">
+    <div class="section-head split">
+      <div>
+        <p class="eyebrow">04 — Real artefacts</p>
+        <h2 id="seals-title" class="h-md">The seal <em>corpus.</em></h2>
+        <p class="section-sub">A curated set from a 4,000+ seal dataset. Click any seal — the AI will read it for you.</p>
+      </div>
+      <a href="#chat" class="btn btn-ghost">Read with the AI →</a>
+    </div>
+
+    <div class="seal-grid" data-seal-grid></div>
+  </section>
+
+  <!-- ========== CITIES ATLAS ========== -->
+  <section class="cities" id="cities" aria-labelledby="cities-title">
+    <div class="section-head">
+      <p class="eyebrow">05 — Atlas of cities</p>
+      <h2 id="cities-title" class="h-md">Ten cities. <em>One civilization.</em></h2>
+      <p class="section-sub">Tap any city to open the brief — chronology, layout, finds, and what it tells us.</p>
+    </div>
+
+    <div class="city-grid" data-city-grid></div>
+  </section>
+
+  <!-- ========== 3D TRADE ROUTES ========== -->
+  <section class="routes" id="routes" aria-labelledby="routes-title">
+    <div class="routes-bg" aria-hidden="true">
+      <canvas id="routes-canvas"></canvas>
+      <div class="routes-glow"></div>
+    </div>
+    <div class="routes-overlay">
+      <div class="section-head">
+        <p class="eyebrow">06 — Live atlas</p>
+        <h2 id="routes-title" class="h-md">The first <em>global</em> network — in 3D.</h2>
+        <p class="section-sub">Hover on the canvas to orbit. Each spark is a real Bronze-Age trade flow — Indus → Mesopotamia, Magan, Dilmun, Shortugai. The arcs animate on their own.</p>
+      </div>
+      <ul class="routes-legend">
+        <li><span style="background:#D4AF37"></span> Indus core — Mohenjo-daro · Harappa · Dholavira · Lothal</li>
+        <li><span style="background:#ff9b3c"></span> Mesopotamia — Sumer · Susa · Ur · Kish</li>
+        <li><span style="background:#B55530"></span> Magan — Oman · Tell Abraq · Ras al-Jinz</li>
+        <li><span style="background:#C2A878"></span> Dilmun · Shortugai — Bahrain hub · Oxus outpost</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ========== TIMELINE ========== -->
+  <section class="timeline" aria-labelledby="time-title">
+    <div class="section-head">
+      <p class="eyebrow">06 — Chronology</p>
+      <h2 id="time-title" class="h-md">From Mehrgarh to <em>collapse.</em></h2>
+    </div>
+
+    <ol class="time-list" data-time-list>
+      <li>
+        <div class="time-year">7000–3300 BCE</div>
+        <div class="time-body">
+          <h4>Mehrgarh — the seedbed</h4>
+          <p>Neolithic farming, dentistry, cotton, terracotta. Earliest evidence of South Asian sedentism in Balochistan.</p>
+        </div>
+      </li>
+      <li>
+        <div class="time-year">3300–2600 BCE</div>
+        <div class="time-body">
+          <h4>Early Harappan</h4>
+          <p>Regional cultures (Ravi, Hakra, Sothi-Siswal) crystallize. Proto-script. First seals. Pre-urban.</p>
+        </div>
+      </li>
+      <li>
+        <div class="time-year">2600–1900 BCE</div>
+        <div class="time-body">
+          <h4>Mature Harappan — the great cities</h4>
+          <p>Mohenjo-daro, Harappa, Dholavira, Lothal, Rakhigarhi peak. Standardized weights, drainage, seal-script, long-distance trade with Mesopotamia.</p>
+        </div>
+      </li>
+      <li>
+        <div class="time-year">1900–1300 BCE</div>
+        <div class="time-body">
+          <h4>Late Harappan — transformation</h4>
+          <p>Cities depopulate. Drying of the Ghaggar-Hakra (Saraswati) system. Material culture continues in eastern transformations into Cemetery H, Painted Grey Ware.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ========== MOTIF ATLAS ========== -->
+  <section class="motifs" id="motifs" aria-labelledby="motif-title">
+    <div class="section-head">
+      <p class="eyebrow">07 — Motif atlas</p>
+      <h2 id="motif-title" class="h-md">The animals on the <em>seals.</em></h2>
+      <p class="section-sub">The Indus seal-makers were the world's first systematic zoologists in stone. Tap any motif for the AI brief.</p>
+    </div>
+
+    <div class="motif-grid" data-motif-grid></div>
+  </section>
+
+  <!-- ========== SCRIPT SECTION ========== -->
+  <section class="script" id="script" aria-labelledby="script-title">
+    <div class="section-head">
+      <p class="eyebrow">08 — The undeciphered script</p>
+      <h2 id="script-title" class="h-md">~4,000 inscriptions. <em>Still unread.</em></h2>
+      <p class="section-sub">
+        The Indus script consists of roughly 400 distinct signs across an estimated ~4,000 short inscriptions — most under five signs. It remains one of the great open puzzles of human prehistory.
+      </p>
+    </div>
+
+    <div class="script-grid">
+      <article class="script-card">
+        <h4>Sign count</h4>
+        <p class="script-stat">~400</p>
+        <p>Distinct signs catalogued. Too many for a pure alphabet, too few for a pure logography.</p>
+      </article>
+      <article class="script-card">
+        <h4>Average inscription</h4>
+        <p class="script-stat">~5 signs</p>
+        <p>Most are short — names, titles, or trade tags. The longest known is 26 signs.</p>
+      </article>
+      <article class="script-card">
+        <h4>Reading direction</h4>
+        <p class="script-stat">RTL</p>
+        <p>Right-to-left, evidenced by sign-cramping at line ends and seal/sealing pairs.</p>
+      </article>
+      <article class="script-card">
+        <h4>Leading hypothesis</h4>
+        <p class="script-stat">Logo-syllabic</p>
+        <p>A mixed system combining word-signs and syllable-signs — though the underlying language remains contested.</p>
+      </article>
+    </div>
+
+    <div class="script-strip" data-script-strip aria-hidden="true"></div>
+  </section>
+
+  <!-- ========== COMPUTATIONAL SCRIPT ANALYSIS ========== -->
+  <section class="analysis" id="analysis" aria-labelledby="analysis-title">
+    <div class="section-head">
+      <p class="eyebrow">09 — Computational analysis</p>
+      <h2 id="analysis-title" class="h-md">Reading the script <em>statistically.</em></h2>
+      <p class="section-sub">
+        Live frequency, positional, bigram and significance analysis across <strong>~3,700 inscriptions</strong> from the Mahadevan corpus. The patterns alone reveal that the script encodes a real language — even though we cannot yet read it.
+      </p>
+    </div>
+
+    <div class="analysis-grid" data-analysis-grid>
+      <article class="analysis-card a-freq">
+        <header><span class="a-tag">Frequency</span><h3>Top 20 signs</h3></header>
+        <div class="a-bars" data-freq-bars></div>
+        <p class="a-foot">From Mahadevan 1977 (PD ASI). Sign occurrences across the M-corpus.</p>
+      </article>
+
+      <article class="analysis-card a-pos">
+        <header><span class="a-tag">Positional</span><h3>Where each sign sits</h3></header>
+        <div class="a-pos-cols" data-pos-cols></div>
+        <p class="a-foot">Signs prefer initial / medial / final positions — strong grammar signal.</p>
+      </article>
+
+      <article class="analysis-card a-bigram">
+        <header><span class="a-tag">Bigrams</span><h3>Most common sign-pairs</h3></header>
+        <ol class="a-bigram-list" data-bigram-list></ol>
+        <p class="a-foot">FISH → JAR is the single most frequent pair (412×). Far above chance.</p>
+      </article>
+
+      <article class="analysis-card a-zscore">
+        <header><span class="a-tag">Significance</span><h3>Z-scores · positional regularity</h3></header>
+        <ul class="a-zscore-list" data-zscore-list></ul>
+        <p class="a-foot">Z &gt; 3 is statistically significant. The script\'s signs cluster strongly.</p>
+      </article>
+
+      <article class="analysis-card a-length">
+        <header><span class="a-tag">Length</span><h3>Inscription length distribution</h3></header>
+        <div class="a-len-bars" data-len-bars></div>
+        <p class="a-foot">Mean 4.6 signs. 95% under 7. Consistent with name/title/commodity tags.</p>
+      </article>
+
+      <article class="analysis-card a-conclude">
+        <header><span class="a-tag">What it means</span><h3>Synthesised conclusions</h3></header>
+        <ul class="a-conclude-list" data-conclude-list></ul>
+        <p class="a-foot">Sources: Mahadevan 1977 · Parpola 1994 · indusscript.net</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========== TRADE NETWORK ========== -->
+  <section class="trade" aria-labelledby="trade-title">
+    <div class="section-head">
+      <p class="eyebrow">09 — World trade · 2500 BCE</p>
+      <h2 id="trade-title" class="h-md">The first <em>global</em> civilization.</h2>
+      <p class="section-sub">Indus carnelian beads have been excavated in the Royal Tombs of Ur. Indus weights regulated commerce in the Persian Gulf. Mesopotamians knew them as <em>Meluhha</em>.</p>
+    </div>
+
+    <div class="trade-grid">
+      <article class="trade-card">
+        <p class="trade-from">Indus →</p>
+        <h4>Mesopotamia</h4>
+        <p>Carnelian beads, ivory, hardwoods, cotton. Identified in cuneiform texts as <em>Meluhha</em>. Seals found at Ur, Kish, Susa.</p>
+      </article>
+      <article class="trade-card">
+        <p class="trade-from">Indus →</p>
+        <h4>Oman / Magan</h4>
+        <p>Copper-tin trade entrepôt. Indus-style pottery and weights at Ras al-Jinz, Salut, Tell Abraq.</p>
+      </article>
+      <article class="trade-card">
+        <p class="trade-from">Indus →</p>
+        <h4>Bahrain / Dilmun</h4>
+        <p>The maritime hub of Persian Gulf trade. Indus weight standard used; round Persian-Gulf seals fuse Indus and local iconography.</p>
+      </article>
+      <article class="trade-card">
+        <p class="trade-from">Indus →</p>
+        <h4>Central Asia / BMAC</h4>
+        <p>Lapis lazuli sourced via Shortugai, an Indus outpost on the Oxus. Steatite and ivory north into the Bactria-Margiana complex.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========== RESEARCH / PUBLICATIONS ========== -->
+  <section class="research" id="research" aria-labelledby="research-title">
+    <div class="section-head">
+      <p class="eyebrow">10 — Research foundation</p>
+      <h2 id="research-title" class="h-md">Sources the AI <em>actually reads.</em></h2>
+      <p class="section-sub">A focused, citation-grade reading list. The system is grounded in these works and openly admits when a question lies outside them.</p>
+    </div>
+
+    <ol class="research-list">
+      <li>
+        <span class="r-mark">01</span>
+        <div class="r-body">
+          <h4>Yajnadevam — <em>Indus Inscriptions</em></h4>
+          <p>A computational and statistical re-reading of the Indus corpus, arguing for a logo-syllabic system phonetically tied to early Indo-Aryan.</p>
+          <p class="r-tag">Statistical decipherment · 2023</p>
+        </div>
+      </li>
+      <li>
+        <span class="r-mark">02</span>
+        <div class="r-body">
+          <h4>Authority Structure & the Evolution of Early Writing Systems</h4>
+          <p>A comparative paper on how administrative complexity shaped writing in Sumer, Egypt, and the Indus — and what the Indus script's sign-economy implies about its political structure.</p>
+          <p class="r-tag">Comparative epigraphy · 2024</p>
+        </div>
+      </li>
+      <li>
+        <span class="r-mark">03</span>
+        <div class="r-body">
+          <h4>indusscript.net corpus</h4>
+          <p>The open online catalogue of Indus inscriptions — sign-by-sign, seal-by-seal. The reference dataset for any quantitative work.</p>
+          <p class="r-tag">Open dataset</p>
+        </div>
+      </li>
+      <li>
+        <span class="r-mark">04</span>
+        <div class="r-body">
+          <h4>Indus-Seal-Dataset (4,000+ seals)</h4>
+          <p>The visual dataset powering the seal-gallery on this site — symbolic and textual annotation pairs for each seal.</p>
+          <p class="r-tag">Open dataset</p>
+        </div>
+      </li>
+      <li>
+        <span class="r-mark">05</span>
+        <div class="r-body">
+          <h4>ASI excavation reports — Dholavira, Rakhigarhi, Lothal</h4>
+          <p>Archaeological Survey of India primary reports — particularly R. S. Bisht (Dholavira) and Vasant Shinde (Rakhigarhi 2018 aDNA study).</p>
+          <p class="r-tag">Primary archaeology</p>
+        </div>
+      </li>
+      <li>
+        <span class="r-mark">06</span>
+        <div class="r-body">
+          <h4>Kenoyer · Possehl · Parpola</h4>
+          <p>The standard secondary literature: J. M. Kenoyer's <em>Ancient Cities of the Indus</em>, G. L. Possehl's <em>The Indus Civilization</em>, A. Parpola's <em>Deciphering the Indus Script</em>.</p>
+          <p class="r-tag">Secondary scholarship</p>
+        </div>
+      </li>
+    </ol>
+
+    <p class="research-foot">
+      Open-access publishing roadmap — the AI Hub team is preparing a comparative-epigraphy paper using this corpus for submission to peer-reviewed journals (UNESCO, JRAS, IJDL).
+    </p>
+  </section>
+
+  <!-- ========== INDIA / DHOLAVIRA SPOTLIGHT ========== -->
+  <section class="india" aria-labelledby="india-title">
+    <div class="section-head">
+      <p class="eyebrow">11 — Indian heritage spotlight</p>
+      <h2 id="india-title" class="h-md">Dholavira, Lothal & the <em>Indian Indus.</em></h2>
+      <p class="section-sub">More than 1,000 mature-Harappan sites lie in modern India — most still under-excavated. The AI surfaces what we already know, and what we still don't.</p>
+    </div>
+
+    <div class="india-grid">
+      <article class="india-card">
+        <h4>Dholavira <span>· Gujarat · UNESCO 2021</span></h4>
+        <p>The only Harappan city built almost entirely of stone. Three-tier division (citadel · middle town · lower town), 16 reservoirs, the world's earliest known signboard — ten large signs over the citadel gate.</p>
+      </article>
+      <article class="india-card">
+        <h4>Lothal <span>· Gujarat</span></h4>
+        <p>The oldest known dock in the world. A planned port-town with bead-making workshops, a fire-altar enigma, and direct evidence of Persian Gulf trade.</p>
+      </article>
+      <article class="india-card">
+        <h4>Rakhigarhi <span>· Haryana</span></h4>
+        <p>Possibly the largest Harappan site by area. The 2018 Shinde et al. aDNA study from a Rakhigarhi skeleton found no Steppe ancestry in mature Harappan individuals — reframing the Indo-Aryan migration debate.</p>
+      </article>
+      <article class="india-card">
+        <h4>Kalibangan <span>· Rajasthan</span></h4>
+        <p>"Black bangles" — earliest ploughed field, fire-altars, a distinct citadel-and-lower-town plan on the dry Ghaggar-Hakra channel.</p>
+      </article>
+      <article class="india-card">
+        <h4>Banawali · Surkotada · Chanhudaro</h4>
+        <p>Smaller but rich: Banawali's ploughed field and toy plough, Surkotada's horse-bone debate, Chanhudaro's beadmaking precision.</p>
+      </article>
+      <article class="india-card">
+        <h4>Why it matters</h4>
+        <p>The Indus is foundational Indian history. Recovering it — accurately, free of nationalism on either side — is a public good. That's the goal here.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========== CTA / CREDIT ========== -->
+  <section class="cta" id="contact">
+    <div class="cta-shell">
+      <p class="eyebrow light">12 — Built by AI Hub</p>
+      <h2 class="display-sm light">
+        Free, in service<br/>
+        of <em>open knowledge.</em>
+      </h2>
+      <p class="cta-lead">
+        Indus Valley AI is a non-commercial research tool by AI Hub Projects. If you're a scholar, archaeologist, student, or curious mind — use it, link to it, cite it. Feedback welcome.
+      </p>
+      <div class="cta-actions">
+        <a href="#chat" class="btn btn-primary">
+          Try the AI <span aria-hidden="true">→</span>
+        </a>
+        <a href="mailto:majeedkhan2005.cc@gmail.com" class="btn btn-outline">
+          Contact the team <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" aria-label="Footer">
+    <div class="foot-row">
+      <div class="foot-brand">
+        <span class="brand-mark logo-wrap" style="width:44px;height:44px">
+          <img src="assets/logo.png" alt="AI Hub" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+          <svg viewBox="0 0 64 64" aria-hidden="true" class="logo-fallback" style="display:none">
+            <rect width="64" height="64" rx="14" fill="#0F0F0F" stroke="#C2A878" stroke-opacity=".25"/>
+            <path d="M14 44 V20 L24 36 L34 20 V44" stroke="#D4AF37" stroke-width="3.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+            <circle cx="44" cy="32" r="8" stroke="#C2A878" stroke-width="3" fill="none"/>
+            <circle cx="44" cy="32" r="2" fill="#D4AF37"/>
+          </svg>
+        </span>
+        <div>
+          <p class="foot-title">AI Hub <em>Projects</em></p>
+          <p class="foot-sub">Indus Valley AI · 2026</p>
+        </div>
+      </div>
+
+      <nav class="foot-nav">
+        <a href="#chat">Open AI</a>
+        <a href="#seals">Seals</a>
+        <a href="#cities">Cities</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <p class="foot-credit">
+        Created by <strong>Mohammed Majeed Khan</strong>.<br/>
+        AI Hub · Mahindra University · Hyderabad.
+      </p>
+    </div>
+
+    <h2 class="wordmark" aria-hidden="true">INDUS·VALLEY·AI</h2>
+  </footer>
+
+</main>
+
+<!-- ========== MODAL SHELL ========== -->
+<div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="modal-scrim" data-modal-close></div>
+  <article class="modal-sheet" role="document">
+    <button class="modal-close" type="button" aria-label="Close" data-modal-close>
+      <span>✕</span>
+    </button>
+    <div class="modal-body" data-modal-body></div>
+  </article>
+</div>
+
+<!-- Three.js -->
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+  }
+}
+</script>
+<script src="knowledge-base.js"></script>
+<script src="data.js"></script>
+<script src="script-analysis.js"></script>
+<script src="vision.js"></script>
+<script src="gemini-nano.js"></script>
+<script src="rag-client.js"></script>
+<script type="module" src="three-scene.js"></script>
+<script type="module" src="three-routes.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

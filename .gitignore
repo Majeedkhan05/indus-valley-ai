@@ -1,0 +1,10 @@
+backend/venv/
+backend/data/index/
+backend/data/ocr/
+backend/data/pdfs/*.pdf
+backend/__pycache__/
+backend/**/__pycache__/
+training/training_data.jsonl
+backup-v1-original/
+*.pyc
+.DS_Store
