@@ -119,11 +119,13 @@ class OllamaClient:
                 json={
                     "model":  self.model_name,
                     "prompt": prompt,
+                    "keep_alive": "30m",      # keep model loaded between queries
                     "options": {
                         "temperature": temperature,
                         "num_predict": max_tokens,
                         "top_k": 30,
                         "top_p": 0.9,
+                        "num_ctx": 2048,       # smaller ctx → faster prompt eval
                     },
                     "stream": False,
                 },
@@ -145,7 +147,12 @@ class OllamaClient:
                 json={
                     "model":  self.model_name,
                     "prompt": prompt,
-                    "options": {"temperature": temperature, "num_predict": max_tokens},
+                    "keep_alive": "30m",      # keep model loaded between queries
+                    "options": {
+                        "temperature": temperature,
+                        "num_predict": max_tokens,
+                        "num_ctx": 2048,
+                    },
                     "stream": True,
                 },
                 stream=True,

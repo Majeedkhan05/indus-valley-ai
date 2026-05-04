@@ -393,7 +393,7 @@
   let ragOnline = false;
   const chatHistory = [];   // for the RAG backend's history slot
 
-  /* — detect RAG backend on load — */
+  /* — RAG backend detection — */
   if (window.IVA_RAG) {
     window.IVA_RAG.ping().then(info => {
       if (info) {
@@ -402,9 +402,9 @@
           nanoText.textContent = `RAG · ${info.ollama_model} · ${info.vector_count} chunks`;
           nanoBadge.dataset.state = 'ready';
         }
-        console.log('[IVAI] RAG backend online:', info);
+        console.log('[IVAI] RAG online:', info);
       } else {
-        console.log('[IVAI] RAG backend offline — using keyword KB.');
+        console.log('[IVAI] RAG offline — using KB.');
       }
     });
   }
@@ -752,31 +752,97 @@
      CORE: domain check + topic match
      ────────────────────────────────────────────── */
   function answer(qRaw) {
-    const q = qRaw.toLowerCase();
-    const inDomain = window.IVA_KB.inDomainKeywords.some(k => q.includes(k))
-      || /(\bwhat\b.*\b(is|was|are|were)\b|\bwho\b|\bhow\b|\bwhy\b|\btell me\b|\bexplain\b|\bdescribe\b|\bcompare\b)/i.test(q);
+    const q = qRaw.toLowerCase().trim();
 
-    const outOfScopeHard = /(\bbitcoin\b|\bcrypto\b|\brecipe\b|\bweather\b|\bstock\b|\bcurrent president\b|\bchatgpt\b|\bgpt-?4\b|\bopenai\b|\biphone\b|\bandroid\b|\bnetflix\b|\bcricket score\b|\bipl\b|\bhomework\b|\bcalculate\b|\bsolve\b|\bjavascript\b|\bpython\b)/i.test(q);
+    // Step 1: try to match a topic FIRST (greetings, in-domain, etc.)
+    // If we match anything well, return it — don't even check domain.
+    const m = bestTopic(q);
+    if (m) return { title: m.topic.title, body: m.topic.body, sources: m.topic.sources, topic: m.topic };
 
-    if (outOfScopeHard || (!inDomain)) {
-      const m = bestTopic(q);
-      if (m && m.score >= 4) return { title: m.topic.title, body: m.topic.body, sources: m.topic.sources, topic: m.topic };
+    // Step 2: if no topic matched, check hard out-of-scope (bitcoin, IPL, etc.)
+    const outOfScopeHard = /(\bbitcoin\b|\bcrypto\b|\brecipe\b|\bweather\b|\bstock\b|\bcurrent president\b|\bchatgpt\b|\bgpt-?4\b|\bopenai\b|\biphone\b|\bandroid\b|\bnetflix\b|\bcricket score\b|\bipl\b|\bhomework\b|\bcalculate\b|\bsolve\b|\bjavascript\b|\bpython code\b)/i.test(q);
+    if (outOfScopeHard) {
       return { title: window.IVA_KB.outOfDomain.title, body: window.IVA_KB.outOfDomain.body, sources: null };
     }
 
-    const m = bestTopic(q);
-    if (m) return { title: m.topic.title, body: m.topic.body, sources: m.topic.sources, topic: m.topic };
+    // Step 3: nothing matched, but not obviously out-of-scope — show the helpful in-domain fallback
     return { title: window.IVA_KB.domainFallback.title, body: window.IVA_KB.domainFallback.body, sources: null };
   }
 
+  /* ──────────────────────────────────────────────
+     SMART TOPIC MATCHER
+     - normalises input (handles spelling variants, hyphens)
+     - synonym expansion
+     - phrase + word-level scoring
+     - boosts multi-word phrase matches
+     ────────────────────────────────────────────── */
+  const SYNONYMS = {
+    'mohenjodaro': 'mohenjo-daro', 'moenjodaro': 'mohenjo-daro', 'mohenjo daro': 'mohenjo-daro',
+    'civilisation': 'civilization', 'ivc': 'indus valley civilization',
+    'harappa civilisation': 'harappan civilization', 'harrapa': 'harappa', 'harrapan': 'harappan',
+    'pashupathi': 'pashupati', 'pasupati': 'pashupati',
+    'dolavira': 'dholavira', 'dholavera': 'dholavira',
+    'rakigarhi': 'rakhigarhi', 'rakhigari': 'rakhigarhi',
+    'ghagar': 'ghaggar', 'sarasvathi': 'sarasvati', 'saraswati': 'sarasvati',
+    'mesopotamian': 'mesopotamia', 'sumerian': 'sumer', 'meluha': 'meluhha',
+    'sealings': 'seals', 'inscription': 'script', 'inscriptions': 'script',
+    'bath': 'great bath', 'bathing': 'great bath',
+    'farming': 'agriculture', 'crops': 'agriculture',
+    'depicts': 'shows', 'depict': 'shows', 'represent': 'shows',
+    'ended': 'decline', 'collapse': 'decline', 'collapsed': 'decline', 'fall': 'decline',
+    'language': 'script', 'writing': 'script', 'writing system': 'script'
+  };
+
+  function normalize(q) {
+    let n = q.toLowerCase().trim();
+    n = n.replace(/[?!.,;:]/g, ' ').replace(/\s+/g, ' ');
+    for (const [from, to] of Object.entries(SYNONYMS)) {
+      const re = new RegExp('\\b' + from.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'g');
+      n = n.replace(re, to);
+    }
+    return n;
+  }
+
   function bestTopic(q) {
+    const qn = normalize(q);
+    const qWords = new Set(qn.split(/\s+/).filter(w => w.length > 2));
+
+    // STOP WORDS — these don't count as meaningful overlap
+    const STOP = new Set(['the','what','was','were','are','tell','about','more','some','this','that','have','has','for','from','with','any','can','may','our','your','their','its','they']);
+
     let best = null, bestScore = 0;
     window.IVA_KB.topics.forEach(t => {
-      let score = 0;
-      t.keys.forEach(k => { if (q.includes(k)) score += k.length; });
+      let phraseScore = 0;            // score from full phrase matches
+      let wordScore   = 0;            // best word-level match score (not summed)
+      t.keys.forEach(k => {
+        const kn = k.toLowerCase();
+        if (qn.includes(kn)) {
+          // full phrase match — strongly boost multi-word
+          const wc = kn.split(/\s+/).length;
+          phraseScore += kn.length * (wc > 1 ? 3 : 1.5);
+          return;
+        }
+        const kWords = kn.split(/\s+/).filter(w => w.length > 2 && !STOP.has(w));
+        if (kWords.length === 0) return;
+        if (kWords.every(w => qWords.has(w))) {
+          // every meaningful word of the key is in the question — strong match
+          wordScore = Math.max(wordScore, kn.length * 1.5);
+        } else {
+          // partial overlap of meaningful words only — small contribution
+          const overlap = kWords.filter(w => qWords.has(w)).length;
+          if (overlap === kWords.length) {
+            wordScore = Math.max(wordScore, kn.length);
+          } else if (overlap > 0) {
+            wordScore = Math.max(wordScore, overlap * 3);
+          }
+        }
+      });
+      // total = phrase matches + best single word-level match (not sum)
+      const score = phraseScore + wordScore;
       if (score > bestScore) { bestScore = score; best = t; }
     });
-    if (bestScore >= 4) return { topic: best, score: bestScore };
+
+    if (bestScore >= 2) return { topic: best, score: bestScore };
     return null;
   }
 

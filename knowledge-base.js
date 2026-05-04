@@ -25,18 +25,33 @@ window.IVA_KB = {
   /* — scoped responses by topic. Each topic has multiple keyword hooks — */
   topics: [
 
+    /* ── greetings / first-time visitor ───────── */
+    {
+      keys: ['hi','hello','hey','greetings','good morning','good afternoon','good evening','what can you do','help me','who are you','what are you','introduce yourself','start','how to use'],
+      title: 'Welcome — I am Indus Valley AI',
+      sources: 'AI Hub Projects · Mahindra University',
+      body: [
+        '👋 <strong>Welcome.</strong> I am <strong>Indus Valley AI</strong> — a domain-restricted scholarly research assistant for the <em>Indus / Harappan Civilization</em> (c. 3300–1300 BCE).',
+        '<strong>What I can do:</strong> Answer your questions about Indus cities, seals, the script, motifs, trade with Mesopotamia, urban planning, religion, decline, archaeology — drawn from a curated 71-topic knowledge base citing primary sources (Marshall, Wheeler, Mahadevan, Kenoyer, Possehl, Parpola, Yajnadevam).',
+        '<strong>Try asking me:</strong>',
+        '<ul><li><em>"What is the Indus Valley Civilization?"</em></li><li><em>"Tell me about the unicorn seal"</em></li><li><em>"How is Dholavira different from Mohenjo-daro?"</em></li><li><em>"What did the Indus people trade with Mesopotamia?"</em></li><li><em>"Why did the civilization decline?"</em></li></ul>',
+        '<strong>Or use the quick-question buttons below the chat box</strong> to explore curated topics like the unicorn motif, the Great Bath, the fish sign, and more.',
+        '<strong>Boundary:</strong> I only answer Indus / Harappan questions. For anything else, please use a general-purpose AI.'
+      ]
+    },
+
     /* ── overview ─────────────────────── */
     {
-      keys: ['what is the indus','overview','tell me about the indus','introduce','introduction','about the indus'],
+      keys: ['what is the indus valley','what is indus valley','what is the harappan','what is the indus civilization','tell me about the indus','tell me about indus valley','about the indus valley','overview of indus','introduce indus','introduction to indus','what does indus valley','what does the indus','what is iv c','about ivc'],
       title: 'The Indus / Harappan Civilization — overview',
-      sources: 'Kenoyer 1998 · Possehl 2002 · ASI reports',
+      sources: 'Kenoyer 1998 · Possehl 2002 · Wright 2010 · ASI reports',
       body: [
-        'The <strong>Indus Valley Civilization</strong> (also called Harappan, after its type-site Harappa) flourished c. <em>3300–1300 BCE</em> across what is today Pakistan and northwestern India, plus parts of Afghanistan.',
-        'It is one of the three earliest urban civilizations of the Old World — alongside Mesopotamia and Egypt — and by area, it was the largest.',
-        '<strong>Mature phase (2600–1900 BCE):</strong> Mohenjo-daro, Harappa, Dholavira, Rakhigarhi, Lothal, Kalibangan rise as planned cities with standardized weights, fired-brick architecture, sophisticated drainage, and a shared script.',
-        '<strong>Trade:</strong> Direct contact with Mesopotamia (Sumerian texts call them <em>Meluhha</em>), Oman, Bahrain, and Central Asia.',
-        '<strong>Decline:</strong> Began c. 1900 BCE, likely a combination of monsoon weakening, the drying of the Ghaggar-Hakra channel, and de-urbanization rather than catastrophic collapse.',
-        'Key open puzzle: the script remains <em>undeciphered</em>, and we still do not know what language(s) the Harappans spoke.'
+        '<strong>Direct answer:</strong> The Indus Valley Civilization (also called Harappan) was one of the world\'s three earliest urban civilizations — alongside Mesopotamia and Egypt — flourishing c. 3300–1300 BCE across present-day Pakistan, northwestern India, and parts of Afghanistan, covering roughly 1.25 million km² (the largest of the three by area).',
+        '<strong>Evidence:</strong>',
+        '<ul><li>Major mature-phase cities (c. 2600–1900 BCE) — Mohenjo-daro, Harappa, Dholavira, Rakhigarhi, Lothal, Kalibangan — show planned grids, fired-brick architecture in a 1:2:4 ratio, and city-scale drainage systems [Marshall 1931; Wheeler 1947].</li><li>A shared but undeciphered script appears on ~4,000 inscribed seals and tablets [Mahadevan 1977].</li><li>Long-distance trade with Mesopotamia is documented in Sumerian records as "Meluhha"; etched carnelian beads and Indus seals appear at Ur, Susa, and Kish [Possehl 2002].</li><li>No royal palaces, throne rooms, or military scenes — unlike contemporary Mesopotamia and Egypt [Kenoyer 1998].</li></ul>',
+        '<strong>Interpretation:</strong> The combination of urban sophistication and apparent absence of monarchic display suggests a non-traditional political order — possibly governed by trade-house councils, religious-civic elites, or guild federations rather than kings.',
+        '<strong>Alternative view:</strong> Some scholars argue the absence of royal monuments may reflect preservation bias — wooden palaces, perishable thrones, and unrecorded oral political traditions could have existed without leaving archaeological traces.',
+        '<strong>Limitation:</strong> The script remains undeciphered, so we cannot read any contemporary administrative or political records. Most lower-town areas at Mohenjo-daro lie below the modern water table — what we see is a partial sample.'
       ]
     },
 
@@ -44,27 +59,29 @@ window.IVA_KB = {
     {
       keys: ['what are the seals','what are indus seals','about the seals','about indus seals','tell me about the seals','tell me about seals','square seals','steatite seal','seal corpus','administrative seal','seal usage','how were the seals','what is a seal'],
       title: 'Indus seals — what they are and what they do',
-      sources: 'Parpola 1994 · Mahadevan 1977 · Kenoyer 1998',
+      sources: 'Parpola 1994 · Mahadevan 1977 · Kenoyer 1998 · CISI corpus',
       body: [
-        '<strong>~4,000 inscribed Indus seals</strong> have been catalogued. Most are square, made of <em>steatite</em> (soapstone) hardened by firing, and were used as administrative stamps — pressed into clay bullae or tags.',
-        '<strong>Standard format:</strong> a single line of script (5–6 signs on average) above an animal motif, with a small "feeding standard" or other emblem in front of the animal.',
-        '<strong>Why they matter:</strong> seals are the densest body of inscribed material we have. They likely encode names, titles, clan-emblems, or trade-house identifiers — the Harappan equivalent of a personal monogram or company seal.',
-        '<strong>Animal motif distribution:</strong> the <em>unicorn</em> (one-horned bull) dominates at ~60% of figured seals — way more than any other motif. Then zebu, elephant, water buffalo, tiger, rhinoceros.',
-        'Seals have been excavated at Mesopotamian sites (Ur, Susa, Kish), confirming long-distance use — they were both administrative tools and trade-credentials.'
+        '<strong>Direct answer:</strong> Indus seals are small (~3 cm) square stamps of fired steatite (soapstone), each carrying a single line of script (5-6 signs on average) above an animal motif. They functioned as administrative stamps — pressed into clay bullae and tags to mark goods, transactions, or institutional ownership.',
+        '<strong>Evidence:</strong>',
+        '<ul><li>Roughly 4,000 inscribed seals catalogued in the <em>Corpus of Indus Seals and Inscriptions</em> (CISI 1-3.2, Parpola et al.) [CISI 1, p.5].</li><li>Standard format: 5-6 script signs above an animal motif, often with a "feeding standard" or pole emblem in front [Mahadevan 1977].</li><li>The unicorn (one-horned bull) appears on ~60% of figured seals — vastly more than any other motif [Kenoyer 1998].</li><li>Indus seals excavated at Mesopotamian sites (Ur, Susa, Kish) confirm their use as trade-credentials over 2,500 km away [Possehl 2002].</li></ul>',
+        '<strong>Interpretation:</strong> Seals likely encoded names, titles, clan-emblems, or trade-house identities — functioning as the Harappan equivalent of personal monograms or corporate seals. The standardised format across the entire civilization area suggests an integrated administrative system.',
+        '<strong>Alternative view:</strong> A minority view, defended by Steve Farmer and colleagues (2004), argues the seals may be heraldic or magical rather than truly linguistic — though this position has been weakened by the 2009 entropy analysis (Rao et al., Science).',
+        '<strong>Limitation:</strong> The script is undeciphered, so the actual readings remain unknown. Yajnadevam\'s recent decipherment hypothesis (a Sanskrit-based reading) is contested and not yet accepted by the field.'
       ]
     },
 
     /* ── unicorn motif ─────────────────── */
     {
-      keys: ['unicorn','one-horned','one horned','single-horn'],
-      title: 'The "unicorn" motif',
-      sources: 'Parpola · Kenoyer · Mahadevan',
+      keys: ['unicorn','one-horned','one horned','single-horn','unicorn seal','unicorn motif'],
+      title: 'The "unicorn" motif on Indus seals',
+      sources: 'Parpola 1994 · Kenoyer 1998 · Mahadevan 1977',
       body: [
-        'The so-called <strong>unicorn</strong> on Indus seals is almost certainly a <em>stylized one-horned bull</em>, drawn in strict profile so that the second horn is hidden behind the first.',
-        'It is the <strong>most common animal motif</strong> by a wide margin — about <em>60%</em> of all figured Indus seals carry it.',
-        'It is almost always paired with a peculiar object in front of its face — the so-called <em>standard</em> or <em>manger</em>: a vertical pole with a domed/cylindrical fixture on top. The function is debated — possibilities include a censer, a filtering/bouquet device, or a portable cult emblem.',
-        '<strong>Interpretive consensus:</strong> not a single deity, but most likely a <em>clan, guild, or administrative emblem</em> — the most institutionally significant motif of the civilization.',
-        'In Yajnadevam\'s decipherment hypothesis, the unicorn marks the inscribed seal as belonging to a specific <em>kin-group / lineage</em>.'
+        '<strong>Direct answer:</strong> The so-called "unicorn" on Indus seals is almost certainly a stylised one-horned bull, drawn in strict profile so the second horn is hidden behind the first. It is the most frequent animal motif in the entire corpus — appearing on roughly 60% of figured seals — and its meaning is widely interpreted as a clan, guild, or administrative emblem rather than a deity.',
+        '<strong>Evidence:</strong>',
+        '<ul><li>Anatomical features (humped back, body proportions) match a stylised bull rather than any known wild animal [Kenoyer 1998].</li><li>The motif appears on ~60% of figured seals — vastly above what would be expected for any naturalistic animal [Parpola 1994].</li><li>It is almost always paired with a "standard" or "manger" — a vertical pole with a domed fixture in front of the animal\'s face [Mahadevan 1977].</li><li>Distribution is geographically uniform across the civilization — Mohenjo-daro, Harappa, Lothal, Dholavira all produced unicorn seals in similar proportion.</li></ul>',
+        '<strong>Interpretation:</strong> The high frequency, stylisation, and standardised pairing with the manger suggest the unicorn functioned as a heraldic emblem — likely identifying a major institution, clan, or office that operated across the civilization.',
+        '<strong>Alternative view:</strong> Yajnadevam\'s decipherment proposes the unicorn marks the seal as belonging to a specific kin-group or lineage. A different reading by Parpola associates it with a high-status priestly or administrative class.',
+        '<strong>Limitation:</strong> Without a deciphered script, the specific institution the unicorn represented cannot be confirmed. The "manger" object\'s function (cult emblem? censer? filter?) remains debated.'
       ]
     },
 
@@ -141,16 +158,16 @@ window.IVA_KB = {
 
     /* ── urban planning / drainage ─────── */
     {
-      keys: ['urban planning','drainage','sewer','sanitation','grid','town planning','city plan'],
+      keys: ['urban planning','drainage','sewer','sanitation','grid','town planning','city plan','planned cities','indus city plan','harappan city','sewerage','toilets','bathroom','wells indus'],
       title: 'Indus urban planning & drainage',
-      sources: 'Kenoyer · Wheeler · Bisht (Dholavira)',
+      sources: 'Marshall 1931 · Wheeler 1947 · Kenoyer 1998 · Bisht (Dholavira)',
       body: [
-        '<strong>Grid layout:</strong> Mature Harappan cities follow a roughly cardinal-aligned street grid. Mohenjo-daro\'s main streets are 9–10 m wide, intersecting smaller residential lanes.',
-        '<strong>Two-mound plan:</strong> a fortified <em>citadel</em> (often western, with public buildings — Great Bath, granary, assembly hall) and a larger <em>lower town</em> (residential).',
-        '<strong>Standardized bricks:</strong> ratio <em>1 : 2 : 4</em> (thickness : width : length) maintained from Mohenjo-daro to Lothal, ~1,500 km apart. This level of standardization across an empire-sized geography is unique in the early Bronze Age.',
-        '<strong>Drainage:</strong> Most houses had latrines and bathrooms connected to <em>covered drains</em> running under the streets — fed into soak pits and finally to the river. Manholes allowed cleaning. This is the world\'s earliest known city-scale sanitation system.',
-        '<strong>Wells:</strong> nearly every house had its own well — Mohenjo-daro alone has ~700 known wells. Public access plus private supply.',
-        '<strong>Dholavira</strong> took this to an extreme — three-tier division (citadel · middle town · lower town), 16 reservoirs, and <em>stone</em> rather than brick construction.'
+        '<strong>Direct answer:</strong> Mature Harappan cities (c. 2600–1900 BCE) display the world\'s earliest known examples of cardinal-grid urban planning, standardised brick architecture, and city-scale sanitation — features unmatched by contemporary Mesopotamia or Egypt.',
+        '<strong>Evidence:</strong>',
+        '<ul><li><em>Grid layout:</em> Mohenjo-daro\'s main streets run 9–10 m wide on cardinal axes, with residential lanes branching at right angles [Marshall 1931].</li><li><em>Two-mound plan:</em> a raised western "citadel" with public buildings (Great Bath, granary, assembly hall) and a larger eastern "lower town" with residential blocks [Wheeler 1947].</li><li><em>Brick standardisation:</em> a 1 : 2 : 4 ratio (thickness : width : length) is maintained from Mohenjo-daro to Lothal, ~1,500 km apart — a unique civilizational standard [Kenoyer 1998].</li><li><em>Drainage:</em> covered brick drains run under main streets with regular inspection manholes; most houses have private bathing platforms and seated toilets feeding into them [Marshall 1931].</li><li><em>Wells:</em> Mohenjo-daro has ~700 documented wells — roughly one per three houses [Mackay 1937–38].</li><li><em>Dholavira:</em> three-tier walled division (castle · middle town · lower town), 16 reservoirs cut into rock, and stone (not brick) construction [Bisht].</li></ul>',
+        '<strong>Interpretation:</strong> The level of standardisation across 1.25 million km² implies <em>some</em> form of central authority or shared technical tradition — but the source of that authority is invisible. Public works (drainage, baths, wells) are over-developed; royal/military display is under-developed. This pattern likely reflects civic priorities very different from contemporary Mesopotamia.',
+        '<strong>Alternative view:</strong> Some scholars argue the apparent uniformity is overstated — local variation in drainage quality, brick sizes, and city layouts exists, and "standardisation" may reflect shared craft traditions rather than top-down imposition.',
+        '<strong>Limitation:</strong> Most lower town areas at Mohenjo-daro and Harappa lie below the modern water table or under modern settlements — what we see is a partial sample. The script remains undeciphered, so any administrative records that might explain the system are unreadable.'
       ]
     },
 
@@ -169,17 +186,16 @@ window.IVA_KB = {
 
     /* ── trade with mesopotamia ────────── */
     {
-      keys: ['mesopotamia','meluhha','trade','sumer','ur','dilmun','magan','oman','persian gulf','export','import'],
+      keys: ['trade with mesopotamia','indus mesopotamia','indus trade','what did indus trade','what did the indus trade','what indus trade','what did indus people trade','trade with mesopotamians','meluhha','sumerian texts','dilmun','magan','persian gulf','indus exports','indus imports','carnelian export','indus carnelian','queen puabi','mesopotamia trade','trade route mesopotamia','what did they trade','traded with sumer','traded with ur','meluhhan'],
       title: 'Indus trade with Mesopotamia',
-      sources: 'Kenoyer · Possehl · cuneiform texts',
+      sources: 'Possehl 2002 · Kenoyer 1998 · Akkadian/Ur III cuneiform texts',
       body: [
-        'Mesopotamian cuneiform texts of the Akkadian and Ur III periods (c. 2400–2000 BCE) refer to a distant land called <strong>Meluhha</strong> — almost universally identified as the Indus.',
-        '<strong>Indus exports:</strong> carnelian beads (long, etched, drilled with a precision that no Mesopotamian workshop could match), ivory, hardwoods (sissoo, ebony), shell ornaments, possibly cotton, and live animals (peacocks, possibly elephants).',
-        'Excavated <strong>Indus carnelian beads</strong> have been found in the Royal Tombs of Ur (Queen Puabi\'s tomb).',
-        '<strong>Intermediate hubs:</strong> <em>Dilmun</em> (Bahrain) and <em>Magan</em> (Oman) — the maritime entrepôts that handled the Persian Gulf leg of the trade.',
-        '<strong>Indus weight system</strong> — based on a small cubical chert weight of c. 13.6 g — was used in the Persian Gulf as a regional standard.',
-        '<strong>Indus seals</strong> have been excavated at Ur, Kish, Susa, and Tell Asmar. A small number of <em>"Persian Gulf seals"</em> blend Indus and local iconography — likely belonging to Indus expatriate merchants.',
-        'Texts mention a <em>"Meluhhan village"</em> at Lagash, suggesting an Indus diaspora settlement in southern Mesopotamia.'
+        '<strong>Direct answer:</strong> The Indus civilization had active long-distance trade with Mesopotamia (c. 2400–1900 BCE), exporting <em>carnelian beads, ivory, shell ornaments, hardwoods, possibly cotton, and exotic animals</em>, while likely importing <em>silver, wool, tin, and grain</em>. The Mesopotamians referred to the Indus as <em>"Meluhha"</em>.',
+        '<strong>Evidence:</strong>',
+        '<ul><li>Cuneiform texts of the Akkadian and Ur III periods name <em>Meluhha</em> as a source of carnelian, ivory, and exotic goods [Possehl 2002].</li><li>Etched carnelian beads of distinctive Harappan technique have been excavated at Ur — including in the Royal Tombs of Queen Puabi [Kenoyer 1998].</li><li>Indus seals have been recovered at Ur, Kish, Susa, and Tell Asmar — including hybrid "Persian Gulf seals" mixing Indus and local iconography [CISI corpus].</li><li>Cuneiform records mention a "Meluhhan village" at Lagash, suggesting an Indus expatriate community in southern Mesopotamia.</li><li>The Indus weight system (cubical chert standard ~13.6 g) was adopted in the Persian Gulf region [Kenoyer 1998].</li></ul>',
+        '<strong>Interpretation:</strong> Trade was bidirectional, organised, and persistent — likely conducted by professional merchant networks operating through intermediate maritime hubs at <em>Dilmun</em> (Bahrain) and <em>Magan</em> (Oman). The presence of an Indus expatriate community at Lagash suggests sustained commercial relations rather than occasional exchanges.',
+        '<strong>Alternative view:</strong> Some scholars argue much of the trade was indirect — via Dilmun and Magan middlemen — and that direct Indus-Mesopotamian contact was limited to specialised goods. The volume of trade is debated.',
+        '<strong>Limitation:</strong> Most evidence comes from Mesopotamian sites; what the Indus imported in return is poorly documented because perishable goods (textiles, grain, oils) leave little archaeological trace.'
       ]
     },
 
@@ -1131,6 +1147,51 @@ window.IVA_KB = {
         '• M-67 (FORK) at initial position: Z = +11.2 (extreme)',
         'A Z-score above ±3 is "highly statistically significant" in any field. The Indus script regularly produces Z-scores above ±15 — meaning the patterns are about 10^50 times more likely to be real grammar than chance.',
         '<strong>Current scholarly consensus:</strong> the script almost certainly encodes a real language. The actual phonetic readings remain unknown — but the structural evidence is overwhelming.'
+      ]
+    },
+
+    /* ── political organisation / governance ──── */
+    {
+      keys: ['political','politics','government','governance','rulers','kings','kingship','authority','political organization','political organisation','who ruled','no kings','elite class','social organization','political system','administrative','state structure','political model'],
+      title: 'How was the Indus Civilization politically organised?',
+      sources: 'Possehl 1998 · Kenoyer 1998 · Wright 2010',
+      body: [
+        '<strong>Direct answer:</strong> Indus political organisation remains one of archaeology\'s great puzzles. Unlike Mesopotamia and Egypt, no clear evidence of kings, dynasties, or state-level militarism survives. Most scholars now describe it as a <em>"corporate" or "heterarchical"</em> polity — power distributed across guilds, councils, or city-leagues rather than concentrated in a monarch.',
+        '<strong>Evidence:</strong>',
+        '<ul><li>No royal tombs, palaces, or throne rooms have been excavated at any major site [Kenoyer 1998].</li><li>No royal portraiture or named-king inscriptions, in stark contrast to contemporary Mesopotamia [Possehl 1998].</li><li>Standardised weights, bricks, and seals across 1.25M km² imply <em>some</em> centralised authority — but the source is invisible [Wright 2010].</li><li>The "Priest-King" statuette (DK-1909) is a single small bust whose identity is debated — Marshall\'s name stuck but is unsupported.</li></ul>',
+        '<strong>Interpretation:</strong> Possehl proposed the Indus was a "civilisation without rulers" — coordinated by religious or commercial elites without monarchic display. Kenoyer favours a council-of-merchants model. Either way, the integration was achieved without the visible apparatus of kingship.',
+        '<strong>Alternative view:</strong> Some scholars argue Indus rulers DID exist but used non-monumental authority systems we no longer recognise — analogous to medieval merchant republics or temple-state coalitions.',
+        '<strong>Limitation:</strong> Without a deciphered script, we cannot read any contemporary self-description. Political reconstruction is interpretive.'
+      ]
+    },
+
+    /* ── why study the indus ───────────────────── */
+    {
+      keys: ['why study','why important','significance','contribution','what can we learn','importance','relevance','why does it matter','why does the indus matter','why is the indus important','what does the indus teach','lessons from'],
+      title: 'Why study the Indus Valley Civilization?',
+      sources: 'Kenoyer 1998 · Possehl 2002 · McIntosh 2008',
+      body: [
+        '<strong>Direct answer:</strong> The Indus Civilization matters because it represents an alternative model of urban complexity — one that achieved standardised urban planning, long-distance trade, and large-scale public works <em>without</em> kings, conquests, or recorded warfare. Studying it expands our understanding of how complex societies can organise themselves.',
+        '<strong>Evidence of significance:</strong>',
+        '<ul><li>The world\'s earliest planned urban grid layout, drainage system, and public bath [Marshall 1931].</li><li>The earliest evidence of dental drilling (Mehrgarh, ~7000 BCE), brick standardisation in 1:2:4 ratio across 1.25M km², and binary-decimal weight system [Kenoyer 1998].</li><li>An undeciphered script — one of the last great undeciphered writing systems of the ancient world [Mahadevan 1977].</li><li>Direct trade with Mesopotamia documented in Sumerian records (Meluhha) — proof of integrated Bronze Age world economy [Possehl 2002].</li></ul>',
+        '<strong>Interpretation:</strong> The Indus offers a powerful counter-narrative to "civilization = empire + king + war". It suggests urbanism, literacy, and long-distance trade can develop along non-monarchic, non-militaristic pathways.',
+        '<strong>Alternative view:</strong> Sceptics argue the apparent peaceful character may simply reflect what archaeology can recover — and that all complex societies, including the Indus, must have had hierarchies and conflict.',
+        '<strong>Limitation:</strong> Most cities lie under modern settlements or below the water table. Future excavation could change the picture.'
+      ]
+    },
+
+    /* ── non-militaristic urban character ──────── */
+    {
+      keys: ['non militaristic','non-militaristic','non militaristic','non-militaristic','peaceful','no war','no warfare','no weapons','no army','no military','no fortification','urban without war','peaceful urbanism','why peaceful','militaristic','militarism','weapons indus','war indus','fortifications absent','no chariots','no swords','arms','militia','soldiers','battle','conflict harappan'],
+      title: 'Why the Indus Civilization is called "urban but non-militaristic"',
+      sources: 'Marshall 1931 · Possehl 2002 · Kenoyer 1998 · Cork 2005',
+      body: [
+        '<strong>Direct answer:</strong> Indus Valley archaeology shows a striking absence of features that mark <em>contemporary</em> Bronze Age societies as militaristic — no royal armies, no battle reliefs, no large-scale fortifications oriented for siege defence, no specialized weapons-grade metallurgy. Scholars therefore describe it as a <em>"non-militaristic urbanism"</em>, though the term remains debated.',
+        '<strong>Evidence:</strong>',
+        '<ul><li>Harappan tools — copper/bronze axes, points, blades — are domestic or hunting-grade, not battle-optimised. Massed weapon deposits (as at Mesopotamian sites like Ur) are absent. [Kenoyer 1998]</li><li>City walls exist (Mohenjo-daro, Harappa, Dholavira) but their proportions, gateways, and sight-lines are consistent with flood control + customs/administration rather than active siege defence. [Possehl 2002]</li><li>No images of warfare, captives, processions of soldiers, or victorious kings on seals or pottery — in stark contrast to Mesopotamian and Egyptian iconography of the same period. [Cork 2005]</li><li>No known palaces, throne rooms, or royal tombs — and no class of grave goods marking warrior elites. Cemetery R-37 at Harappa contains no weapons. [Vats 1940; Kenoyer 1998]</li></ul>',
+        '<strong>Interpretation:</strong> The pattern suggests a society where authority was administrative and religious rather than military — possibly governed by trade-house councils, priestly bodies, or guild-confederations. Public works (drainage, granaries, baths) are over-developed; martial display is under-developed.',
+        '<strong>Alternative view:</strong> A minority of scholars (e.g. Cork) argue the absence of weapons may simply reflect <em>preservation bias</em> — wooden weapons, slings, and bows leave little archaeological trace — and that trade networks always require force projection. Some "non-militaristic" claims may overstate the evidence.',
+        '<strong>Limitation:</strong> Absence of evidence is not evidence of absence. The Indus script is undeciphered, so we cannot read administrative or military records that may exist. The claim is a working interpretation, not a definitive proof.'
       ]
     },
 
