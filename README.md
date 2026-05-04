@@ -6,7 +6,7 @@ colorTo: red
 sdk: static
 pinned: true
 license: mit
-short_description: A domain-restricted research assistant for the Indus Valley Civilization. Built from scratch. Zero external APIs.
+short_description: Indus Valley AI research assistant
 ---
 
 # Indus Valley AI
