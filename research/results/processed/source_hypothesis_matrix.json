@@ -1,0 +1,286 @@
+{
+  "baseline_ratio": 0.2576979839807425,
+  "hypotheses": [
+    {
+      "id": "A",
+      "hypothesis": "Vocabulary mismatch with the benchmark explains under-retrieval",
+      "test": "Pearson correlation between per-source query-vocabulary coverage and retrieval ratio",
+      "result": "r=-0.466 (p=0.352); Yajnadevam coverage 0.214 vs others 0.479",
+      "evidence": {
+        "pearson_r": -0.4660006833869398,
+        "p_value": 0.35159654552227837,
+        "coverage_by_source": {
+          "Authority Structure and the Evolution of Early Writing Systems 2.pdf": 0.10338983050847457,
+          "CISI_1_Collections_in_India.pdf": 0.5474576271186441,
+          "CISI_2_Collections_in_Pakistan.pdf": 0.5610169491525424,
+          "CISI_3.1_Mohenjodaro_and_Harappa.pdf": 0.6627118644067796,
+          "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf": 0.5220338983050847,
+          "Indus Inscriptions by Yajnadevam.pdf": 0.2135593220338983
+        },
+        "ratio_by_source": {
+          "Authority Structure and the Evolution of Early Writing Systems 2.pdf": 4.121020260492041,
+          "CISI_1_Collections_in_India.pdf": 1.8337554269175107,
+          "CISI_2_Collections_in_Pakistan.pdf": 1.3200325226024305,
+          "CISI_3.1_Mohenjodaro_and_Harappa.pdf": 1.2373250517196166,
+          "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf": 0.8990173871096291,
+          "Indus Inscriptions by Yajnadevam.pdf": 0.2576979839807425
+        }
+      },
+      "verdict": "INCONCLUSIVE"
+    },
+    {
+      "id": "B",
+      "hypothesis": "Chunk length explains under-retrieval",
+      "test": "Length-stratified comparison (quartile bands): does the deficit vanish within a band?",
+      "result": "deficit persists in every band; Yajnadevam/other ratio = short:nan, mid:0.14, long:nan",
+      "evidence": {
+        "short": {
+          "yaj": NaN,
+          "other": 0.45240312743285915,
+          "n_yaj": 0
+        },
+        "mid": {
+          "yaj": 0.2576979839807425,
+          "other": 1.887217091619795,
+          "n_yaj": 303
+        },
+        "long": {
+          "yaj": NaN,
+          "other": 1.4392688396699285,
+          "n_yaj": 0
+        }
+      },
+      "verdict": "NOT SUPPORTED"
+    },
+    {
+      "id": "C",
+      "hypothesis": "Token-distribution divergence from queries explains under-retrieval",
+      "test": "KL(query unigrams || source unigrams) per source, correlated with retrieval ratio",
+      "result": "Yajnadevam KL=11.199 (highest=12.121); correlation with ratio r=0.394 (p=0.440)",
+      "evidence": {
+        "kl_by_source": {
+          "Authority Structure and the Evolution of Early Writing Systems 2.pdf": 12.120786073255733,
+          "CISI_1_Collections_in_India.pdf": 5.652545596269254,
+          "CISI_2_Collections_in_Pakistan.pdf": 5.814427867933318,
+          "CISI_3.1_Mohenjodaro_and_Harappa.pdf": 5.300565869831151,
+          "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf": 6.828440834959505,
+          "Indus Inscriptions by Yajnadevam.pdf": 11.199392766150082
+        },
+        "pearson_r": 0.39375475042914754,
+        "p_value": 0.43989229455241674
+      },
+      "verdict": "INCONCLUSIVE"
+    },
+    {
+      "id": "D",
+      "hypothesis": "Numeric/glyph-heavy content explains under-retrieval",
+      "test": "Prose vs tabular strata within each source",
+      "result": "Yajnadevam prose ratio 0.30 vs CISI prose 2.36; deficit persists in prose",
+      "evidence": {
+        "yaj_prose": 0.2997105643994211,
+        "yaj_tabular": 0.2483806778395033,
+        "other_prose": 2.3597354922299423,
+        "other_tabular": 0.42703998603501386
+      },
+      "verdict": "NOT SUPPORTED"
+    },
+    {
+      "id": "E",
+      "hypothesis": "Anomalous embedding behaviour (norm/anisotropy) explains under-retrieval",
+      "test": "Vector norms, mean cosine to queries, and max cosine to any query, by source",
+      "result": "norms identical (all L2-normalised, sd=3.5e-08); mean cos to queries Yajnadevam 0.506 vs others 0.500; but MAX cos 0.693 vs 0.673",
+      "evidence": {
+        "norm_sd": 3.489726907446311e-08,
+        "mean_cos_yaj": 0.5063408613204956,
+        "mean_cos_other": 0.49974021315574646,
+        "max_cos_yaj": 0.6928248405456543,
+        "max_cos_other": 0.6726730465888977
+      },
+      "verdict": "PARTIALLY SUPPORTED"
+    },
+    {
+      "id": "F",
+      "hypothesis": "Duplicate / near-duplicate collapse explains under-retrieval",
+      "test": "Pre-dedup duplicate rate + intra-source chunk similarity + shared leading n-gram",
+      "result": "Yajnadevam duplicate rate 75.0% vs 0.0% for CISI; intra-source similarity 0.894 vs 0.662",
+      "evidence": {
+        "duplicate_rate": {
+          "Authority Structure and the Evolution of Early Writing Systems 2.pdf": 0.5,
+          "Indus Inscriptions by Yajnadevam.pdf": 0.75,
+          "CISI_1_Collections_in_India.pdf": 0.0,
+          "CISI_2_Collections_in_Pakistan.pdf": 0.0,
+          "CISI_3.1_Mohenjodaro_and_Harappa.pdf": 0.0,
+          "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf": 0.0
+        },
+        "intra_similarity": {
+          "Authority Structure and the Evolution of Early Writing Systems 2.pdf": 0.9189507961273193,
+          "CISI_1_Collections_in_India.pdf": 0.6645404100418091,
+          "CISI_2_Collections_in_Pakistan.pdf": 0.6673542857170105,
+          "CISI_3.1_Mohenjodaro_and_Harappa.pdf": 0.6722477674484253,
+          "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf": 0.6439967751502991,
+          "Indus Inscriptions by Yajnadevam.pdf": 0.893819272518158
+        }
+      },
+      "verdict": "SUPPORTED"
+    },
+    {
+      "id": "G",
+      "hypothesis": "Source-specific terminology (jargon islands) explains under-retrieval",
+      "test": "Share of each source's vocabulary that appears in NO other source",
+      "result": "Yajnadevam unique-vocab share 0.382 vs others 0.407",
+      "evidence": {
+        "unique_vocab_share": {
+          "Authority Structure and the Evolution of Early Writing Systems 2.pdf": 0.38055555555555554,
+          "CISI_1_Collections_in_India.pdf": 0.2849584278155707,
+          "CISI_2_Collections_in_Pakistan.pdf": 0.24384040693053569,
+          "CISI_3.1_Mohenjodaro_and_Harappa.pdf": 0.39969558599695587,
+          "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf": 0.7246782316731953,
+          "Indus Inscriptions by Yajnadevam.pdf": 0.38188514984095095
+        }
+      },
+      "verdict": "NOT SUPPORTED"
+    },
+    {
+      "id": "H",
+      "hypothesis": "Overall corpus composition (source shares) explains the retrieval outcome",
+      "test": "Ablation: remove the source entirely and measure the effect on retrieval quality",
+      "result": "removing 25.3% of the corpus changes hybrid Recall@5 by +0.001",
+      "evidence": {
+        "delta_recall5_removing_source": 0.0010683760683760646
+      },
+      "verdict": "NOT SUPPORTED"
+    },
+    {
+      "id": "I",
+      "hypothesis": "Query category composition (benchmark asks about other topics) explains it",
+      "test": "Per-category retrieval ratio; does the source reach parity on its own subject matter?",
+      "result": "script-like categories 0.20x vs other 0.27x - never reaches parity",
+      "evidence": {
+        "by_category": [
+          {
+            "category": "sites",
+            "questions": 10,
+            "retrieved": 182,
+            "yajnadevam_hits": 3,
+            "yajnadevam_share": 0.016483516483516484,
+            "ratio_vs_corpus": 0.06522685235556523
+          },
+          {
+            "category": "seals",
+            "questions": 10,
+            "retrieved": 171,
+            "yajnadevam_hits": 5,
+            "yajnadevam_share": 0.029239766081871343,
+            "ratio_vs_corpus": 0.1157045529114315
+          },
+          {
+            "category": "script",
+            "questions": 10,
+            "retrieved": 168,
+            "yajnadevam_hits": 12,
+            "yajnadevam_share": 0.07142857142857142,
+            "ratio_vs_corpus": 0.2826496935407827
+          },
+          {
+            "category": "trade",
+            "questions": 10,
+            "retrieved": 153,
+            "yajnadevam_hits": 12,
+            "yajnadevam_share": 0.0784313725490196,
+            "ratio_vs_corpus": 0.31036044780948685
+          },
+          {
+            "category": "controversies",
+            "questions": 8,
+            "retrieved": 130,
+            "yajnadevam_hits": 16,
+            "yajnadevam_share": 0.12307692307692308,
+            "ratio_vs_corpus": 0.4870271642548871
+          },
+          {
+            "category": "scholars",
+            "questions": 8,
+            "retrieved": 152,
+            "yajnadevam_hits": 19,
+            "yajnadevam_share": 0.125,
+            "ratio_vs_corpus": 0.49463696369636967
+          },
+          {
+            "category": "religion",
+            "questions": 7,
+            "retrieved": 121,
+            "yajnadevam_hits": 12,
+            "yajnadevam_share": 0.09917355371900827,
+            "ratio_vs_corpus": 0.3924392439243925
+          },
+          {
+            "category": "methodology",
+            "questions": 7,
+            "retrieved": 132,
+            "yajnadevam_hits": 0,
+            "yajnadevam_share": 0.0,
+            "ratio_vs_corpus": 0.0
+          },
+          {
+            "category": "decline",
+            "questions": 6,
+            "retrieved": 108,
+            "yajnadevam_hits": 11,
+            "yajnadevam_share": 0.10185185185185185,
+            "ratio_vs_corpus": 0.40303752597481973
+          },
+          {
+            "category": "iconography",
+            "questions": 4,
+            "retrieved": 65,
+            "yajnadevam_hits": 0,
+            "yajnadevam_share": 0.0,
+            "ratio_vs_corpus": 0.0
+          }
+        ]
+      },
+      "verdict": "NOT SUPPORTED"
+    },
+    {
+      "id": "J",
+      "hypothesis": "Chunking strategy / formatting alone explains it (source identity is irrelevant)",
+      "test": "CONTROLLED: 55 Yajnadevam prose chunks vs 16 CISI prose chunks matched on token length (+/-20) AND numeric rate (+/-0.05)",
+      "result": "length-and-format-matched: Yajnadevam 0.30x vs matched CISI 1.03x - a 3.4x gap remains after controlling for format",
+      "evidence": {
+        "yaj_prose_ratio": 0.2997105643994211,
+        "matched_other_ratio": 1.0302550651230102,
+        "n_yaj": 55,
+        "n_matched": 16
+      },
+      "verdict": "NOT SUPPORTED"
+    }
+  ],
+  "summary": {
+    "supported": [
+      "F"
+    ],
+    "partially_supported": [
+      "E"
+    ],
+    "not_supported": [
+      "B",
+      "D",
+      "G",
+      "H",
+      "I",
+      "J"
+    ],
+    "inconclusive": [
+      "A",
+      "C"
+    ]
+  },
+  "conclusion": "Near-duplicate collapse (F) is the only hypothesis surviving a controlled test. E is a weak correlate consistent with F. A and C are INCONCLUSIVE (n=6 sources is far too few for correlation). B, D, G, H, I, J are NOT SUPPORTED - notably G, where unique-vocabulary share is LOWER than average, the opposite of the prediction.",
+  "power_caveats": {
+    "A_and_C": "correlations over n=6 sources; not interpretable",
+    "B": "Yajnadevam prose has too few chunks in the short and long length bands to compute a ratio (NaN); only mid band testable",
+    "J": "only 16 length-and-format-matched CISI prose chunks found"
+  },
+  "causal_language_note": "We say F is the mechanism CONSISTENT WITH all controlled comparisons. We do not claim a proven causal chain: no intervention experiment (e.g. de-duplicating the source and re-indexing) has been run.",
+  "seed": 42
+}

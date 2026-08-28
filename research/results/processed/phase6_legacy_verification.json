@@ -1,0 +1,13 @@
+{
+  "method": "independent - rank correlation + set overlap (E002 used identity resolution)",
+  "depth": 10,
+  "content_jaccard_mean": 0.9650000000000001,
+  "kendall_tau_on_shared_mean": 1.0,
+  "citation_correctness_legacy": 0.03875,
+  "citations_examined": 800,
+  "wrong_document": 769,
+  "wrong_page_only": 0,
+  "corroborates_E002": true,
+  "E002_citation_accuracy_topk6": 0.022916666666666665,
+  "E002_content_overlap": 0.97875
+}

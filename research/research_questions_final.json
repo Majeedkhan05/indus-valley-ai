@@ -1,0 +1,52 @@
+{
+  "finalised_from_evidence": true,
+  "RQ1": {
+    "question": "Do standard retrieval metrics detect corpus-integrity failures that break evidence attribution?",
+    "answer": "NO - demonstrated",
+    "evidence": {
+      "kendall_tau": 1.0,
+      "content_jaccard": 0.9650000000000001,
+      "legacy_citation_correctness": 0.03875,
+      "retrieval_metrics_change": "none"
+    }
+  },
+  "RQ2": {
+    "question": "How do lexical, dense and hybrid retrieval compare on a small contested-domain corpus, and is the comparison robust?",
+    "answer": "No significant differences; ordering is NOT robust to the judging scheme. Only hybrid RRF holds rank 1 under both schemes.",
+    "evidence": {
+      "rankings": {
+        "global_quantile": [
+          "hybrid_rrf",
+          "bm25",
+          "dense"
+        ],
+        "per_question": [
+          "hybrid_rrf",
+          "dense",
+          "bm25"
+        ]
+      },
+      "ranking_consistent": false,
+      "all_p_values_above_0.05": true
+    }
+  },
+  "RQ3": {
+    "question": "What corpus property makes a large source effectively unretrievable?",
+    "answer": "Near-duplicate collapse (H3 supported 4/4). Tabular-content (H1) and topical-mismatch (H2) hypotheses were FALSIFIED and are retained.",
+    "evidence": {
+      "H1": "FALSIFIED",
+      "H2": "FALSIFIED",
+      "H3": "SUPPORTED",
+      "duplicate_rate": 0.75,
+      "intra_source_similarity": 0.893819272518158,
+      "shared_header_chunks": {
+        "text": "Seal ID CISI ID Len Inscription(R",
+        "chunks": 302,
+        "of": 303
+      }
+    }
+  },
+  "superseded": [
+    "original RQ on multimodal/KG/spatial retrieval - blocked by absent data (no labels, no coordinates); documented, not attempted"
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "hypothesis": "Yajnadevam under-retrieval is caused by tabular (glyph/ID listing) content rather than by the source itself",
+  "tabular_cut_numeric_rate": 0.3,
+  "strata": [
+    {
+      "label": "Authority Structure and the Evolut [prose]",
+      "chunks": 4,
+      "corpus_share": 0.003336113427856547,
+      "retrieved_share": 0.013748191027496382,
+      "ratio": 4.121020260492041,
+      "mean_numeric_rate": 0.03259854449209136,
+      "source": "Authority Structure and the Evolution of Early Writing Systems 2.pdf",
+      "kind": "prose"
+    },
+    {
+      "label": "CISI_1_Collections_in_India.pdf [prose]",
+      "chunks": 64,
+      "corpus_share": 0.05337781484570475,
+      "retrieved_share": 0.1714905933429812,
+      "ratio": 3.2127690846599135,
+      "mean_numeric_rate": 0.09568470753221142,
+      "source": "CISI_1_Collections_in_India.pdf",
+      "kind": "prose"
+    },
+    {
+      "label": "CISI_1_Collections_in_India.pdf [tabular]",
+      "chunks": 68,
+      "corpus_share": 0.0567139282735613,
+      "retrieved_share": 0.030390738060781478,
+      "ratio": 0.535860219630544,
+      "mean_numeric_rate": 0.44884095812238317,
+      "source": "CISI_1_Collections_in_India.pdf",
+      "kind": "tabular"
+    },
+    {
+      "label": "CISI_2_Collections_in_Pakistan.pdf [prose]",
+      "chunks": 85,
+      "corpus_share": 0.07089241034195162,
+      "retrieved_share": 0.17800289435600578,
+      "ratio": 2.5108878862688346,
+      "mean_numeric_rate": 0.10563364945484192,
+      "source": "CISI_2_Collections_in_Pakistan.pdf",
+      "kind": "prose"
+    },
+    {
+      "label": "CISI_2_Collections_in_Pakistan.pdf [tabular]",
+      "chunks": 101,
+      "corpus_share": 0.08423686405337781,
+      "retrieved_share": 0.026772793053545588,
+      "ratio": 0.3178275135762491,
+      "mean_numeric_rate": 0.4525279007668759,
+      "source": "CISI_2_Collections_in_Pakistan.pdf",
+      "kind": "tabular"
+    },
+    {
+      "label": "CISI_3.1_Mohenjodaro_and_Harappa.p [prose]",
+      "chunks": 109,
+      "corpus_share": 0.09090909090909091,
+      "retrieved_share": 0.23878437047756873,
+      "ratio": 2.626628075253256,
+      "mean_numeric_rate": 0.12739315039449084,
+      "source": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+      "kind": "prose"
+    },
+    {
+      "label": "CISI_3.1_Mohenjodaro_and_Harappa.p [tabular]",
+      "chunks": 189,
+      "corpus_share": 0.15763135946622187,
+      "retrieved_share": 0.06874095513748191,
+      "ratio": 0.43608680005206774,
+      "mean_numeric_rate": 0.47513325985044613,
+      "source": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+      "kind": "tabular"
+    },
+    {
+      "label": "CISI_3.2_Recent_Findings_from_Indi [prose]",
+      "chunks": 120,
+      "corpus_share": 0.10008340283569642,
+      "retrieved_share": 0.14978292329956586,
+      "ratio": 1.4965810419681622,
+      "mean_numeric_rate": 0.18143062140832386,
+      "source": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+      "kind": "prose"
+    },
+    {
+      "label": "CISI_3.2_Recent_Findings_from_Indi [tabular]",
+      "chunks": 156,
+      "corpus_share": 0.13010842368640535,
+      "retrieved_share": 0.057163531114327065,
+      "ratio": 0.43935303721844965,
+      "mean_numeric_rate": 0.42630066910100634,
+      "source": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+      "kind": "tabular"
+    },
+    {
+      "label": "Indus Inscriptions by Yajnadevam.p [prose]",
+      "chunks": 55,
+      "corpus_share": 0.045871559633027525,
+      "retrieved_share": 0.013748191027496382,
+      "ratio": 0.2997105643994211,
+      "mean_numeric_rate": 0.27151211993690044,
+      "source": "Indus Inscriptions by Yajnadevam.pdf",
+      "kind": "prose"
+    },
+    {
+      "label": "Indus Inscriptions by Yajnadevam.p [tabular]",
+      "chunks": 248,
+      "corpus_share": 0.20683903252710592,
+      "retrieved_share": 0.05137481910274964,
+      "ratio": 0.2483806778395033,
+      "mean_numeric_rate": 0.3853331066373947,
+      "source": "Indus Inscriptions by Yajnadevam.pdf",
+      "kind": "tabular"
+    }
+  ],
+  "yajnadevam_prose_ratio": 0.2997105643994211,
+  "yajnadevam_tabular_ratio": 0.2483806778395033,
+  "cisi_prose_mean_ratio": 2.461716522037541,
+  "verdict": "FALSIFIED",
+  "reasoning": "Yajnadevam PROSE chunks are ALSO strongly under-retrieved (ratio 0.30 vs CISI prose 2.46), so the tabular-content hypothesis does NOT explain the deficit. Cause remains UNKNOWN."
+}

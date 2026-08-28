@@ -1,0 +1,80 @@
+{
+  "Authority Structure and the Evolution of Early Writing Systems 2.pdf": {
+    "chunks": 4,
+    "corpus_share": 0.003336113427856547,
+    "mean_tokens_per_chunk": 172.75,
+    "median_tokens_per_chunk": 187.5,
+    "dictionary_word_rate": 0.9667149059334298,
+    "numeric_token_rate": 0.03328509406657019,
+    "vocab_size": 360,
+    "query_vocab_coverage": 0.10338983050847457,
+    "mean_cos_to_all_queries": 0.5353347063064575,
+    "mean_cos_to_corpus_centroid": 0.7758747339248657,
+    "mean_cos_to_query_centroid": 0.7725855708122253
+  },
+  "Indus Inscriptions by Yajnadevam.pdf": {
+    "chunks": 303,
+    "corpus_share": 0.2527105921601334,
+    "mean_tokens_per_chunk": 163.43894389438944,
+    "median_tokens_per_chunk": 165.0,
+    "dictionary_word_rate": 0.4844917410443843,
+    "numeric_token_rate": 0.3652518072775736,
+    "vocab_size": 5973,
+    "query_vocab_coverage": 0.2135593220338983,
+    "mean_cos_to_all_queries": 0.5063408613204956,
+    "mean_cos_to_corpus_centroid": 0.8577848672866821,
+    "mean_cos_to_query_centroid": 0.7307422161102295
+  },
+  "CISI_1_Collections_in_India.pdf": {
+    "chunks": 132,
+    "corpus_share": 0.11009174311926606,
+    "mean_tokens_per_chunk": 154.17424242424244,
+    "median_tokens_per_chunk": 132.5,
+    "dictionary_word_rate": 0.6835536337280723,
+    "numeric_token_rate": 0.22903051447103337,
+    "vocab_size": 5292,
+    "query_vocab_coverage": 0.5474576271186441,
+    "mean_cos_to_all_queries": 0.5060592889785767,
+    "mean_cos_to_corpus_centroid": 0.8003460168838501,
+    "mean_cos_to_query_centroid": 0.7303359508514404
+  },
+  "CISI_2_Collections_in_Pakistan.pdf": {
+    "chunks": 186,
+    "corpus_share": 0.15512927439532945,
+    "mean_tokens_per_chunk": 153.5,
+    "median_tokens_per_chunk": 85.5,
+    "dictionary_word_rate": 0.646527266995902,
+    "numeric_token_rate": 0.25666351441280516,
+    "vocab_size": 6291,
+    "query_vocab_coverage": 0.5610169491525424,
+    "mean_cos_to_all_queries": 0.5089350938796997,
+    "mean_cos_to_corpus_centroid": 0.8014752864837646,
+    "mean_cos_to_query_centroid": 0.7344861030578613
+  },
+  "CISI_3.1_Mohenjodaro_and_Harappa.pdf": {
+    "chunks": 298,
+    "corpus_share": 0.24854045037531275,
+    "mean_tokens_per_chunk": 207.7013422818792,
+    "median_tokens_per_chunk": 202.0,
+    "dictionary_word_rate": 0.47848776153162614,
+    "numeric_token_rate": 0.37592697309960416,
+    "vocab_size": 9855,
+    "query_vocab_coverage": 0.6627118644067796,
+    "mean_cos_to_all_queries": 0.5079470872879028,
+    "mean_cos_to_corpus_centroid": 0.802879810333252,
+    "mean_cos_to_query_centroid": 0.7330603003501892
+  },
+  "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf": {
+    "chunks": 276,
+    "corpus_share": 0.23019182652210174,
+    "mean_tokens_per_chunk": 209.86231884057972,
+    "median_tokens_per_chunk": 203.5,
+    "dictionary_word_rate": 0.6221297607126826,
+    "numeric_token_rate": 0.2857290839404717,
+    "vocab_size": 12509,
+    "query_vocab_coverage": 0.5220338983050847,
+    "mean_cos_to_all_queries": 0.4811444580554962,
+    "mean_cos_to_corpus_centroid": 0.7750073671340942,
+    "mean_cos_to_query_centroid": 0.6943792104721069
+  }
+}

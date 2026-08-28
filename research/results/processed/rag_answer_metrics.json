@@ -1,0 +1,66 @@
+{
+  "judge": "AUTOMATED measures only - NOT human evaluation",
+  "model": "gemma3:4b via Ollama",
+  "index": "index_v2",
+  "questions_attempted": 80,
+  "questions_succeeded": 80,
+  "errors": 0,
+  "aggregate": {
+    "citation_count": {
+      "mean": 5.925,
+      "median": 6.0,
+      "n": 80
+    },
+    "citation_validity": {
+      "mean": 1.0,
+      "median": 1.0,
+      "n": 79
+    },
+    "citation_grounding": {
+      "mean": 1.0,
+      "median": 1.0,
+      "n": 79
+    },
+    "answer_relevance_cos": {
+      "mean": 0.7897986151278019,
+      "median": 0.8016499578952789,
+      "n": 80
+    },
+    "answer_evidence_cos": {
+      "mean": 0.7289134040474892,
+      "median": 0.7477853298187256,
+      "n": 80
+    },
+    "reference_overlap": {
+      "mean": 0.13186070873570874,
+      "median": 0.1111111111111111,
+      "n": 80
+    },
+    "unsupported_rate": {
+      "mean": 0.33375934158330633,
+      "median": 0.2697566311184031,
+      "n": 80
+    },
+    "hedging_rate": {
+      "mean": 0.2235714285714286,
+      "median": 0.18333333333333335,
+      "n": 80
+    },
+    "latency_s": {
+      "mean": 33.41825,
+      "median": 15.780000000000001,
+      "n": 80
+    },
+    "confidence": {
+      "mean": 0.6647375,
+      "median": 0.69,
+      "n": 80
+    },
+    "answer_words": {
+      "mean": 93.3375,
+      "median": 95.5,
+      "n": 80
+    }
+  },
+  "timestamp": "2026-08-23T18:51:06+0530"
+}

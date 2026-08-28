@@ -1,0 +1,35 @@
+{
+  "experiment_id": "E002_legacy_vs_corrected",
+  "top_k": 6,
+  "questions": 80,
+  "legacy": {
+    "vectors": 1506,
+    "metadata_rows": 2112
+  },
+  "corrected": {
+    "vectors": 1199,
+    "metadata_rows": 1199
+  },
+  "legacy_vector_identity": {
+    "resolved": 1506,
+    "total": 1506,
+    "metadata_describes_own_vector": 307,
+    "metadata_correct_fraction": 0.20385126162018594
+  },
+  "citation_correctness_legacy": {
+    "hits": 480,
+    "correct": 11,
+    "accuracy": 0.022916666666666665,
+    "wrong_document": 469,
+    "wrong_page_only": 0,
+    "unresolvable": 0,
+    "queries_with_any_wrong": 80,
+    "queries_with_all_wrong": 72
+  },
+  "citation_correctness_corrected": {
+    "accuracy": 1.0,
+    "basis": "index_v2 fully validated: 1199/1199 vectors re-embedded, cos>=0.99 (experiments/analysis/validation_index_v2.json)"
+  },
+  "content_overlap_topk": 0.97875,
+  "timestamp": "2026-08-23T17:01:26+0530"
+}

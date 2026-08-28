@@ -720,12 +720,15 @@
           citesEl.innerHTML =
             '<div class="rag-cites-label">Sources</div>' +
             ev.citations.map((c, i) => `
-              <div class="rag-cite">
-                <span class="rag-cite-n">[${i+1}]</span>
-                <span class="rag-cite-doc">${escapeHtml(c.document)}</span>
-                <span class="rag-cite-page">p. ${c.page}</span>
-                <span class="rag-cite-score">${(c.score * 100).toFixed(0)}%</span>
-              </div>
+              <details class="rag-cite">
+                <summary>
+                  <span class="rag-cite-n">[${i+1}]</span>
+                  <span class="rag-cite-doc">${escapeHtml(c.document)}</span>
+                  <span class="rag-cite-page">p. ${c.page}</span>
+                  <span class="rag-cite-score">${(c.score * 100).toFixed(0)}%</span>
+                </summary>
+                ${c.snippet ? `<p class="rag-cite-snippet">${escapeHtml(c.snippet)}…</p>` : ''}
+              </details>
             `).join('');
         }
       }

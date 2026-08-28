@@ -1,0 +1,45 @@
+{
+  "question": "Must all 1,382 tasks be annotated before useful research continues?",
+  "answer": "No. They are not redundant, but they are not equally informative.",
+  "structure": {
+    "total_pairs": 1382,
+    "questions": 80,
+    "retrieved_by_all_3": 165,
+    "retrieved_by_one": 582,
+    "in_some_top5": 741,
+    "ranks_6_to_10": 641
+  },
+  "protocol": {
+    "tier1_all_top5": 741,
+    "tier2_stratified_sample": 114,
+    "strata": 63,
+    "per_stratum": 2,
+    "minimum_set": 855,
+    "reduction": 0.38133140376266283,
+    "hours_per_annotator": 3.6,
+    "annotators": 2
+  },
+  "stratification_axes": [
+    "question category",
+    "contested/ambiguous flag",
+    "source chunk type (prose/tabular)",
+    "number of systems retrieving the pair"
+  ],
+  "preserved_metrics": [
+    "Recall@1",
+    "Recall@5",
+    "MRR",
+    "nDCG@5",
+    "Cohen's kappa",
+    "all pairwise system comparisons"
+  ],
+  "degraded_metrics": [
+    "Recall@10",
+    "nDCG@10 (estimated on stratified sample)"
+  ],
+  "unaffected": [
+    "citation correctness (direct count, no relevance judging)"
+  ],
+  "rule": "The FULL machine-generated candidate set is preserved in tasks.jsonl. Unannotated machine judgments are NEVER converted into human ground truth.",
+  "seed": 42
+}

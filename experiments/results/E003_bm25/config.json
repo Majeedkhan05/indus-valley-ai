@@ -1,0 +1,19 @@
+{
+  "experiment_id": "E003_bm25",
+  "system": "bm25",
+  "index": "index_v2 (validated)",
+  "corpus_chunks": 1199,
+  "questions": 80,
+  "embedder": "BAAI/bge-small-en-v1.5",
+  "pool_depth": 20,
+  "judgments": "AUTOMATIC PROXY - quantile-calibrated dual judge. NOT human, NOT expert.",
+  "bootstrap_resamples": 10000,
+  "seed": 42,
+  "environment": {
+    "python": "3.13.5",
+    "platform": "macOS-14.5-arm64-arm-64bit-Mach-O",
+    "numpy": "2.4.4",
+    "faiss": "1.13.2"
+  },
+  "timestamp": "2026-08-23T11:32:25.487083+00:00"
+}

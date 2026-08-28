@@ -1,0 +1,87 @@
+<!doctype html><html><head><meta charset="utf-8"><title>IVA-80 Annotation</title>
+<style>
+:root{--bg:#12121a;--fg:#eee;--gold:#C9A84C;--card:#1c1c26;--dim:#999}
+body{background:var(--bg);color:var(--fg);font:15px/1.6 system-ui,sans-serif;margin:0;padding:24px}
+.wrap{max-width:880px;margin:0 auto}
+h1{color:var(--gold);font-size:19px;margin:0 0 4px}
+.bar{background:var(--card);height:6px;border-radius:3px;margin:12px 0 20px}
+.bar i{display:block;height:6px;background:var(--gold);border-radius:3px;width:0}
+.card{background:var(--card);border:1px solid #2a2a38;border-radius:10px;padding:18px;margin-bottom:16px}
+.q{font-size:17px;color:var(--gold);margin-bottom:6px}
+.ref{color:var(--dim);font-size:13px;margin-bottom:14px}
+.ev{white-space:pre-wrap;max-height:340px;overflow:auto;background:#0e0e15;padding:14px;border-radius:8px;font-size:13.5px}
+.meta{color:var(--dim);font-size:12px;margin-top:8px}
+button{background:#23232f;color:var(--fg);border:1px solid #33334a;border-radius:8px;padding:9px 16px;cursor:pointer;font-size:14px;margin-right:8px}
+button:hover{border-color:var(--gold)}
+button.g2{border-color:#3a7} button.g1{border-color:#b93} button.g0{border-color:#a44}
+label{font-size:13px;color:var(--dim);margin-right:14px}
+input[type=text]{background:#0e0e15;border:1px solid #33334a;color:var(--fg);border-radius:6px;padding:7px;width:100%}
+#load{margin-bottom:18px}
+.kbd{background:#0e0e15;border:1px solid #33334a;border-radius:4px;padding:1px 6px;font-size:12px}
+</style></head><body><div class="wrap">
+<h1>IVA-80 — relevance annotation</h1>
+<div class="meta">Keys: <span class="kbd">2</span> relevant · <span class="kbd">1</span> partial ·
+<span class="kbd">0</span> not relevant · <span class="kbd">s</span> unsure. Progress saves to your browser; export when done.</div>
+<div id="load" class="card">
+  <label>Your annotator name <input type="text" id="who" placeholder="e.g. alice"></label>
+  <div style="margin-top:12px"><input type="file" id="file" accept=".jsonl"> <span class="meta">load research/annotations/tasks.jsonl</span></div>
+</div>
+<div class="bar"><i id="prog"></i></div>
+<div id="app"></div>
+<div class="card"><button onclick="exportJSONL()">Export labels (.jsonl)</button>
+<span class="meta" id="stat"></span></div>
+</div><script>
+let tasks=[],i=0,labels={},who='';
+const $=id=>document.getElementById(id);
+$('file').onchange=e=>{const r=new FileReader();r.onload=()=>{
+  tasks=r.result.trim().split('\n').map(JSON.parse);
+  who=($('who').value||'anon').trim();
+  labels=JSON.parse(localStorage.getItem('iva_'+who)||'{}');
+  i=tasks.findIndex(t=>!(t.task_id in labels)); if(i<0)i=tasks.length-1;
+  $('load').style.display='none'; render();};r.readAsText(e.target.files[0]);};
+function render(){
+  const done=Object.keys(labels).length;
+  $('prog').style.width=(100*done/tasks.length)+'%';
+  $('stat').textContent=`${done}/${tasks.length} judged · annotator: ${who}`;
+  if(i>=tasks.length){$('app').innerHTML='<div class="card">All tasks judged. Export below.</div>';return;}
+  const t=tasks[i];
+  $('app').innerHTML=`<div class="card">
+    <div class="q">Q${t.qid} · ${t.category}</div>
+    <div style="font-size:16px;margin-bottom:8px">${esc(t.question)}</div>
+    <div class="ref">Reference answer (a hint, not a key): ${esc(t.reference_answer)}</div>
+    <div class="ev">${esc(t.chunk_text.slice(0,2500))}</div>
+    <div class="meta">${esc(t.source)} · p.${t.page}</div>
+  </div>
+  <div class="card">
+    <div style="margin-bottom:12px">
+      <button class="g2" onclick="grade(2)">2 · Relevant</button>
+      <button class="g1" onclick="grade(1)">1 · Partial</button>
+      <button class="g0" onclick="grade(0)">0 · Not relevant</button>
+      <button onclick="grade(null)">Unsure</button>
+    </div>
+    <label>correct source? <select id="so"><option>?</option><option>y</option><option>n</option></select></label>
+    <label>correct page? <select id="po"><option>?</option><option>y</option><option>n</option></select></label>
+    <label>evidence sufficient? <select id="es"><option>?</option><option>y</option><option>n</option></select></label>
+    <div style="margin-top:10px"><input type="text" id="notes" placeholder="notes (optional)"></div>
+    <div class="meta" style="margin-top:10px">
+      <button onclick="if(i>0){i--;render()}">&larr; back</button> task ${i+1} of ${tasks.length}</div>
+  </div>`;
+}
+function grade(g){
+  const t=tasks[i];
+  labels[t.task_id]={task_id:t.task_id,qid:t.qid,chunk_id:t.chunk_id,annotator:who,
+    grade:g,unsure:g===null,source_ok:$('so').value,page_ok:$('po').value,
+    evidence_sufficient:$('es').value,notes:$('notes').value,ts:new Date().toISOString()};
+  localStorage.setItem('iva_'+who,JSON.stringify(labels));
+  i++; render();
+}
+function exportJSONL(){
+  const b=new Blob([Object.values(labels).map(o=>JSON.stringify(o)).join('\n')],{type:'application/x-jsonlines'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(b);
+  a.download=`labels_${who||'anon'}.jsonl`;a.click();
+}
+function esc(s){return String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]))}
+document.addEventListener('keydown',e=>{if(!tasks.length)return;
+  if(e.key==='2')grade(2);else if(e.key==='1')grade(1);else if(e.key==='0')grade(0);
+  else if(e.key.toLowerCase()==='s')grade(null);});
+</script></body></html>

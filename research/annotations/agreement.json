@@ -1,0 +1,9 @@
+{
+  "annotators": {},
+  "total_tasks": 1382,
+  "n_annotators": 0,
+  "pairwise_kappa": {},
+  "raw_agreement": {},
+  "status": "INSUFFICIENT_ANNOTATION",
+  "message": "Fewer than two annotators have submitted labels. Cohen's kappa requires two. No qrels_human.json written - human ground truth does NOT exist yet."
+}

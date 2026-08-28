@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 from pathlib import Path
 from typing import List, Optional
 
@@ -41,7 +42,11 @@ log = logging.getLogger("ivai")
 # ─── paths ──────────────────────────────────────────────────────────────────
 HERE      = Path(__file__).parent
 PDF_DIR   = HERE / "data" / "pdfs"
-INDEX_DIR = HERE / "data" / "index"
+# Index directory. Default is the VALIDATED index_v2 (see
+# docs/bug-index-metadata-misalignment.md). The legacy "index" directory has a
+# vector/metadata mismatch and is rejected by VectorDB.verify_integrity().
+INDEX_NAME = os.environ.get("IVAI_INDEX", "index_v2")
+INDEX_DIR = HERE / "data" / INDEX_NAME
 PDF_DIR.mkdir(parents=True, exist_ok=True)
 INDEX_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -236,7 +241,8 @@ def query_stream(req: QueryRequest):
         for token in ollama().stream(prompt):
             yield f"data: {json.dumps({'token': token, 'done': False})}\n\n"
         # send citations at the end
-        cites = [{"document": r.source, "page": r.page, "score": round(r.score, 3)} for r in retrieved]
+        cites = [{"document": r.source, "page": r.page, "score": round(r.score, 3),
+                  "snippet": r.text[:400]} for r in retrieved]
         yield f"data: {json.dumps({'citations': cites, 'done': True})}\n\n"
 
     return StreamingResponse(stream(), media_type="text/event-stream")

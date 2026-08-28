@@ -1,0 +1,657 @@
+{
+  "taxonomy": [
+    "lexical_mismatch",
+    "semantic_mismatch",
+    "ambiguous_question",
+    "insufficient_evidence",
+    "source_imbalance",
+    "ocr_artifact",
+    "chunking_problem",
+    "near_duplicate_collapse",
+    "contested_interpretation",
+    "retrieval_failure",
+    "evaluation_artifact"
+  ],
+  "n_failing": 60,
+  "counts": {
+    "evaluation_artifact": 41,
+    "source_imbalance": 11,
+    "ocr_artifact": 3,
+    "semantic_mismatch": 7,
+    "ambiguous_question": 3,
+    "contested_interpretation": 5,
+    "insufficient_evidence": 1,
+    "near_duplicate_collapse": 1,
+    "retrieval_failure": 3
+  },
+  "failures": [
+    {
+      "qid": 1,
+      "question": "Where is Mohenjo-daro located?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 2,
+      "question": "When was Harappa first excavated and by whom?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 3,
+      "question": "What is unique about Dholavira's water management?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 4,
+      "question": "What is Lothal's most distinctive feature?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 5,
+      "question": "What did Rakhigarhi's 2019 ancient DNA study find?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 7,
+      "question": "How wide are Mohenjo-daro's main streets?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 8,
+      "question": "What is the DK Area at Mohenjo-daro?",
+      "category": "sites",
+      "recall@5": 0.0,
+      "categories": [
+        "source_imbalance",
+        "ocr_artifact"
+      ],
+      "why": "relevant mostly CISI_2_Collections_in_Pa, retrieved mostly CISI_3.1_Mohenjodaro_and; retrieved dictionary-word rate 0.49",
+      "top_sources": [
+        "CISI_3.1_Mohenjodaro_and_Harap p.16",
+        "CISI_3.1_Mohenjodaro_and_Harap p.16",
+        "CISI_1_Collections_in_India.pd p.58"
+      ]
+    },
+    {
+      "qid": 9,
+      "question": "What is the ploughed field at Kalibangan?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 10,
+      "question": "How many wells did Mohenjo-daro have?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 11,
+      "question": "How many inscribed Indus seals have been catalogued?",
+      "category": "seals",
+      "recall@5": 0.0,
+      "categories": [
+        "source_imbalance"
+      ],
+      "why": "relevant mostly CISI_1_Collections_in_In, retrieved mostly CISI_3.1_Mohenjodaro_and",
+      "top_sources": [
+        "CISI_3.1_Mohenjodaro_and_Harap p.22",
+        "CISI_1_Collections_in_India.pd p.6",
+        "CISI_1_Collections_in_India.pd p.4"
+      ]
+    },
+    {
+      "qid": 12,
+      "question": "What material were Indus seals made from?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 13,
+      "question": "What is the most common animal motif on Indus seals?",
+      "category": "seals",
+      "recall@5": 0.3333333333333333,
+      "categories": [
+        "source_imbalance"
+      ],
+      "why": "relevant mostly CISI_2_Collections_in_Pa, retrieved mostly CISI_3.1_Mohenjodaro_and",
+      "top_sources": [
+        "CISI_3.1_Mohenjodaro_and_Harap p.13",
+        "CISI_2_Collections_in_Pakistan p.16",
+        "CISI_3.1_Mohenjodaro_and_Harap p.27"
+      ]
+    },
+    {
+      "qid": 14,
+      "question": "What is seal M-304?",
+      "category": "seals",
+      "recall@5": 0.0,
+      "categories": [
+        "semantic_mismatch",
+        "ambiguous_question",
+        "source_imbalance",
+        "ocr_artifact"
+      ],
+      "why": "best relevant chunk cos=0.50; relevant mostly CISI_1_Collections_in_In, retrieved mostly CISI_3.1_Mohenjodaro_and; retrieved dictionary-word rate 0.30",
+      "top_sources": [
+        "CISI_1_Collections_in_India.pd p.169",
+        "CISI_3.2_Recent_Findings_from_ p.165",
+        "CISI_3.1_Mohenjodaro_and_Harap p.240"
+      ]
+    },
+    {
+      "qid": 16,
+      "question": "What is the standard format of an Indus seal?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 17,
+      "question": "Have Indus seals been found in Mesopotamia?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 18,
+      "question": "What is the Ernestite drill?",
+      "category": "seals",
+      "recall@5": 0.0,
+      "categories": [
+        "semantic_mismatch"
+      ],
+      "why": "best relevant chunk cos=0.56",
+      "top_sources": [
+        "CISI_3.1_Mohenjodaro_and_Harap p.25",
+        "CISI_3.1_Mohenjodaro_and_Harap p.9",
+        "CISI_2_Collections_in_Pakistan p.17"
+      ]
+    },
+    {
+      "qid": 19,
+      "question": "What object accompanies the unicorn on most seals?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 21,
+      "question": "Has the Indus script been deciphered?",
+      "category": "script",
+      "recall@5": 0.3333333333333333,
+      "categories": [
+        "contested_interpretation",
+        "insufficient_evidence"
+      ],
+      "why": "evidence ceiling 0.61",
+      "top_sources": [
+        "CISI_3.1_Mohenjodaro_and_Harap p.7",
+        "CISI_3.1_Mohenjodaro_and_Harap p.22",
+        "CISI_1_Collections_in_India.pd p.10"
+      ]
+    },
+    {
+      "qid": 22,
+      "question": "How many distinct signs are in the Indus script?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 24,
+      "question": "What is the most common bigram in the Indus script?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 25,
+      "question": "What is the average inscription length?",
+      "category": "script",
+      "recall@5": 0.25,
+      "categories": [
+        "ambiguous_question",
+        "source_imbalance",
+        "near_duplicate_collapse"
+      ],
+      "why": "relevant mostly CISI_2_Collections_in_Pa, retrieved mostly CISI_1_Collections_in_In",
+      "top_sources": [
+        "CISI_1_Collections_in_India.pd p.10",
+        "CISI_1_Collections_in_India.pd p.13",
+        "CISI_1_Collections_in_India.pd p.17"
+      ]
+    },
+    {
+      "qid": 26,
+      "question": "What is Parpola's hypothesis about the script?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 28,
+      "question": "What did Rao et al. 2009 find about the script's entropy?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 29,
+      "question": "What direction is the Indus script read?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 30,
+      "question": "Where does the JAR sign typically appear?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 31,
+      "question": "What did Indus people trade with Mesopotamia?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 33,
+      "question": "Where were Indus carnelian beads found in Mesopotamia?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 36,
+      "question": "What is Shortugai?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 37,
+      "question": "What is Sutkagan-Dor?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 38,
+      "question": "What was the Indus standard weight?",
+      "category": "trade",
+      "recall@5": 0.0,
+      "categories": [
+        "retrieval_failure"
+      ],
+      "why": "",
+      "top_sources": [
+        "CISI_3.1_Mohenjodaro_and_Harap p.12",
+        "Indus Inscriptions by Yajnadev p.10",
+        "CISI_3.1_Mohenjodaro_and_Harap p.241"
+      ]
+    },
+    {
+      "qid": 39,
+      "question": "What is a Persian Gulf seal?",
+      "category": "trade",
+      "recall@5": 0.29411764705882354,
+      "categories": [
+        "source_imbalance"
+      ],
+      "why": "relevant mostly CISI_3.1_Mohenjodaro_and, retrieved mostly CISI_1_Collections_in_In",
+      "top_sources": [
+        "CISI_2_Collections_in_Pakistan p.11",
+        "CISI_3.1_Mohenjodaro_and_Harap p.27",
+        "CISI_3.2_Recent_Findings_from_ p.5"
+      ]
+    },
+    {
+      "qid": 41,
+      "question": "Did the Indus civilization have temples?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 42,
+      "question": "What are the Kalibangan fire altars?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 44,
+      "question": "What is the pipal tree's significance?",
+      "category": "religion",
+      "recall@5": 0.09090909090909091,
+      "categories": [
+        "semantic_mismatch",
+        "ocr_artifact"
+      ],
+      "why": "best relevant chunk cos=0.60; retrieved dictionary-word rate 0.32",
+      "top_sources": [
+        "CISI_2_Collections_in_Pakistan p.177",
+        "CISI_3.1_Mohenjodaro_and_Harap p.17",
+        "CISI_3.1_Mohenjodaro_and_Harap p.107"
+      ]
+    },
+    {
+      "qid": 45,
+      "question": "What is the Great Bath?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 46,
+      "question": "What are Harappan terracotta figurines?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 47,
+      "question": "Is the swastika motif found at Indus sites?",
+      "category": "religion",
+      "recall@5": 0.125,
+      "categories": [
+        "retrieval_failure"
+      ],
+      "why": "",
+      "top_sources": [
+        "CISI_2_Collections_in_Pakistan p.8",
+        "CISI_3.1_Mohenjodaro_and_Harap p.27",
+        "CISI_3.1_Mohenjodaro_and_Harap p.22"
+      ]
+    },
+    {
+      "qid": 48,
+      "question": "When did the Indus civilization decline?",
+      "category": "decline",
+      "recall@5": 0.0,
+      "categories": [
+        "source_imbalance"
+      ],
+      "why": "relevant mostly CISI_3.1_Mohenjodaro_and, retrieved mostly CISI_1_Collections_in_In",
+      "top_sources": [
+        "CISI_3.1_Mohenjodaro_and_Harap p.12",
+        "CISI_1_Collections_in_India.pd p.6",
+        "CISI_1_Collections_in_India.pd p.6"
+      ]
+    },
+    {
+      "qid": 49,
+      "question": "What was the 4.2 ka event?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 50,
+      "question": "What happened to the Ghaggar-Hakra river?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 52,
+      "question": "Is the Indus decline attributed to Aryan invasion?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 53,
+      "question": "What are the Late Harappan regional cultures?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 54,
+      "question": "What is the brick ratio used in Indus cities?",
+      "category": "methodology",
+      "recall@5": 0.4,
+      "categories": [
+        "source_imbalance"
+      ],
+      "why": "relevant mostly CISI_1_Collections_in_In, retrieved mostly CISI_3.1_Mohenjodaro_and",
+      "top_sources": [
+        "CISI_3.1_Mohenjodaro_and_Harap p.24",
+        "CISI_1_Collections_in_India.pd p.6",
+        "CISI_3.1_Mohenjodaro_and_Harap p.25"
+      ]
+    },
+    {
+      "qid": 55,
+      "question": "What is the Indus drainage system?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 56,
+      "question": "What is the two-mound plan?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 57,
+      "question": "How were Harappan bricks made?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 58,
+      "question": "What was the role of the granary?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 59,
+      "question": "What is Cemetery R-37?",
+      "category": "methodology",
+      "recall@5": 0.42857142857142855,
+      "categories": [
+        "retrieval_failure"
+      ],
+      "why": "",
+      "top_sources": [
+        "CISI_3.1_Mohenjodaro_and_Harap p.250",
+        "CISI_2_Collections_in_Pakistan p.8",
+        "CISI_3.1_Mohenjodaro_and_Harap p.8"
+      ]
+    },
+    {
+      "qid": 61,
+      "question": "Did the Indus civilization have horses?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 62,
+      "question": "Did the Indus civilization have kings?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 63,
+      "question": "Was the Indus civilization militaristic?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 65,
+      "question": "Who is the Priest-King statuette?",
+      "category": "controversies",
+      "recall@5": 0.0,
+      "categories": [
+        "semantic_mismatch",
+        "contested_interpretation"
+      ],
+      "why": "best relevant chunk cos=0.54",
+      "top_sources": [
+        "CISI_3.1_Mohenjodaro_and_Harap p.11",
+        "CISI_3.1_Mohenjodaro_and_Harap p.17",
+        "CISI_3.2_Recent_Findings_from_ p.43"
+      ]
+    },
+    {
+      "qid": 66,
+      "question": "What is the Dancing Girl?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 67,
+      "question": "Was the Indus civilization literate?",
+      "category": "controversies",
+      "recall@5": 0.0,
+      "categories": [
+        "contested_interpretation",
+        "source_imbalance"
+      ],
+      "why": "relevant mostly CISI_1_Collections_in_In, retrieved mostly CISI_3.1_Mohenjodaro_and",
+      "top_sources": [
+        "CISI_3.1_Mohenjodaro_and_Harap p.28",
+        "CISI_1_Collections_in_India.pd p.6",
+        "CISI_1_Collections_in_India.pd p.9"
+      ]
+    },
+    {
+      "qid": 68,
+      "question": "What was the Indus political organisation?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 69,
+      "question": "What does the unicorn motif represent?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 73,
+      "question": "Who is John Marshall?",
+      "category": "scholars",
+      "recall@5": 0.0,
+      "categories": [
+        "semantic_mismatch",
+        "source_imbalance"
+      ],
+      "why": "best relevant chunk cos=0.43; relevant mostly CISI_2_Collections_in_Pa, retrieved mostly CISI_1_Collections_in_In",
+      "top_sources": [
+        "CISI_1_Collections_in_India.pd p.9",
+        "CISI_3.1_Mohenjodaro_and_Harap p.29",
+        "CISI_2_Collections_in_Pakistan p.4"
+      ]
+    },
+    {
+      "qid": 75,
+      "question": "Who is Asko Parpola?",
+      "category": "scholars",
+      "recall@5": 0.1111111111111111,
+      "categories": [
+        "semantic_mismatch",
+        "contested_interpretation"
+      ],
+      "why": "best relevant chunk cos=0.49",
+      "top_sources": [
+        "CISI_1_Collections_in_India.pd p.11",
+        "CISI_2_Collections_in_Pakistan p.6",
+        "CISI_3.1_Mohenjodaro_and_Harap p.22"
+      ]
+    },
+    {
+      "qid": 79,
+      "question": "Who is Vasant Shinde?",
+      "categories": [
+        "evaluation_artifact"
+      ],
+      "why": "no chunk passed the judging threshold for this question"
+    },
+    {
+      "qid": 80,
+      "question": "Who is B.B. Lal?",
+      "category": "scholars",
+      "recall@5": 0.0,
+      "categories": [
+        "semantic_mismatch",
+        "ambiguous_question",
+        "contested_interpretation",
+        "source_imbalance"
+      ],
+      "why": "best relevant chunk cos=0.43; relevant mostly CISI_1_Collections_in_In, retrieved mostly CISI_3.2_Recent_Findings",
+      "top_sources": [
+        "CISI_3.2_Recent_Findings_from_ p.172",
+        "CISI_3.1_Mohenjodaro_and_Harap p.30",
+        "CISI_3.2_Recent_Findings_from_ p.172"
+      ]
+    }
+  ]
+}

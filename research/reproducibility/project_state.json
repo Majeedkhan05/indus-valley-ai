@@ -1,0 +1,137 @@
+{
+  "generated": "2026-08-23T17:19:13+0530",
+  "phase": "1 - freeze and protect",
+  "environment": {
+    "python": "3.13.5",
+    "platform": "macOS-14.5-arm64-arm-64bit-Mach-O",
+    "numpy": "2.4.4",
+    "faiss": "1.13.2",
+    "cpu_count": 8
+  },
+  "git": {
+    "parent_branch": "main",
+    "parent_head": "f677d9e",
+    "parent_remotes": "hfspace\thttps://huggingface.co/spaces/AIHub-Mu/indus-valley-ai (fetch)\nhfspace\thttps://huggingface.co/spaces/AIHub-Mu/indus-valley-ai (push)",
+    "parent_modified": [
+      "M DEPLOY_HF.md",
+      " D Indus_Valley_AI_Project_Report.pdf",
+      " M README.md",
+      " M backend/main.py",
+      " M backend/rag/vectordb.py"
+    ],
+    "nested_backend_repo": {
+      "head": "a8c7a67",
+      "remote": "origin\thttps://github.com/Majeedkhan05/IndusvalleyAI.git (fetch)\norigin\thttps://github.com/Majeedkhan05/IndusvalleyAI.git (push)",
+      "preserved": true
+    }
+  },
+  "indexes": {
+    "legacy_index": {
+      "present": true,
+      "vectors": 1506,
+      "metadata_rows": 2112,
+      "dim": 384,
+      "aligned_counts": false,
+      "faiss_sha256_16": "be9659390b5371c3",
+      "chunks_sha256_16": "3f8aa61c6746f705",
+      "status": "LEGACY - KNOWN CITATION INTEGRITY FAILURE",
+      "retained": true
+    },
+    "index_v2": {
+      "present": true,
+      "vectors": 1199,
+      "metadata_rows": 1199,
+      "dim": 384,
+      "aligned_counts": true,
+      "faiss_sha256_16": "9782394c45726ca0",
+      "chunks_sha256_16": "81292fcefd537433",
+      "status": "CANONICAL"
+    }
+  },
+  "tests": {
+    "tests/data/test_index_integrity.py": {
+      "exit_code": 0,
+      "summary": "12 passed, 0 failed, 12 total",
+      "passed": true
+    }
+  },
+  "backend": {
+    "health": {
+      "embedder": "BAAI/bge-small-en-v1.5",
+      "embedding_dim": 384,
+      "vector_count": 1199,
+      "documents": [
+        {
+          "source": "Indus Inscriptions by Yajnadevam.pdf",
+          "chunks": 303,
+          "pages": 303
+        },
+        {
+          "source": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+          "chunks": 298,
+          "pages": 171
+        },
+        {
+          "source": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+          "chunks": 276,
+          "pages": 161
+        },
+        {
+          "source": "CISI_2_Collections_in_Pakistan.pdf",
+          "chunks": 186,
+          "pages": 112
+        },
+        {
+          "source": "CISI_1_Collections_in_India.pdf",
+          "chunks": 132,
+          "pages": 81
+        },
+        {
+          "source": "Authority Structure and the Evolution of Early Writing Systems 2.pdf",
+          "chunks": 4,
+          "pages": 4
+        }
+      ],
+      "ollama_model": "gemma3:4b",
+      "ollama_ready": true
+    },
+    "live_query": {
+      "ok": true,
+      "in_domain": true,
+      "confidence": 0.7,
+      "n_citations": 3,
+      "citations": [
+        {
+          "document": "CISI_1_Collections_in_India.pdf",
+          "page": 58,
+          "score": 0.7
+        },
+        {
+          "document": "CISI_2_Collections_in_Pakistan.pdf",
+          "page": 134,
+          "score": 0.694
+        },
+        {
+          "document": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+          "page": 217,
+          "score": 0.684
+        }
+      ],
+      "answer_nonempty": true,
+      "answer_is_error": false
+    }
+  },
+  "frontend": {
+    "http": 200,
+    "bytes": 37033,
+    "has_three_importmap": true,
+    "n_sections": 16
+  },
+  "protected_invariants": [
+    "do not rewrite the Three.js frontend",
+    "do not migrate to Next.js",
+    "do not delete backend/data/index (legacy)",
+    "do not delete backend/.git",
+    "do not rewrite git history or push"
+  ]
+}

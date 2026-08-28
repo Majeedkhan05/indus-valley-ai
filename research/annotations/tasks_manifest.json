@@ -1,0 +1,11 @@
+{
+  "pool_depth_per_system": 10,
+  "questions": 80,
+  "tasks": 1382,
+  "mean_pool_per_question": 17.275,
+  "min_pool": 11,
+  "max_pool": 20,
+  "presentation": "randomised per question, seed 42; system identity hidden",
+  "labels_present": false,
+  "estimated_person_hours_per_annotator": 5.8
+}

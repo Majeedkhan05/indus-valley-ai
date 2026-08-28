@@ -1,0 +1,141 @@
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 7255.38it/s]
+[1/80]   9.0s  cites=6  unsup=0.32  hedge=0.00
+[2/80]   9.3s  cites=6  unsup=0.07  hedge=0.50
+[3/80]  14.5s  cites=6  unsup=0.28  hedge=0.29
+[4/80]  26.7s  cites=6  unsup=0.83  hedge=0.33
+[5/80]  14.2s  cites=6  unsup=0.43  hedge=0.00
+[6/80]  12.8s  cites=6  unsup=0.29  hedge=0.17
+[7/80]  28.7s  cites=6  unsup=0.42  hedge=0.00
+[8/80]   9.4s  cites=6  unsup=0.18  hedge=0.00
+[9/80]  13.5s  cites=6  unsup=0.74  hedge=0.50
+[10/80]  28.5s  cites=6  unsup=0.90  hedge=0.50
+[11/80]  14.8s  cites=6  unsup=0.20  hedge=0.00
+[12/80]  21.2s  cites=6  unsup=0.14  hedge=0.00
+[13/80]  19.2s  cites=6  unsup=0.20  hedge=0.25
+[14/80]   9.7s  cites=6  unsup=0.63  hedge=0.00
+[15/80]  16.6s  cites=6  unsup=0.18  hedge=0.00
+[16/80]  21.6s  cites=6  unsup=0.18  hedge=0.50
+[17/80]  24.8s  cites=6  unsup=0.20  hedge=0.00
+[18/80]  16.0s  cites=6  unsup=0.25  hedge=0.00
+[19/80]  21.6s  cites=6  unsup=0.35  hedge=0.00
+[20/80]  30.3s  cites=6  unsup=0.18  hedge=0.14
+[21/80]  20.2s  cites=6  unsup=0.04  hedge=0.33
+[22/80]  16.2s  cites=6  unsup=0.21  hedge=0.50
+[23/80]  21.3s  cites=6  unsup=0.26  hedge=0.00
+[24/80]  33.9s  cites=6  unsup=0.44  hedge=0.00
+[25/80]  42.8s  cites=6  unsup=0.14  hedge=0.00
+[26/80]  32.4s  cites=6  unsup=0.07  hedge=0.33
+[27/80]  45.6s  cites=6  unsup=0.10  hedge=0.00
+[28/80]  28.0s  cites=6  unsup=0.35  hedge=0.00
+[29/80]  43.7s  cites=6  unsup=0.26  hedge=0.67
+[30/80]  25.3s  cites=6  unsup=0.10  hedge=1.00
+[31/80]  24.6s  cites=6  unsup=0.10  hedge=0.50
+[32/80]  30.5s  cites=6  unsup=0.33  hedge=0.33
+[33/80]  22.7s  cites=6  unsup=0.23  hedge=0.50
+[34/80]  12.0s  cites=6  unsup=0.80  hedge=0.00
+[35/80]  13.1s  cites=6  unsup=0.33  hedge=0.67
+[36/80]  13.2s  cites=6  unsup=0.20  hedge=0.50
+[37/80]   0.0s  cites=0  unsup=1.00  hedge=0.00
+[38/80]  10.0s  cites=6  unsup=0.35  hedge=0.33
+[39/80]  76.5s  cites=6  unsup=0.17  hedge=0.33
+[40/80]  12.5s  cites=6  unsup=0.33  hedge=0.20
+[41/80]  15.6s  cites=6  unsup=0.37  hedge=0.60
+[42/80] 194.9s  cites=6  unsup=0.77  hedge=0.33
+[43/80]  15.9s  cites=6  unsup=0.25  hedge=0.25
+[44/80]  13.8s  cites=6  unsup=0.69  hedge=0.00
+[45/80]  45.9s  cites=6  unsup=0.32  hedge=0.17
+[46/80]  49.8s  cites=6  unsup=0.60  hedge=0.00
+[47/80] 188.5s  cites=6  unsup=0.20  hedge=0.29
+[48/80]  16.4s  cites=6  unsup=0.28  hedge=0.25
+[49/80]  12.5s  cites=6  unsup=0.23  hedge=0.00
+[50/80]  23.0s  cites=6  unsup=0.38  hedge=0.60
+[51/80]  10.8s  cites=6  unsup=0.30  hedge=0.00
+[52/80]  10.5s  cites=6  unsup=0.22  hedge=0.25
+[53/80]  10.7s  cites=6  unsup=0.25  hedge=0.00
+[54/80]  17.7s  cites=6  unsup=0.31  hedge=0.33
+[55/80]  11.6s  cites=6  unsup=0.47  hedge=0.00
+[56/80]  15.1s  cites=6  unsup=0.23  hedge=0.00
+[57/80] 529.8s  cites=6  unsup=0.07  hedge=0.00
+[58/80]   9.0s  cites=6  unsup=0.26  hedge=0.00
+[59/80]   9.2s  cites=6  unsup=0.64  hedge=0.00
+[60/80]  14.1s  cites=6  unsup=0.16  hedge=0.40
+[61/80]  14.9s  cites=6  unsup=0.19  hedge=0.50
+[62/80] 175.7s  cites=6  unsup=0.44  hedge=0.60
+[63/80]  16.0s  cites=6  unsup=0.38  hedge=0.33
+[64/80]  17.4s  cites=6  unsup=0.33  hedge=0.33
+[65/80] 164.2s  cites=6  unsup=0.55  hedge=0.43
+[66/80]  20.2s  cites=6  unsup=0.89  hedge=0.50
+[67/80]  14.6s  cites=6  unsup=0.32  hedge=0.20
+[68/80]  19.3s  cites=6  unsup=0.15  hedge=0.00
+[69/80]   9.4s  cites=6  unsup=0.08  hedge=0.33
+[70/80]  10.5s  cites=6  unsup=0.15  hedge=0.67
+[71/80]  13.6s  cites=6  unsup=0.20  hedge=0.00
+[72/80]  13.7s  cites=6  unsup=0.46  hedge=0.50
+[73/80]   9.6s  cites=6  unsup=0.16  hedge=0.14
+[74/80]  13.6s  cites=6  unsup=0.66  hedge=0.00
+[75/80]  10.8s  cites=6  unsup=0.14  hedge=0.00
+[76/80]  14.0s  cites=6  unsup=0.15  hedge=0.00
+[77/80]   7.0s  cites=6  unsup=0.58  hedge=0.50
+[78/80]   8.8s  cites=6  unsup=0.44  hedge=0.00
+[79/80]   6.0s  cites=6  unsup=0.55  hedge=0.00
+[80/80]  12.5s  cites=6  unsup=0.09  hedge=0.00
+
+{
+  "citation_count": {
+    "mean": 5.925,
+    "median": 6.0,
+    "n": 80
+  },
+  "citation_validity": {
+    "mean": 1.0,
+    "median": 1.0,
+    "n": 79
+  },
+  "citation_grounding": {
+    "mean": 1.0,
+    "median": 1.0,
+    "n": 79
+  },
+  "answer_relevance_cos": {
+    "mean": 0.7897986151278019,
+    "median": 0.8016499578952789,
+    "n": 80
+  },
+  "answer_evidence_cos": {
+    "mean": 0.7289134040474892,
+    "median": 0.7477853298187256,
+    "n": 80
+  },
+  "reference_overlap": {
+    "mean": 0.13186070873570874,
+    "median": 0.1111111111111111,
+    "n": 80
+  },
+  "unsupported_rate": {
+    "mean": 0.33375934158330633,
+    "median": 0.2697566311184031,
+    "n": 80
+  },
+  "hedging_rate": {
+    "mean": 0.2235714285714286,
+    "median": 0.18333333333333335,
+    "n": 80
+  },
+  "latency_s": {
+    "mean": 33.41825,
+    "median": 15.780000000000001,
+    "n": 80
+  },
+  "confidence": {
+    "mean": 0.6647375,
+    "median": 0.69,
+    "n": 80
+  },
+  "answer_words": {
+    "mean": 93.3375,
+    "median": 95.5,
+    "n": 80
+  }
+}
+
+wrote research/results/raw/rag_answers.json (80 answers)

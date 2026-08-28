@@ -1,0 +1,111 @@
+{
+  "fairness": {
+    "corpus": {
+      "chunks": 1199,
+      "chunks_sha256_16": "81292fcefd537433",
+      "faiss_sha256_16": "9782394c45726ca0",
+      "all_systems_index_same_corpus": true,
+      "note": "all systems are scored over the identical chunk list; BM25 is built from the same texts the vectors were embedded from"
+    },
+    "queries": {
+      "n": 80,
+      "all_systems_see_same_queries": true,
+      "question_ids_identical": true
+    },
+    "embedding_model": {
+      "dense": "BAAI/bge-small-en-v1.5",
+      "hybrid_rrf": "BAAI/bge-small-en-v1.5 (same vectors as dense)",
+      "bm25": "none - lexical",
+      "dense_and_hybrid_share_vectors": true,
+      "note": "hybrid fuses the dense run itself, so by construction it cannot use a different embedding model"
+    },
+    "retrieval_depth": {
+      "bm25": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        10
+      ],
+      "dense": [
+        10
+      ],
+      "hybrid_rrf": [
+        10
+      ]
+    },
+    "depth_identical": false,
+    "judgments": {
+      "single_qrels_file_for_all_systems": true,
+      "pooled_from": "union of top-10 of every system (no system's own results are privileged)"
+    }
+  },
+  "bm25_idf_sensitivity": {
+    "results": {
+      "lucene": {
+        "bm25": {
+          "recall@5": 0.4314713064713064,
+          "mrr": 0.5446174196174196,
+          "ndcg@10": 0.5025088833087713,
+          "n": 39
+        },
+        "dense": {
+          "recall@5": 0.3832112332112331,
+          "mrr": 0.4666971916971917,
+          "ndcg@10": 0.4367477748272438,
+          "n": 39
+        },
+        "hybrid_rrf": {
+          "recall@5": 0.4662698412698412,
+          "mrr": 0.5603276353276353,
+          "ndcg@10": 0.5174000481614032,
+          "n": 39
+        }
+      },
+      "robertson": {
+        "bm25": {
+          "recall@5": 0.41865079365079355,
+          "mrr": 0.5374542124542124,
+          "ndcg@10": 0.47751184283790776,
+          "n": 39
+        },
+        "dense": {
+          "recall@5": 0.3832112332112331,
+          "mrr": 0.4666971916971917,
+          "ndcg@10": 0.4367477748272438,
+          "n": 39
+        },
+        "hybrid_rrf": {
+          "recall@5": 0.44703907203907195,
+          "mrr": 0.5705840455840455,
+          "ndcg@10": 0.5136489599921534,
+          "n": 39
+        }
+      }
+    },
+    "orderings": {
+      "lucene": [
+        "hybrid_rrf",
+        "bm25",
+        "dense"
+      ],
+      "robertson": [
+        "hybrid_rrf",
+        "bm25",
+        "dense"
+      ]
+    },
+    "ordering_unchanged": true
+  },
+  "cross_validation": {
+    "reference": "rank_bm25.BM25Okapi",
+    "matched_variant": "robertson",
+    "max_abs_score_diff": 6.115e-13,
+    "top10_jaccard": 1.0,
+    "verdict": "PASS",
+    "note": "our scoring loop is exact; the earlier mismatch was a documented IDF-variant difference, not a bug"
+  },
+  "seed": 42
+}

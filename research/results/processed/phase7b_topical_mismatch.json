@@ -1,0 +1,95 @@
+{
+  "hypothesis": "Yajnadevam under-retrieval reflects topical mismatch with the benchmark, i.e. correct selectivity rather than bias",
+  "yajnadevam_corpus_share": 0.2527105921601334,
+  "depth": 10,
+  "by_category": [
+    {
+      "category": "sites",
+      "questions": 10,
+      "retrieved": 182,
+      "yajnadevam_hits": 3,
+      "yajnadevam_share": 0.016483516483516484,
+      "ratio_vs_corpus": 0.06522685235556523
+    },
+    {
+      "category": "seals",
+      "questions": 10,
+      "retrieved": 171,
+      "yajnadevam_hits": 5,
+      "yajnadevam_share": 0.029239766081871343,
+      "ratio_vs_corpus": 0.1157045529114315
+    },
+    {
+      "category": "script",
+      "questions": 10,
+      "retrieved": 168,
+      "yajnadevam_hits": 12,
+      "yajnadevam_share": 0.07142857142857142,
+      "ratio_vs_corpus": 0.2826496935407827
+    },
+    {
+      "category": "trade",
+      "questions": 10,
+      "retrieved": 153,
+      "yajnadevam_hits": 12,
+      "yajnadevam_share": 0.0784313725490196,
+      "ratio_vs_corpus": 0.31036044780948685
+    },
+    {
+      "category": "controversies",
+      "questions": 8,
+      "retrieved": 130,
+      "yajnadevam_hits": 16,
+      "yajnadevam_share": 0.12307692307692308,
+      "ratio_vs_corpus": 0.4870271642548871
+    },
+    {
+      "category": "scholars",
+      "questions": 8,
+      "retrieved": 152,
+      "yajnadevam_hits": 19,
+      "yajnadevam_share": 0.125,
+      "ratio_vs_corpus": 0.49463696369636967
+    },
+    {
+      "category": "religion",
+      "questions": 7,
+      "retrieved": 121,
+      "yajnadevam_hits": 12,
+      "yajnadevam_share": 0.09917355371900827,
+      "ratio_vs_corpus": 0.3924392439243925
+    },
+    {
+      "category": "methodology",
+      "questions": 7,
+      "retrieved": 132,
+      "yajnadevam_hits": 0,
+      "yajnadevam_share": 0.0,
+      "ratio_vs_corpus": 0.0
+    },
+    {
+      "category": "decline",
+      "questions": 6,
+      "retrieved": 108,
+      "yajnadevam_hits": 11,
+      "yajnadevam_share": 0.10185185185185185,
+      "ratio_vs_corpus": 0.40303752597481973
+    },
+    {
+      "category": "iconography",
+      "questions": 4,
+      "retrieved": 65,
+      "yajnadevam_hits": 0,
+      "yajnadevam_share": 0.0,
+      "ratio_vs_corpus": 0.0
+    }
+  ],
+  "script_like_categories": [
+    "script",
+    "seals"
+  ],
+  "mean_ratio_script_like": 0.1991771232261071,
+  "mean_ratio_other": 0.26909102475194013,
+  "verdict": "FALSIFIED",
+  "reasoning": "Yajnadevam stays suppressed even on script/seal questions (0.20x vs 0.27x). Topical mismatch does NOT explain it. Cause remains UNKNOWN."
+}

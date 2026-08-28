@@ -1,0 +1,84 @@
+{
+  "hypothesis": "Yajnadevam is a print-to-PDF of a web app; boilerplate and low lexical diversity dilute its embeddings",
+  "per_source": [
+    {
+      "source": "Authority Structure and the Evolution of Early Writing Systems 2.pdf",
+      "raw_rows": 8,
+      "duplicate_rows": 4,
+      "duplicate_rate": 0.5,
+      "type_token_ratio": 0.5209840810419681,
+      "mean_intra_source_similarity": 0.9189507961273193,
+      "mean_cos_to_corpus_centroid": 0.7758747339248657,
+      "unique_chunks": 4
+    },
+    {
+      "source": "CISI_1_Collections_in_India.pdf",
+      "raw_rows": 132,
+      "duplicate_rows": 0,
+      "duplicate_rate": 0.0,
+      "type_token_ratio": 0.26003636184954054,
+      "mean_intra_source_similarity": 0.6645404100418091,
+      "mean_cos_to_corpus_centroid": 0.8003460168838501,
+      "unique_chunks": 132
+    },
+    {
+      "source": "CISI_2_Collections_in_Pakistan.pdf",
+      "raw_rows": 186,
+      "duplicate_rows": 0,
+      "duplicate_rate": 0.0,
+      "type_token_ratio": 0.22034254491961752,
+      "mean_intra_source_similarity": 0.6673542857170105,
+      "mean_cos_to_corpus_centroid": 0.8014752864837646,
+      "unique_chunks": 186
+    },
+    {
+      "source": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+      "raw_rows": 298,
+      "duplicate_rows": 0,
+      "duplicate_rate": 0.0,
+      "type_token_ratio": 0.15922126181436302,
+      "mean_intra_source_similarity": 0.6722477674484253,
+      "mean_cos_to_corpus_centroid": 0.802879810333252,
+      "unique_chunks": 298
+    },
+    {
+      "source": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+      "raw_rows": 276,
+      "duplicate_rows": 0,
+      "duplicate_rate": 0.0,
+      "type_token_ratio": 0.21596284658678913,
+      "mean_intra_source_similarity": 0.6439967751502991,
+      "mean_cos_to_corpus_centroid": 0.7750073671340942,
+      "unique_chunks": 276
+    },
+    {
+      "source": "Indus Inscriptions by Yajnadevam.pdf",
+      "raw_rows": 1212,
+      "duplicate_rows": 909,
+      "duplicate_rate": 0.75,
+      "type_token_ratio": 0.12061306086183918,
+      "mean_intra_source_similarity": 0.893819272518158,
+      "mean_cos_to_corpus_centroid": 0.8577848672866821,
+      "unique_chunks": 303
+    }
+  ],
+  "checks": {
+    "a_duplicate_rate_much_higher": true,
+    "b_shared_boilerplate_prefix": true,
+    "c_intra_similarity_higher": true,
+    "d_lexical_diversity_lower": true
+  },
+  "n_predictions_met": 4,
+  "verdict": "SUPPORTED",
+  "yajnadevam_top_leading_6gram": {
+    "text": "Seal ID CISI ID Len Inscription(R",
+    "chunks": 302,
+    "of": 303
+  },
+  "comparison": {
+    "other_sources_duplicate_rate": 0.0,
+    "other_sources_type_token_ratio": 0.21389075379257755,
+    "other_sources_intra_similarity": 0.662034809589386
+  },
+  "note": "Even if supported, this explains a MECHANISM of dilution; it does not by itself prove the retrieval outcome is wrong."
+}

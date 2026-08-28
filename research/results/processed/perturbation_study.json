@@ -1,0 +1,73 @@
+{
+  "design": "inject metadata misalignment of controlled severity; measure retrieval and citation correctness independently",
+  "seed": 42,
+  "repeats_per_severity": 5,
+  "depth": 10,
+  "citation_top_k": 6,
+  "rows": [
+    {
+      "severity": 0.0,
+      "recall@5": 0.3649779333220892,
+      "recall@5_sd": 0.0,
+      "mrr": 0.6670068027210884,
+      "ndcg@10": 0.5914101674173188,
+      "citation_correctness": 1.0,
+      "citation_sd": 0.0,
+      "repeats": 1
+    },
+    {
+      "severity": 0.1,
+      "recall@5": 0.3649779333220892,
+      "recall@5_sd": 0.0,
+      "mrr": 0.6670068027210884,
+      "ndcg@10": 0.5914101674173188,
+      "citation_correctness": 0.9037500000000002,
+      "citation_sd": 0.007383352144445579,
+      "repeats": 5
+    },
+    {
+      "severity": 0.25,
+      "recall@5": 0.3649779333220892,
+      "recall@5_sd": 0.0,
+      "mrr": 0.6670068027210884,
+      "ndcg@10": 0.5914101674173188,
+      "citation_correctness": 0.7325,
+      "citation_sd": 0.02721442632134654,
+      "repeats": 5
+    },
+    {
+      "severity": 0.5,
+      "recall@5": 0.3649779333220892,
+      "recall@5_sd": 0.0,
+      "mrr": 0.6670068027210884,
+      "ndcg@10": 0.5914101674173188,
+      "citation_correctness": 0.48250000000000004,
+      "citation_sd": 0.016435902436096675,
+      "repeats": 5
+    },
+    {
+      "severity": 0.75,
+      "recall@5": 0.3649779333220892,
+      "recall@5_sd": 0.0,
+      "mrr": 0.6670068027210884,
+      "ndcg@10": 0.5914101674173188,
+      "citation_correctness": 0.2587499999999999,
+      "citation_sd": 0.019066768647745917,
+      "repeats": 5
+    },
+    {
+      "severity": 1.0,
+      "recall@5": 0.3649779333220892,
+      "recall@5_sd": 0.0,
+      "mrr": 0.6670068027210884,
+      "ndcg@10": 0.5914101674173188,
+      "citation_correctness": 0.005833333333333334,
+      "citation_sd": 0.0062360956446232355,
+      "repeats": 5
+    }
+  ],
+  "retrieval_recall5_range": 0.0,
+  "citation_drop": 0.9941666666666666,
+  "verdict": "SUPPORTED",
+  "interpretation": "Retrieval metrics are invariant to metadata perturbation by construction; the experiment confirms empirically that an attribution failure of ANY severity is undetectable by Recall@K / MRR / nDCG."
+}

@@ -1,0 +1,83 @@
+{
+  "issue": "BM25 returns fewer than DEPTH candidates when few documents share a query term; dense always returns DEPTH. Shorter lists can only lower Recall@10, biasing the comparison AGAINST BM25.",
+  "direction_of_bias": "against BM25 - i.e. against the system that outranks our deployed dense retriever, so it does not flatter our narrative",
+  "frequency": {
+    "queries_short": 9,
+    "of": 80,
+    "judged_short": 6,
+    "of_judged": 39,
+    "lengths_observed": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      10
+    ],
+    "mean_length": 9.3375
+  },
+  "fair_subset_full_lists_only": {
+    "n": 33,
+    "metrics": {
+      "bm25": {
+        "recall@5": 0.4379509379509379,
+        "recall@10": 0.6928210678210678,
+        "mrr": 0.5224266474266474,
+        "ndcg@10": 0.5152154704969155,
+        "n": 33
+      },
+      "dense": {
+        "recall@5": 0.37334054834054836,
+        "recall@10": 0.5916666666666667,
+        "mrr": 0.47049062049062046,
+        "ndcg@10": 0.4266610710408383,
+        "n": 33
+      },
+      "hybrid_rrf": {
+        "recall@5": 0.4752886002886002,
+        "recall@10": 0.6713203463203463,
+        "mrr": 0.5574074074074074,
+        "ndcg@10": 0.513427970223285,
+        "n": 33
+      }
+    }
+  },
+  "all_judged": {
+    "bm25": {
+      "recall@5": 0.4314713064713064,
+      "recall@10": 0.6471306471306472,
+      "mrr": 0.5446174196174196,
+      "ndcg@10": 0.5025088833087713,
+      "n": 39
+    },
+    "dense": {
+      "recall@5": 0.3832112332112331,
+      "recall@10": 0.6288461538461538,
+      "mrr": 0.4666971916971917,
+      "ndcg@10": 0.4367477748272438,
+      "n": 39
+    },
+    "hybrid_rrf": {
+      "recall@5": 0.4662698412698412,
+      "recall@10": 0.6898351648351648,
+      "mrr": 0.5603276353276353,
+      "ndcg@10": 0.5174000481614032,
+      "n": 39
+    }
+  },
+  "bm25_recall10_upper_bound": 0.7368742368742368,
+  "ordering_fair_subset": [
+    "hybrid_rrf",
+    "bm25",
+    "dense"
+  ],
+  "ordering_all": [
+    "hybrid_rrf",
+    "bm25",
+    "dense"
+  ],
+  "ordering_unchanged": true,
+  "resolution": "Reported, not patched. Padding BM25 with zero-score documents would invent an ordering it does not have. The honest statement is that BM25 Recall@10 is a LOWER BOUND.",
+  "seed": 42
+}

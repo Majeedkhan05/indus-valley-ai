@@ -1,0 +1,882 @@
+[
+  {
+    "qid": 34,
+    "question": "What is Dilmun?",
+    "answer": "Please provide me with the text you would like me to analyze to answer your question about Dilmun. I need the text to be able to find the information you're requesting.",
+    "citations": [
+      {
+        "document": "CISI_1_Collections_in_India.pdf",
+        "page": 7,
+        "score": 0.626
+      },
+      {
+        "document": "CISI_1_Collections_in_India.pdf",
+        "page": 7,
+        "score": 0.609
+      },
+      {
+        "document": "CISI_2_Collections_in_Pakistan.pdf",
+        "page": 11,
+        "score": 0.598
+      },
+      {
+        "document": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+        "page": 186,
+        "score": 0.582
+      },
+      {
+        "document": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+        "page": 186,
+        "score": 0.578
+      },
+      {
+        "document": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+        "page": 188,
+        "score": 0.568
+      }
+    ],
+    "human_scores": {
+      "groundedness": null,
+      "citation_correctness": null,
+      "answer_relevance": null,
+      "unsupported_claims": null,
+      "notes": ""
+    }
+  },
+  {
+    "qid": 52,
+    "question": "Is the Indus decline attributed to Aryan invasion?",
+    "answer": "The text does not attribute the decline of the Indus Valley Civilization to an Aryan invasion. Instead, it presents a picture of complex interactions and trade networks with surrounding cultures. It highlights a \u201cveritable explosion of knowledge\u201d resulting from recent archaeological research in the Iranian Plateau and Central Asia, revealing interconnected Bronze Age cultures flourishing in regions like the Gorgan plain, Southern Turkmenia, and ancient Margiana and Bactria. [6] The text focuses on the established connections between the Indus Valley and Mesopotamia through trade routes involving Dilmun, Magan, and Meluhha, suggesting a period of cultural exchange rather than conflict.",
+    "citations": [
+      {
+        "document": "CISI_1_Collections_in_India.pdf",
+        "page": 8,
+        "score": 0.708
+      },
+      {
+        "document": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+        "page": 4,
+        "score": 0.694
+      },
+      {
+        "document": "CISI_2_Collections_in_Pakistan.pdf",
+        "page": 15,
+        "score": 0.691
+      },
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 6,
+        "score": 0.689
+      },
+      {
+        "document": "CISI_2_Collections_in_Pakistan.pdf",
+        "page": 11,
+        "score": 0.686
+      },
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 3,
+        "score": 0.685
+      }
+    ],
+    "human_scores": {
+      "groundedness": null,
+      "citation_correctness": null,
+      "answer_relevance": null,
+      "unsupported_claims": null,
+      "notes": ""
+    }
+  },
+  {
+    "qid": 41,
+    "question": "Did the Indus civilization have temples?",
+    "answer": "Based on the provided text, there isn't explicit confirmation of the existence of \u201ctemples\u201d as we understand them today. However, the text strongly suggests the presence of significant religious or ritualistic centers within the Indus civilization. \n\nHere\u2019s what the text indicates:\n\n*   **Moenjodaro as an \u201cideal instance of cities that have appeared and disappeared with the vagaries of the Indus\u201d**: This implies a central, important site likely associated with religious or communal activities.\n*   **\u201cA vast storehouse of antiquities, and an engrossing subject of archaeological research\u201d**: This highlights the ongoing investigation of sites like Harappa, Mohenjo-daro, and others, suggesting the discovery of structures with religious significance.\n*   **Descriptions of regions like the North West Frontier (Buddhist power), Punjab (Mughal monuments, Ismaili settlements), Sind (Moenjo-daro, etc.), and Baluchistan (Mehrgarh, Quetta, Nal, Anjira)**: These areas contain numerous archaeological sites, many of which",
+    "citations": [
+      {
+        "document": "CISI_1_Collections_in_India.pdf",
+        "page": 6,
+        "score": 0.719
+      },
+      {
+        "document": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+        "page": 4,
+        "score": 0.715
+      },
+      {
+        "document": "CISI_2_Collections_in_Pakistan.pdf",
+        "page": 9,
+        "score": 0.698
+      },
+      {
+        "document": "CISI_1_Collections_in_India.pdf",
+        "page": 6,
+        "score": 0.695
+      },
+      {
+        "document": "CISI_2_Collections_in_Pakistan.pdf",
+        "page": 8,
+        "score": 0.694
+      },
+      {
+        "document": "CISI_2_Collections_in_Pakistan.pdf",
+        "page": 3,
+        "score": 0.69
+      }
+    ],
+    "human_scores": {
+      "groundedness": null,
+      "citation_correctness": null,
+      "answer_relevance": null,
+      "unsupported_claims": null,
+      "notes": ""
+    }
+  },
+  {
+    "qid": 29,
+    "question": "What direction is the Indus script read?",
+    "answer": "The text doesn\u2019t explicitly state the direction in which the Indus script is read. However, it acknowledges that the question of decipherment is complex and debated, stating, \u201cIn the absence of multi-lingual texts, long texts, and/or a successor symboling system or script, there can be no widely accepted understanding of what the symbols or signs of the \u2018Indus script\u2019 actually meant\u201d (KENOYER & MEADOW, [6]).  Furthermore, Koskenniemi and Parpola\u2019s work (as referenced in the introduction) focuses on creating standardized editions and concordances, suggesting a consistent approach to reading the script, but without definitively establishing a direction.",
+    "citations": [
+      {
+        "document": "CISI_1_Collections_in_India.pdf",
+        "page": 10,
+        "score": 0.836
+      },
+      {
+        "document": "CISI_1_Collections_in_India.pdf",
+        "page": 10,
+        "score": 0.815
+      },
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 7,
+        "score": 0.773
+      },
+      {
+        "document": "CISI_2_Collections_in_Pakistan.pdf",
+        "page": 12,
+        "score": 0.768
+      },
+      {
+        "document": "CISI_2_Collections_in_Pakistan.pdf",
+        "page": 12,
+        "score": 0.754
+      },
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 22,
+        "score": 0.754
+      }
+    ],
+    "human_scores": {
+      "groundedness": null,
+      "citation_correctness": null,
+      "answer_relevance": null,
+      "unsupported_claims": null,
+      "notes": ""
+    }
+  },
+  {
+    "qid": 62,
+    "question": "Did the Indus civilization have kings?",
+    "answer": "Based on the provided text and the cited sources, the question of whether the Indus civilization had kings remains complex and actively investigated. While definitive proof is lacking, evidence suggests a sophisticated social organization capable of large-scale projects and centralized control, hinting at leadership beyond simple tribal structures. \n\nHere\u2019s a breakdown of what the sources suggest:\n\n*   **Urban Planning & Large-Scale Projects:** The construction of cities like Harappa and Mohenjo-daro, with their intricate drainage systems, standardized brick sizes, and planned layouts, required significant organization and coordination \u2013 suggesting a degree of centralized authority (Kenoyer, 2003; Kenoyer & Meadow, 1996).\n*   **Seals and Inscriptions:** The discovery of seals with animal motifs and inscriptions (Durrani et al., 1995; FRENEZ & Tosi, 2005) indicates a system of record-keeping and potentially, a ruling class that controlled trade and resources.\n*   **Urban Process Models:** J.M. Kenoyer\u2019",
+    "citations": [
+      {
+        "document": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+        "page": 4,
+        "score": 0.689
+      },
+      {
+        "document": "CISI_1_Collections_in_India.pdf",
+        "page": 6,
+        "score": 0.685
+      },
+      {
+        "document": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+        "page": 5,
+        "score": 0.675
+      },
+      {
+        "document": "CISI_2_Collections_in_Pakistan.pdf",
+        "page": 11,
+        "score": 0.671
+      },
+      {
+        "document": "CISI_2_Collections_in_Pakistan.pdf",
+        "page": 3,
+        "score": 0.67
+      },
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 28,
+        "score": 0.665
+      }
+    ],
+    "human_scores": {
+      "groundedness": null,
+      "citation_correctness": null,
+      "answer_relevance": null,
+      "unsupported_claims": null,
+      "notes": ""
+    }
+  },
+  {
+    "qid": 26,
+    "question": "What is Parpola's hypothesis about the script?",
+    "answer": "According to Parpola\u2019s 2009 paper, \u201c\u2018Hind leg\u2019 + \u2018fish\u2019: Towards further understanding of the Indus script,\u201d the Indus script was initially based on an \u201coperator grammar\u201d \u2013 a sequence of functional operators like \u201cENTITY \u2013 DOMAIN / JURISDICTION \u2013 PROCESS \u2013 STATE / QUALIFIER \u2013 TERMINATION / AUTHORIZATION\u201d (PARPOLA, 2009, p. 37-76). This system emerged from a common semantic structure found in early writing systems like Mesopotamian cuneiform and early Chinese inscriptions, and it functioned to stabilize processes rather than preserve speech or memory, particularly within a highly distributed, non-centralized society (PARPOLA, 2009).  He suggests that once administrative needs were met, further elaboration of the script offered no functional advantage.",
+    "citations": [
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 7,
+        "score": 0.701
+      },
+      {
+        "document": "CISI_1_Collections_in_India.pdf",
+        "page": 10,
+        "score": 0.686
+      },
+      {
+        "document": "Authority Structure and the Evolution of Early Writing Systems 2.pdf",
+        "page": 1,
+        "score": 0.68
+      },
+      {
+        "document": "Authority Structure and the Evolution of Early Writing Systems 2.pdf",
+        "page": 4,
+        "score": 0.67
+      },
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 8,
+        "score": 0.66
+      },
+      {
+        "document": "Authority Structure and the Evolution of Early Writing Systems 2.pdf",
+        "page": 2,
+        "score": 0.643
+      }
+    ],
+    "human_scores": {
+      "groundedness": null,
+      "citation_correctness": null,
+      "answer_relevance": null,
+      "unsupported_claims": null,
+      "notes": ""
+    }
+  },
+  {
+    "qid": 1,
+    "question": "Where is Mohenjo-daro located?",
+    "answer": "Mohenjo-daro is located in Pakistan. Specifically, the document states: \u201cfrom Mohenjo-daro and Harappa in museums outside India and Pakistan are relatively few.\u201d ( [5] ) Further details about its museum holdings are provided in the document.",
+    "citations": [
+      {
+        "document": "CISI_1_Collections_in_India.pdf",
+        "page": 58,
+        "score": 0.7
+      },
+      {
+        "document": "CISI_2_Collections_in_Pakistan.pdf",
+        "page": 134,
+        "score": 0.694
+      },
+      {
+        "document": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+        "page": 217,
+        "score": 0.684
+      },
+      {
+        "document": "CISI_2_Collections_in_Pakistan.pdf",
+        "page": 140,
+        "score": 0.679
+      },
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 3,
+        "score": 0.678
+      },
+      {
+        "document": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+        "page": 215,
+        "score": 0.675
+      }
+    ],
+    "human_scores": {
+      "groundedness": null,
+      "citation_correctness": null,
+      "answer_relevance": null,
+      "unsupported_claims": null,
+      "notes": ""
+    }
+  },
+  {
+    "qid": 61,
+    "question": "Did the Indus civilization have horses?",
+    "answer": "The evidence regarding the presence of horses in the Indus Civilization is still debated, but the new HARP material, specifically the sign on seal H-1688 from Harappa, suggests a possible connection to animals like the chinkara or Indian gazelle (Gazella gazella, Pallas) \u2013 which are closely related to horses (Kenoyer and Meadow, below, pp. xliv and Ivi). Furthermore, interpretations of motifs on Early Harappan pottery from Rahman Dheri support the idea that the most frequently occurring Indus sign represents a simplified buffalo head, with horns and ears projecting to either side (cf. Parpola 1994: 104 & 106, fig. 7.4). While definitive proof of widespread horse use remains elusive, this new sign adds to the possibility that horses were present and potentially important to the Indus Civilization (CISI_3.1_Mohenjodaro_and_Harappa.pdf, p.7).",
+    "citations": [
+      {
+        "document": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+        "page": 4,
+        "score": 0.706
+      },
+      {
+        "document": "CISI_1_Collections_in_India.pdf",
+        "page": 6,
+        "score": 0.693
+      },
+      {
+        "document": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+        "page": 5,
+        "score": 0.69
+      },
+      {
+        "document": "CISI_2_Collections_in_Pakistan.pdf",
+        "page": 11,
+        "score": 0.679
+      },
+      {
+        "document": "CISI_2_Collections_in_Pakistan.pdf",
+        "page": 3,
+        "score": 0.678
+      },
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 7,
+        "score": 0.67
+      }
+    ],
+    "human_scores": {
+      "groundedness": null,
+      "citation_correctness": null,
+      "answer_relevance": null,
+      "unsupported_claims": null,
+      "notes": ""
+    }
+  },
+  {
+    "qid": 22,
+    "question": "How many distinct signs are in the Indus script?",
+    "answer": "The text doesn't provide a definitive number of distinct signs in the Indus script. It states that the script \"holds an answer to the most debated question concerning this early urban culture, that concerning its language,\" and that \u201cmany attempts at deciphering this unknown writing system have been made.\u201d However, it notes that \u201cno unanimity has been reached even on the basic issues.\u201d  Therefore, the exact number of signs remains unknown and is a central part of the ongoing scholarly debate.",
+    "citations": [
+      {
+        "document": "CISI_1_Collections_in_India.pdf",
+        "page": 10,
+        "score": 0.809
+      },
+      {
+        "document": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+        "page": 11,
+        "score": 0.803
+      },
+      {
+        "document": "CISI_1_Collections_in_India.pdf",
+        "page": 10,
+        "score": 0.8
+      },
+      {
+        "document": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+        "page": 15,
+        "score": 0.793
+      },
+      {
+        "document": "CISI_1_Collections_in_India.pdf",
+        "page": 10,
+        "score": 0.781
+      },
+      {
+        "document": "CISI_2_Collections_in_Pakistan.pdf",
+        "page": 12,
+        "score": 0.781
+      }
+    ],
+    "human_scores": {
+      "groundedness": null,
+      "citation_correctness": null,
+      "answer_relevance": null,
+      "unsupported_claims": null,
+      "notes": ""
+    }
+  },
+  {
+    "qid": 38,
+    "question": "What was the Indus standard weight?",
+    "answer": "The provided text references metal seals with impressions, potentially indicating a standard weight system. Specifically, it mentions \u201cfe 4 dowee\u201d and \u201cmetal SEAL IMPRESSIONS\u201d associated with SHAHR-I SOKHTA (98-102 and 103-105) [6]. However, the text doesn\u2019t explicitly state *what* the standard weight was, only that these seals might have been used in a system of weights and measures.",
+    "citations": [
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 241,
+        "score": 0.679
+      },
+      {
+        "document": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+        "page": 35,
+        "score": 0.678
+      },
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 238,
+        "score": 0.678
+      },
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 7,
+        "score": 0.677
+      },
+      {
+        "document": "CISI_2_Collections_in_Pakistan.pdf",
+        "page": 234,
+        "score": 0.677
+      },
+      {
+        "document": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+        "page": 34,
+        "score": 0.674
+      }
+    ],
+    "human_scores": {
+      "groundedness": null,
+      "citation_correctness": null,
+      "answer_relevance": null,
+      "unsupported_claims": null,
+      "notes": ""
+    }
+  },
+  {
+    "qid": 19,
+    "question": "What object accompanies the unicorn on most seals?",
+    "answer": "According to the provided text excerpts from the CISI collection documentation, the object that accompanies the unicorn on most seals is a \u201cboss\u201d (also referred to as a \u201cFig-deity\u201d). \n\nHere\u2019s the breakdown of the relevant information:\n\n*   **[4] (p.17):** \u201cYule\u2019s analysis is somewhat different in detail.\u201d \u2013 This refers to Paul Yule\u2019s work, which details the presence of a boss on the reverse of many of the square seals, including those depicting unicorns.\n*   **[5] (p.46):** \u201c\u2018unicorn\u2019 IV M-1727B M-1727 A M-1728 A bis M-1728 a \u2018unicorn\u2019 IV M-1730 A bis M-1729 a Be i M-1730a\u201d \u2013 This section lists several \u201cunicorn\u201d seals, and the descriptions consistently include the \u201cboss\u201d feature.\n*   **[6] (p.52",
+    "citations": [
+      {
+        "document": "CISI_1_Collections_in_India.pdf",
+        "page": 17,
+        "score": 0.799
+      },
+      {
+        "document": "CISI_2_Collections_in_Pakistan.pdf",
+        "page": 16,
+        "score": 0.765
+      },
+      {
+        "document": "CISI_2_Collections_in_Pakistan.pdf",
+        "page": 16,
+        "score": 0.751
+      },
+      {
+        "document": "CISI_2_Collections_in_Pakistan.pdf",
+        "page": 17,
+        "score": 0.749
+      },
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 46,
+        "score": 0.737
+      },
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 52,
+        "score": 0.73
+      }
+    ],
+    "human_scores": {
+      "groundedness": null,
+      "citation_correctness": null,
+      "answer_relevance": null,
+      "unsupported_claims": null,
+      "notes": ""
+    }
+  },
+  {
+    "qid": 43,
+    "question": "What is the proto-Shiva debate?",
+    "answer": "This text doesn't discuss the \"proto-Shiva debate.\" It focuses on the archaeological connections between the Indus Valley Civilization, the Dasas (a group mentioned in the Rigveda), and cultures in the Iranian Plateau and Central Asia, particularly concerning the use of cylinder seals. \n\nHere's a breakdown of what the text *does* discuss:\n\n*   **Connections between Indus and Iranian Cultures:** The text argues for a continuous archaeological sequence from the Neolithic to the Iron Age in the Indo-Iranian borderlands, linking the Indus Civilization to earlier cultures in Iran and Central Asia through shared cultural practices like the use of cylinder seals.\n*   **Mehrgarh and Kulli Cultures:** It highlights the importance of the Mehrgarh and Kulli cultures in understanding the origins of the Indus Civilization, noting that the Kulli culture was fully developed by 2600 BCE and retained its identity until 1900 BCE.\n*   **Iconographic Similarities:** The text points to similarities in iconography, such as the \"bull tied to a kind of post or tree\"",
+    "citations": [
+      {
+        "document": "CISI_1_Collections_in_India.pdf",
+        "page": 9,
+        "score": 0.656
+      },
+      {
+        "document": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+        "page": 20,
+        "score": 0.652
+      },
+      {
+        "document": "CISI_1_Collections_in_India.pdf",
+        "page": 10,
+        "score": 0.628
+      },
+      {
+        "document": "CISI_1_Collections_in_India.pdf",
+        "page": 10,
+        "score": 0.626
+      },
+      {
+        "document": "CISI_1_Collections_in_India.pdf",
+        "page": 8,
+        "score": 0.625
+      },
+      {
+        "document": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+        "page": 5,
+        "score": 0.615
+      }
+    ],
+    "human_scores": {
+      "groundedness": null,
+      "citation_correctness": null,
+      "answer_relevance": null,
+      "unsupported_claims": null,
+      "notes": ""
+    }
+  },
+  {
+    "qid": 27,
+    "question": "What is Yajnadevam's claim?",
+    "answer": "Please provide the text you are referring to. I need the text of the \"SYSTEM PO 8IGA 9L:011'6 \u2018THA \u2018L8Td \u2018V bd6 CL9IZ TATA} = CLL Ese\u201c SSX08 sovjms \u201cqT ISV:V| (9) SINV bd\u00e9 Z8IL TSE\u201c 6/9XE8X00I \u2018O'7 Ir Aped \u2018\u20acOZ LL:O11'6 \u201889 \u2018THA \u2018L8 Ta :V Ldd SLSIZTATA}| CETL Ise\u201c Tey L1/LX06X76 (S$) J PO (SAA. * TH) SAZ 9L:011'6 \u201889 \u201cTHA \u2018L8 Ta \u00b0V ibd CZSIZTIGTA}| = PSEL OSE\u201c \u201804 ovis 1\u20ac:86\u00b06 \u201cSU \u2018THA 'V bd6 6ELIZTATA| 89rL| 6",
+    "citations": [
+      {
+        "document": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+        "page": 204,
+        "score": 0.629
+      },
+      {
+        "document": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+        "page": 196,
+        "score": 0.628
+      },
+      {
+        "document": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+        "page": 193,
+        "score": 0.627
+      },
+      {
+        "document": "CISI_2_Collections_in_Pakistan.pdf",
+        "page": 241,
+        "score": 0.625
+      },
+      {
+        "document": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+        "page": 174,
+        "score": 0.617
+      },
+      {
+        "document": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+        "page": 198,
+        "score": 0.615
+      }
+    ],
+    "human_scores": {
+      "groundedness": null,
+      "citation_correctness": null,
+      "answer_relevance": null,
+      "unsupported_claims": null,
+      "notes": ""
+    }
+  },
+  {
+    "qid": 58,
+    "question": "What was the role of the granary?",
+    "answer": "The provided text does not discuss the role of a granary. It focuses on the archaeological investigation of copper and bronze objects, particularly metal compartmented seals, in the Indus Valley, specifically at Mohenjo-daro and its connections to the BMAC. \n\n[6] (source: CISI_3.1_Mohenjodaro_and_Harappa.pdf, p.9, relevance: 0.57)",
+    "citations": [
+      {
+        "document": "CISI_1_Collections_in_India.pdf",
+        "page": 6,
+        "score": 0.591
+      },
+      {
+        "document": "CISI_2_Collections_in_Pakistan.pdf",
+        "page": 14,
+        "score": 0.588
+      },
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 11,
+        "score": 0.583
+      },
+      {
+        "document": "CISI_1_Collections_in_India.pdf",
+        "page": 14,
+        "score": 0.572
+      },
+      {
+        "document": "CISI_2_Collections_in_Pakistan.pdf",
+        "page": 7,
+        "score": 0.571
+      },
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 9,
+        "score": 0.569
+      }
+    ],
+    "human_scores": {
+      "groundedness": null,
+      "citation_correctness": null,
+      "answer_relevance": null,
+      "unsupported_claims": null,
+      "notes": ""
+    }
+  },
+  {
+    "qid": 51,
+    "question": "What is Cemetery H?",
+    "answer": "Cemetery H is a Late Harappan phase mentioned alongside the Late Harappan Phase (p. 360) when discussing periods on page 360. It\u2019s also referenced in the addenda and corrigenda sections (p. 361-363) alongside Harappa, specifically in relation to geometric designs and graffiti (H-2579 to H-2583).",
+    "citations": [
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 250,
+        "score": 0.721
+      },
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 250,
+        "score": 0.583
+      },
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 245,
+        "score": 0.574
+      },
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 245,
+        "score": 0.569
+      },
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 244,
+        "score": 0.561
+      },
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 250,
+        "score": 0.558
+      }
+    ],
+    "human_scores": {
+      "groundedness": null,
+      "citation_correctness": null,
+      "answer_relevance": null,
+      "unsupported_claims": null,
+      "notes": ""
+    }
+  },
+  {
+    "qid": 5,
+    "question": "What did Rakhigarhi's 2019 ancient DNA study find?",
+    "answer": "This document does not contain information about Rakhigarhi\u2019s 2019 ancient DNA study. It focuses on the broader context of Indus Valley Civilization research, particularly connections between Iran and South Asia, referencing various archaeological sites and scholarly works. \n\nSpecifically, it cites sources like:\n\n*   [5] (source: CISI_3.2_Recent_Findings_from_India___Pakistan.pdf, p.1, relevance: 0.64) \u2013 This source provides a general overview of Indus Valley Civilization research.\n*   [6] \u2013 This source lists several academic publications relevant to the topic, including works by Kohl, Sarianidi, Lamberg-Karlovsky, Amiet, Ghirshman, Thomas, Parpola, and Jarrige.\n\nTo find information about the 2019 Rakhigarhi DNA study, you would need to consult a different source.",
+    "citations": [
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 1,
+        "score": 0.65
+      },
+      {
+        "document": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+        "page": 2,
+        "score": 0.647
+      },
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 5,
+        "score": 0.644
+      },
+      {
+        "document": "CISI_1_Collections_in_India.pdf",
+        "page": 1,
+        "score": 0.643
+      },
+      {
+        "document": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+        "page": 1,
+        "score": 0.637
+      },
+      {
+        "document": "CISI_1_Collections_in_India.pdf",
+        "page": 8,
+        "score": 0.631
+      }
+    ],
+    "human_scores": {
+      "groundedness": null,
+      "citation_correctness": null,
+      "answer_relevance": null,
+      "unsupported_claims": null,
+      "notes": ""
+    }
+  },
+  {
+    "qid": 28,
+    "question": "What did Rao et al. 2009 find about the script's entropy?",
+    "answer": "This text does not contain information about Rao et al. (2009) or their findings regarding the script\u2019s entropy. It focuses on the challenges of interpreting the Indus script, the importance of stratigraphic analysis, and the existing scholarship surrounding the script\u2019s decipherment.",
+    "citations": [
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 7,
+        "score": 0.69
+      },
+      {
+        "document": "Authority Structure and the Evolution of Early Writing Systems 2.pdf",
+        "page": 1,
+        "score": 0.686
+      },
+      {
+        "document": "CISI_1_Collections_in_India.pdf",
+        "page": 10,
+        "score": 0.683
+      },
+      {
+        "document": "Authority Structure and the Evolution of Early Writing Systems 2.pdf",
+        "page": 4,
+        "score": 0.671
+      },
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 28,
+        "score": 0.659
+      },
+      {
+        "document": "CISI_1_Collections_in_India.pdf",
+        "page": 10,
+        "score": 0.655
+      }
+    ],
+    "human_scores": {
+      "groundedness": null,
+      "citation_correctness": null,
+      "answer_relevance": null,
+      "unsupported_claims": null,
+      "notes": ""
+    }
+  },
+  {
+    "qid": 25,
+    "question": "What is the average inscription length?",
+    "answer": "The provided text doesn\u2019t offer information about the average inscription length on the Indus seals. It focuses on the conventions used for referencing and documenting the photographs and objects within the Corpus of Indus Seals and Inscriptions. Specifically, it details how multiple photographs of the same side or parts of a side are numbered and referenced, and it outlines the policy of printing photographs at double size to improve detail recognition. \n\nHere\u2019s a relevant excerpt:\n\n\u201c[6] In the past, some attempts were made, but rather incomprehensively. The task has been taken up by the editors of the present work. The volume already published, in 1987, is concerned with the material now lying in India, while this volume deals with the collections housed in various museums in Pakistan. The task undertaken by Professor Sayid Ghulam Mustafa Shah and Professor Asko Parpola has indeed been tremendous. I am sure that the book will provide basic information to all those who are trying to solve the problem. Karachi, January 1, 1990. AHMAD NABI KHAN Director",
+    "citations": [
+      {
+        "document": "CISI_1_Collections_in_India.pdf",
+        "page": 13,
+        "score": 0.727
+      },
+      {
+        "document": "CISI_2_Collections_in_Pakistan.pdf",
+        "page": 13,
+        "score": 0.719
+      },
+      {
+        "document": "CISI_2_Collections_in_Pakistan.pdf",
+        "page": 14,
+        "score": 0.714
+      },
+      {
+        "document": "CISI_1_Collections_in_India.pdf",
+        "page": 13,
+        "score": 0.712
+      },
+      {
+        "document": "CISI_2_Collections_in_Pakistan.pdf",
+        "page": 13,
+        "score": 0.705
+      },
+      {
+        "document": "CISI_2_Collections_in_Pakistan.pdf",
+        "page": 4,
+        "score": 0.702
+      }
+    ],
+    "human_scores": {
+      "groundedness": null,
+      "citation_correctness": null,
+      "answer_relevance": null,
+      "unsupported_claims": null,
+      "notes": ""
+    }
+  },
+  {
+    "qid": 18,
+    "question": "What is the Ernestite drill?",
+    "answer": "The provided text does not contain information about the Ernestite drill. It focuses on archaeological excavations and numbering systems related to sites like Mohenjo-daro, Mehrgarh, and Nausharo in Pakistan and India.",
+    "citations": [
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 9,
+        "score": 0.586
+      },
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 11,
+        "score": 0.562
+      },
+      {
+        "document": "CISI_1_Collections_in_India.pdf",
+        "page": 14,
+        "score": 0.559
+      },
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 23,
+        "score": 0.558
+      },
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 236,
+        "score": 0.556
+      },
+      {
+        "document": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+        "page": 10,
+        "score": 0.553
+      }
+    ],
+    "human_scores": {
+      "groundedness": null,
+      "citation_correctness": null,
+      "answer_relevance": null,
+      "unsupported_claims": null,
+      "notes": ""
+    }
+  },
+  {
+    "qid": 8,
+    "question": "What is the DK Area at Mohenjo-daro?",
+    "answer": "The DK Area at Mohenjo-daro is Block 2, specifically Room 14. The text states: \u201cSYSTEM1; plan 2) was found in DK-B, Block 2, Room 14, at a depth of 1.40 m below the surface.\u201d [5]",
+    "citations": [
+      {
+        "document": "CISI_1_Collections_in_India.pdf",
+        "page": 58,
+        "score": 0.708
+      },
+      {
+        "document": "CISI_2_Collections_in_Pakistan.pdf",
+        "page": 98,
+        "score": 0.689
+      },
+      {
+        "document": "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf",
+        "page": 217,
+        "score": 0.689
+      },
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 16,
+        "score": 0.687
+      },
+      {
+        "document": "CISI_2_Collections_in_Pakistan.pdf",
+        "page": 134,
+        "score": 0.685
+      },
+      {
+        "document": "CISI_3.1_Mohenjodaro_and_Harappa.pdf",
+        "page": 89,
+        "score": 0.684
+      }
+    ],
+    "human_scores": {
+      "groundedness": null,
+      "citation_correctness": null,
+      "answer_relevance": null,
+      "unsupported_claims": null,
+      "notes": ""
+    }
+  }
+]

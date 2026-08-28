@@ -1,0 +1,3497 @@
+{
+  "bm25": [
+    {
+      "qid": 6,
+      "category": "sites",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.25,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.43067655807339306,
+      "ndcg@10": 0.43067655807339306,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 8,
+      "category": "sites",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "multi_hop"
+      ],
+      "mrr": 0.16666666666666666,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.3562071871080222,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 11,
+      "category": "seals",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.1111111111111111,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.25,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.11751610475642714,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 13,
+      "category": "seals",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 0.3333333333333333,
+      "recall@5": 0.3333333333333333,
+      "recall@10": 0.6666666666666666,
+      "ndcg@5": 0.2960819109658652,
+      "ndcg@10": 0.431733884398313,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 14,
+      "category": "seals",
+      "flags": [
+        "possibly_ambiguous"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.1111111111111111,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.3010299956639812,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 15,
+      "category": "seals",
+      "flags": [
+        "contested_interpretation",
+        "very_short_reference_answer"
+      ],
+      "retrieval_types": [
+        "lexical"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.5,
+      "recall@3": 0.5,
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "ndcg@5": 0.6131471927654584,
+      "ndcg@10": 0.6131471927654584,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 18,
+      "category": "seals",
+      "flags": [],
+      "retrieval_types": [
+        "semantic"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 20,
+      "category": "seals",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.3333333333333333,
+      "recall@1": 0.0,
+      "recall@3": 0.5,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.5437713091520254,
+      "ndcg@10": 0.5437713091520254,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 21,
+      "category": "script",
+      "flags": [
+        "contested_interpretation",
+        "very_short_reference_answer"
+      ],
+      "retrieval_types": [
+        "lexical"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 0.6666666666666666,
+      "recall@5": 0.6666666666666666,
+      "recall@10": 0.6666666666666666,
+      "ndcg@5": 0.5307212739772434,
+      "ndcg@10": 0.5307212739772434,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 23,
+      "category": "script",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.5,
+      "recall@3": 0.5,
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "ndcg@5": 0.6131471927654584,
+      "ndcg@10": 0.7903864795495061,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 25,
+      "category": "script",
+      "flags": [
+        "possibly_ambiguous"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.14285714285714285,
+      "recall@3": 0.14285714285714285,
+      "recall@5": 0.14285714285714285,
+      "recall@10": 0.5714285714285714,
+      "ndcg@5": 0.3391602052736161,
+      "ndcg@10": 0.5511285310631421,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 27,
+      "category": "script",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 1.0,
+      "ndcg@10": 1.0,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 32,
+      "category": "trade",
+      "flags": [
+        "very_short_reference_answer"
+      ],
+      "retrieval_types": [
+        "lexical"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 34,
+      "category": "trade",
+      "flags": [],
+      "retrieval_types": [
+        "semantic"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 0.6666666666666666,
+      "recall@5": 0.6666666666666666,
+      "recall@10": 1.0,
+      "ndcg@5": 0.5307212739772434,
+      "ndcg@10": 0.6719882468370725,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 35,
+      "category": "trade",
+      "flags": [],
+      "retrieval_types": [
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.5,
+      "recall@3": 0.5,
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "ndcg@5": 0.6131471927654584,
+      "ndcg@10": 0.6131471927654584,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 38,
+      "category": "trade",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 39,
+      "category": "trade",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.06666666666666667,
+      "recall@3": 0.2,
+      "recall@5": 0.3333333333333333,
+      "recall@10": 0.6666666666666666,
+      "ndcg@5": 1.0,
+      "ndcg@10": 1.0,
+      "precision@5": 1.0
+    },
+    {
+      "qid": 40,
+      "category": "trade",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.125,
+      "recall@3": 0.25,
+      "recall@5": 0.375,
+      "recall@10": 0.375,
+      "ndcg@5": 0.6992148198508501,
+      "ndcg@10": 0.5214682725103094,
+      "precision@5": 0.6
+    },
+    {
+      "qid": 43,
+      "category": "religion",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical"
+      ],
+      "mrr": 0.14285714285714285,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.3333333333333333,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 44,
+      "category": "religion",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.1,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.125,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.07311683844390995,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 47,
+      "category": "religion",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.2,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.14285714285714285,
+      "recall@10": 0.42857142857142855,
+      "ndcg@5": 0.13120507751234178,
+      "ndcg@10": 0.2774192047677609,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 48,
+      "category": "decline",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 51,
+      "category": "decline",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "source_specific"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.25,
+      "recall@3": 0.5,
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "ndcg@5": 0.6366824387328317,
+      "ndcg@10": 0.8843252268199594,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 54,
+      "category": "methodology",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.25,
+      "recall@3": 0.25,
+      "recall@5": 0.5,
+      "recall@10": 0.75,
+      "ndcg@5": 0.5585075862632192,
+      "ndcg@10": 0.6713527276121545,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 59,
+      "category": "methodology",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.16666666666666666,
+      "recall@3": 0.3333333333333333,
+      "recall@5": 0.6666666666666666,
+      "recall@10": 1.0,
+      "ndcg@5": 0.7860137352654724,
+      "ndcg@10": 0.8896291645642339,
+      "precision@5": 0.8
+    },
+    {
+      "qid": 60,
+      "category": "methodology",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "source_specific",
+        "evidence_attribution"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 64,
+      "category": "controversies",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.25,
+      "recall@3": 0.25,
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "ndcg@5": 0.5413996682199069,
+      "ndcg@10": 0.5413996682199069,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 65,
+      "category": "controversies",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 67,
+      "category": "controversies",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 70,
+      "category": "iconography",
+      "flags": [
+        "possibly_ambiguous"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.14285714285714285,
+      "recall@3": 0.2857142857142857,
+      "recall@5": 0.5714285714285714,
+      "recall@10": 0.8571428571428571,
+      "ndcg@5": 0.7860137352654724,
+      "ndcg@10": 0.8081164970945602,
+      "precision@5": 0.8
+    },
+    {
+      "qid": 71,
+      "category": "iconography",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.3333333333333333,
+      "recall@3": 0.6666666666666666,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.9674679834891693,
+      "ndcg@10": 0.9674679834891693,
+      "precision@5": 0.6
+    },
+    {
+      "qid": 72,
+      "category": "iconography",
+      "flags": [],
+      "retrieval_types": [
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.5,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.9197207891481876,
+      "ndcg@10": 0.9197207891481876,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 73,
+      "category": "scholars",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.125,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.6666666666666666,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.2836929289153804,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 74,
+      "category": "scholars",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.25,
+      "recall@3": 0.5,
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "ndcg@5": 0.6366824387328317,
+      "ndcg@10": 0.8899603164338973,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 75,
+      "category": "scholars",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 0.14285714285714285,
+      "recall@5": 0.42857142857142855,
+      "recall@10": 0.7142857142857143,
+      "ndcg@5": 0.4912596920895758,
+      "ndcg@10": 0.5676069807732721,
+      "precision@5": 0.6
+    },
+    {
+      "qid": 76,
+      "category": "scholars",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 1.0,
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 1.0,
+      "ndcg@10": 1.0,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 77,
+      "category": "scholars",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.6309297535714575,
+      "ndcg@10": 0.6309297535714575,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 78,
+      "category": "scholars",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.3333333333333333,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 1.0,
+      "ndcg@10": 1.0,
+      "precision@5": 0.6
+    },
+    {
+      "qid": 80,
+      "category": "scholars",
+      "flags": [
+        "contested_interpretation",
+        "possibly_ambiguous"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.2,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.38685280723454163,
+      "ndcg@10": 0.38685280723454163,
+      "precision@5": 0.2
+    }
+  ],
+  "dense": [
+    {
+      "qid": 6,
+      "category": "sites",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.25,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.43067655807339306,
+      "ndcg@10": 0.43067655807339306,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 8,
+      "category": "sites",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "multi_hop"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 11,
+      "category": "seals",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.2,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.25,
+      "recall@10": 0.75,
+      "ndcg@5": 0.15101961822780524,
+      "ndcg@10": 0.4202024810692814,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 13,
+      "category": "seals",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 0.3333333333333333,
+      "recall@5": 0.3333333333333333,
+      "recall@10": 0.6666666666666666,
+      "ndcg@5": 0.2960819109658652,
+      "ndcg@10": 0.431733884398313,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 14,
+      "category": "seals",
+      "flags": [
+        "possibly_ambiguous"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 15,
+      "category": "seals",
+      "flags": [
+        "contested_interpretation",
+        "very_short_reference_answer"
+      ],
+      "retrieval_types": [
+        "lexical"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 0.5,
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "ndcg@5": 0.38685280723454163,
+      "ndcg@10": 0.5640920940185894,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 18,
+      "category": "seals",
+      "flags": [],
+      "retrieval_types": [
+        "semantic"
+      ],
+      "mrr": 0.25,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.43067655807339306,
+      "ndcg@10": 0.43067655807339306,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 20,
+      "category": "seals",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.5,
+      "recall@3": 0.5,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.8772153153380493,
+      "ndcg@10": 0.8772153153380493,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 21,
+      "category": "script",
+      "flags": [
+        "contested_interpretation",
+        "very_short_reference_answer"
+      ],
+      "retrieval_types": [
+        "lexical"
+      ],
+      "mrr": 0.16666666666666666,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.6666666666666666,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.3152014104491349,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 23,
+      "category": "script",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.25,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "ndcg@5": 0.2640681225725909,
+      "ndcg@10": 0.448643819352159,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 25,
+      "category": "script",
+      "flags": [
+        "possibly_ambiguous"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 0.2857142857142857,
+      "recall@5": 0.42857142857142855,
+      "recall@10": 0.42857142857142855,
+      "ndcg@5": 0.5147714448836774,
+      "ndcg@10": 0.4172025044756148,
+      "precision@5": 0.6
+    },
+    {
+      "qid": 27,
+      "category": "script",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 32,
+      "category": "trade",
+      "flags": [
+        "very_short_reference_answer"
+      ],
+      "retrieval_types": [
+        "lexical"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.5,
+      "recall@3": 0.5,
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "ndcg@5": 0.6131471927654584,
+      "ndcg@10": 0.8175295903539445,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 34,
+      "category": "trade",
+      "flags": [],
+      "retrieval_types": [
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.3333333333333333,
+      "recall@3": 0.6666666666666666,
+      "recall@5": 0.6666666666666666,
+      "recall@10": 0.6666666666666666,
+      "ndcg@5": 0.7039180890341347,
+      "ndcg@10": 0.7039180890341347,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 35,
+      "category": "trade",
+      "flags": [],
+      "retrieval_types": [
+        "semantic"
+      ],
+      "mrr": 0.2,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "ndcg@5": 0.23719771276929622,
+      "ndcg@10": 0.42177340954886444,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 38,
+      "category": "trade",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.3333333333333333,
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.5,
+      "ndcg@10": 0.5,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 39,
+      "category": "trade",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.06666666666666667,
+      "recall@3": 0.2,
+      "recall@5": 0.26666666666666666,
+      "recall@10": 0.4,
+      "ndcg@5": 0.8687949224876582,
+      "ndcg@10": 0.7058075148678525,
+      "precision@5": 0.8
+    },
+    {
+      "qid": 40,
+      "category": "trade",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.125,
+      "recall@3": 0.375,
+      "recall@5": 0.375,
+      "recall@10": 0.75,
+      "ndcg@5": 0.7227265726449519,
+      "ndcg@10": 0.7865342126285454,
+      "precision@5": 0.6
+    },
+    {
+      "qid": 43,
+      "category": "religion",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical"
+      ],
+      "mrr": 1.0,
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 1.0,
+      "ndcg@10": 1.0,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 44,
+      "category": "religion",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.125,
+      "recall@3": 0.25,
+      "recall@5": 0.375,
+      "recall@10": 0.875,
+      "ndcg@5": 0.6548086577531307,
+      "ndcg@10": 0.8075052731453509,
+      "precision@5": 0.6
+    },
+    {
+      "qid": 47,
+      "category": "religion",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.14285714285714285,
+      "recall@3": 0.14285714285714285,
+      "recall@5": 0.2857142857142857,
+      "recall@10": 0.5714285714285714,
+      "ndcg@5": 0.48522855511632257,
+      "ndcg@10": 0.5706291306523891,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 48,
+      "category": "decline",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.14285714285714285,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.3333333333333333,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 51,
+      "category": "decline",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "source_specific"
+      ],
+      "mrr": 0.16666666666666666,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.25,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.13905617951077562,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 54,
+      "category": "methodology",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.25,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.25,
+      "recall@10": 0.5,
+      "ndcg@5": 0.16812753627111746,
+      "ndcg@10": 0.28097267762005274,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 59,
+      "category": "methodology",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.16666666666666666,
+      "recall@3": 0.16666666666666666,
+      "recall@5": 0.16666666666666666,
+      "recall@10": 0.16666666666666666,
+      "ndcg@5": 0.3391602052736161,
+      "ndcg@10": 0.3026024134988135,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 60,
+      "category": "methodology",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "source_specific",
+        "evidence_attribution"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.5,
+      "recall@3": 0.5,
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "ndcg@5": 0.6131471927654584,
+      "ndcg@10": 0.7903864795495061,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 64,
+      "category": "controversies",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.25,
+      "recall@3": 0.75,
+      "recall@5": 0.75,
+      "recall@10": 0.75,
+      "ndcg@5": 0.8318724637288826,
+      "ndcg@10": 0.8318724637288826,
+      "precision@5": 0.6
+    },
+    {
+      "qid": 65,
+      "category": "controversies",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.1,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.2890648263178879,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 67,
+      "category": "controversies",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.3333333333333333,
+      "recall@1": 0.0,
+      "recall@3": 0.3333333333333333,
+      "recall@5": 0.6666666666666666,
+      "recall@10": 1.0,
+      "ndcg@5": 0.4367467095119258,
+      "ndcg@10": 0.5723986829443736,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 70,
+      "category": "iconography",
+      "flags": [
+        "possibly_ambiguous"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.14285714285714285,
+      "recall@3": 0.42857142857142855,
+      "recall@5": 0.5714285714285714,
+      "recall@10": 0.5714285714285714,
+      "ndcg@5": 0.8687949224876582,
+      "ndcg@10": 0.7041249493150388,
+      "precision@5": 0.8
+    },
+    {
+      "qid": 71,
+      "category": "iconography",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 0.3333333333333333,
+      "recall@5": 0.6666666666666666,
+      "recall@10": 1.0,
+      "ndcg@5": 0.4776237035032179,
+      "ndcg@10": 0.618890676363047,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 72,
+      "category": "iconography",
+      "flags": [],
+      "retrieval_types": [
+        "semantic"
+      ],
+      "mrr": 0.125,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.5,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.19342640361727081,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 73,
+      "category": "scholars",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.1,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.3333333333333333,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.13565197343244778,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 74,
+      "category": "scholars",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 0.25,
+      "recall@5": 0.25,
+      "recall@10": 0.25,
+      "ndcg@5": 0.24630238874073,
+      "ndcg@10": 0.24630238874073,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 75,
+      "category": "scholars",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.3333333333333333,
+      "recall@1": 0.0,
+      "recall@3": 0.14285714285714285,
+      "recall@5": 0.14285714285714285,
+      "recall@10": 0.42857142857142855,
+      "ndcg@5": 0.16958010263680806,
+      "ndcg@10": 0.31480817123988064,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 76,
+      "category": "scholars",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.6309297535714575,
+      "ndcg@10": 0.6309297535714575,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 77,
+      "category": "scholars",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 78,
+      "category": "scholars",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 80,
+      "category": "scholars",
+      "flags": [
+        "contested_interpretation",
+        "possibly_ambiguous"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    }
+  ],
+  "hybrid_rrf": [
+    {
+      "qid": 6,
+      "category": "sites",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.6309297535714575,
+      "ndcg@10": 0.6309297535714575,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 8,
+      "category": "sites",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "multi_hop"
+      ],
+      "mrr": 0.1,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.2890648263178879,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 11,
+      "category": "seals",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.1,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.25,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.11284514134893527,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 13,
+      "category": "seals",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 0.3333333333333333,
+      "recall@5": 0.3333333333333333,
+      "recall@10": 0.3333333333333333,
+      "ndcg@5": 0.2960819109658652,
+      "ndcg@10": 0.2960819109658652,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 14,
+      "category": "seals",
+      "flags": [
+        "possibly_ambiguous"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 15,
+      "category": "seals",
+      "flags": [
+        "contested_interpretation",
+        "very_short_reference_answer"
+      ],
+      "retrieval_types": [
+        "lexical"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.5,
+      "recall@3": 0.5,
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "ndcg@5": 0.6131471927654584,
+      "ndcg@10": 0.6131471927654584,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 18,
+      "category": "seals",
+      "flags": [],
+      "retrieval_types": [
+        "semantic"
+      ],
+      "mrr": 0.125,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.31546487678572877,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 20,
+      "category": "seals",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.5,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 1.0,
+      "ndcg@10": 1.0,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 21,
+      "category": "script",
+      "flags": [
+        "contested_interpretation",
+        "very_short_reference_answer"
+      ],
+      "retrieval_types": [
+        "lexical"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 0.3333333333333333,
+      "recall@5": 0.3333333333333333,
+      "recall@10": 0.6666666666666666,
+      "ndcg@5": 0.2960819109658652,
+      "ndcg@10": 0.4525081529734507,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 23,
+      "category": "script",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 0.5,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.6509209298071326,
+      "ndcg@10": 0.6509209298071326,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 25,
+      "category": "script",
+      "flags": [
+        "possibly_ambiguous"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.14285714285714285,
+      "recall@3": 0.14285714285714285,
+      "recall@5": 0.2857142857142857,
+      "recall@10": 0.5714285714285714,
+      "ndcg@5": 0.48522855511632257,
+      "ndcg@10": 0.5706291306523891,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 27,
+      "category": "script",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 1.0,
+      "ndcg@10": 1.0,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 32,
+      "category": "trade",
+      "flags": [
+        "very_short_reference_answer"
+      ],
+      "retrieval_types": [
+        "lexical"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 0.5,
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "ndcg@5": 0.38685280723454163,
+      "ndcg@10": 0.38685280723454163,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 34,
+      "category": "trade",
+      "flags": [],
+      "retrieval_types": [
+        "semantic"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 0.6666666666666666,
+      "recall@5": 0.6666666666666666,
+      "recall@10": 0.6666666666666666,
+      "ndcg@5": 0.5307212739772434,
+      "ndcg@10": 0.5307212739772434,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 35,
+      "category": "trade",
+      "flags": [],
+      "retrieval_types": [
+        "semantic"
+      ],
+      "mrr": 0.3333333333333333,
+      "recall@1": 0.0,
+      "recall@3": 0.5,
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "ndcg@5": 0.3065735963827292,
+      "ndcg@10": 0.5109559939712153,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 38,
+      "category": "trade",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.16666666666666666,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.3562071871080222,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 39,
+      "category": "trade",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.06666666666666667,
+      "recall@3": 0.2,
+      "recall@5": 0.3333333333333333,
+      "recall@10": 0.6,
+      "ndcg@5": 1.0,
+      "ndcg@10": 0.9363792118010481,
+      "precision@5": 1.0
+    },
+    {
+      "qid": 40,
+      "category": "trade",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.125,
+      "recall@3": 0.25,
+      "recall@5": 0.5,
+      "recall@10": 0.75,
+      "ndcg@5": 0.7860137352654724,
+      "ndcg@10": 0.7436332141041978,
+      "precision@5": 0.8
+    },
+    {
+      "qid": 43,
+      "category": "religion",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical"
+      ],
+      "mrr": 0.3333333333333333,
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.5,
+      "ndcg@10": 0.5,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 44,
+      "category": "religion",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 0.125,
+      "recall@5": 0.125,
+      "recall@10": 0.375,
+      "ndcg@5": 0.21398626473452756,
+      "ndcg@10": 0.32948362433971223,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 47,
+      "category": "religion",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.3333333333333333,
+      "recall@1": 0.0,
+      "recall@3": 0.14285714285714285,
+      "recall@5": 0.14285714285714285,
+      "recall@10": 0.42857142857142855,
+      "ndcg@5": 0.16958010263680806,
+      "ndcg@10": 0.3068980162565852,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 48,
+      "category": "decline",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 51,
+      "category": "decline",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "source_specific"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 0.5,
+      "recall@5": 0.75,
+      "recall@10": 0.75,
+      "ndcg@5": 0.6096199500078984,
+      "ndcg@10": 0.6096199500078984,
+      "precision@5": 0.6
+    },
+    {
+      "qid": 54,
+      "category": "methodology",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 0.5,
+      "recall@5": 0.5,
+      "recall@10": 0.75,
+      "ndcg@5": 0.44149241373678083,
+      "ndcg@10": 0.5716190970674814,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 59,
+      "category": "methodology",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.16666666666666666,
+      "recall@3": 0.3333333333333333,
+      "recall@5": 0.5,
+      "recall@10": 0.6666666666666666,
+      "ndcg@5": 0.6843515475204855,
+      "ndcg@10": 0.7114533439819829,
+      "precision@5": 0.6
+    },
+    {
+      "qid": 60,
+      "category": "methodology",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "source_specific",
+        "evidence_attribution"
+      ],
+      "mrr": 0.3333333333333333,
+      "recall@1": 0.0,
+      "recall@3": 0.5,
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "ndcg@5": 0.3065735963827292,
+      "ndcg@10": 0.3065735963827292,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 64,
+      "category": "controversies",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.25,
+      "recall@3": 0.25,
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "ndcg@5": 0.5585075862632192,
+      "ndcg@10": 0.815079870530422,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 65,
+      "category": "controversies",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 67,
+      "category": "controversies",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.16666666666666666,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.6666666666666666,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.3152014104491349,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 70,
+      "category": "iconography",
+      "flags": [
+        "possibly_ambiguous"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.14285714285714285,
+      "recall@3": 0.42857142857142855,
+      "recall@5": 0.5714285714285714,
+      "recall@10": 0.8571428571428571,
+      "ndcg@5": 0.8539316501572937,
+      "ndcg@10": 0.8816172070446371,
+      "precision@5": 0.8
+    },
+    {
+      "qid": 71,
+      "category": "iconography",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.3333333333333333,
+      "recall@3": 0.3333333333333333,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.8529278650606567,
+      "ndcg@10": 0.8529278650606567,
+      "precision@5": 0.6
+    },
+    {
+      "qid": 72,
+      "category": "iconography",
+      "flags": [],
+      "retrieval_types": [
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.5,
+      "recall@3": 0.5,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.8503449055347546,
+      "ndcg@10": 0.8503449055347546,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 73,
+      "category": "scholars",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 74,
+      "category": "scholars",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.25,
+      "recall@3": 0.5,
+      "recall@5": 0.5,
+      "recall@10": 0.5,
+      "ndcg@5": 0.5855700749881525,
+      "ndcg@10": 0.5855700749881525,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 75,
+      "category": "scholars",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.14285714285714285,
+      "recall@3": 0.14285714285714285,
+      "recall@5": 0.14285714285714285,
+      "recall@10": 0.5714285714285714,
+      "ndcg@5": 0.3391602052736161,
+      "ndcg@10": 0.5287048779571419,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 76,
+      "category": "scholars",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 1.0,
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 1.0,
+      "ndcg@10": 1.0,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 77,
+      "category": "scholars",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.25,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.43067655807339306,
+      "ndcg@10": 0.43067655807339306,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 78,
+      "category": "scholars",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.3333333333333333,
+      "recall@3": 0.6666666666666666,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.8854598815714874,
+      "ndcg@10": 0.8854598815714874,
+      "precision@5": 0.6
+    },
+    {
+      "qid": 80,
+      "category": "scholars",
+      "flags": [
+        "contested_interpretation",
+        "possibly_ambiguous"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.1111111111111111,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.3010299956639812,
+      "precision@5": 0.0
+    }
+  ],
+  "legacy_dense": [
+    {
+      "qid": 6,
+      "category": "sites",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.25,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.43067655807339306,
+      "ndcg@10": 0.43067655807339306,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 8,
+      "category": "sites",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "multi_hop"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 11,
+      "category": "seals",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.2,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.25,
+      "recall@10": 0.75,
+      "ndcg@5": 0.15101961822780524,
+      "ndcg@10": 0.4202024810692814,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 13,
+      "category": "seals",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 0.3333333333333333,
+      "recall@5": 0.3333333333333333,
+      "recall@10": 0.6666666666666666,
+      "ndcg@5": 0.2960819109658652,
+      "ndcg@10": 0.431733884398313,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 14,
+      "category": "seals",
+      "flags": [
+        "possibly_ambiguous"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 15,
+      "category": "seals",
+      "flags": [
+        "contested_interpretation",
+        "very_short_reference_answer"
+      ],
+      "retrieval_types": [
+        "lexical"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 0.5,
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "ndcg@5": 0.38685280723454163,
+      "ndcg@10": 0.5640920940185894,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 18,
+      "category": "seals",
+      "flags": [],
+      "retrieval_types": [
+        "semantic"
+      ],
+      "mrr": 0.25,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.43067655807339306,
+      "ndcg@10": 0.43067655807339306,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 20,
+      "category": "seals",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.5,
+      "recall@3": 0.5,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.8772153153380493,
+      "ndcg@10": 0.8772153153380493,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 21,
+      "category": "script",
+      "flags": [
+        "contested_interpretation",
+        "very_short_reference_answer"
+      ],
+      "retrieval_types": [
+        "lexical"
+      ],
+      "mrr": 0.16666666666666666,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.6666666666666666,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.3152014104491349,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 23,
+      "category": "script",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.25,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "ndcg@5": 0.2640681225725909,
+      "ndcg@10": 0.448643819352159,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 25,
+      "category": "script",
+      "flags": [
+        "possibly_ambiguous"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 0.2857142857142857,
+      "recall@5": 0.42857142857142855,
+      "recall@10": 0.42857142857142855,
+      "ndcg@5": 0.5147714448836774,
+      "ndcg@10": 0.4172025044756148,
+      "precision@5": 0.6
+    },
+    {
+      "qid": 27,
+      "category": "script",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 32,
+      "category": "trade",
+      "flags": [
+        "very_short_reference_answer"
+      ],
+      "retrieval_types": [
+        "lexical"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.5,
+      "recall@3": 0.5,
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "ndcg@5": 0.6131471927654584,
+      "ndcg@10": 0.8175295903539445,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 34,
+      "category": "trade",
+      "flags": [],
+      "retrieval_types": [
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.3333333333333333,
+      "recall@3": 0.6666666666666666,
+      "recall@5": 0.6666666666666666,
+      "recall@10": 0.6666666666666666,
+      "ndcg@5": 0.7039180890341347,
+      "ndcg@10": 0.7039180890341347,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 35,
+      "category": "trade",
+      "flags": [],
+      "retrieval_types": [
+        "semantic"
+      ],
+      "mrr": 0.2,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "ndcg@5": 0.23719771276929622,
+      "ndcg@10": 0.42177340954886444,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 38,
+      "category": "trade",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.3333333333333333,
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.5,
+      "ndcg@10": 0.5,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 39,
+      "category": "trade",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.06666666666666667,
+      "recall@3": 0.2,
+      "recall@5": 0.26666666666666666,
+      "recall@10": 0.4,
+      "ndcg@5": 0.8687949224876582,
+      "ndcg@10": 0.7058075148678525,
+      "precision@5": 0.8
+    },
+    {
+      "qid": 40,
+      "category": "trade",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.125,
+      "recall@3": 0.375,
+      "recall@5": 0.375,
+      "recall@10": 0.75,
+      "ndcg@5": 0.7227265726449519,
+      "ndcg@10": 0.7865342126285454,
+      "precision@5": 0.6
+    },
+    {
+      "qid": 43,
+      "category": "religion",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical"
+      ],
+      "mrr": 1.0,
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 1.0,
+      "ndcg@10": 1.0,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 44,
+      "category": "religion",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.125,
+      "recall@3": 0.25,
+      "recall@5": 0.375,
+      "recall@10": 0.875,
+      "ndcg@5": 0.6548086577531307,
+      "ndcg@10": 0.8075052731453509,
+      "precision@5": 0.6
+    },
+    {
+      "qid": 47,
+      "category": "religion",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.14285714285714285,
+      "recall@3": 0.14285714285714285,
+      "recall@5": 0.2857142857142857,
+      "recall@10": 0.5714285714285714,
+      "ndcg@5": 0.48522855511632257,
+      "ndcg@10": 0.5706291306523891,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 48,
+      "category": "decline",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.14285714285714285,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.3333333333333333,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 51,
+      "category": "decline",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "source_specific"
+      ],
+      "mrr": 0.16666666666666666,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.25,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.13905617951077562,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 54,
+      "category": "methodology",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.25,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.25,
+      "recall@10": 0.5,
+      "ndcg@5": 0.16812753627111746,
+      "ndcg@10": 0.28097267762005274,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 59,
+      "category": "methodology",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.16666666666666666,
+      "recall@3": 0.16666666666666666,
+      "recall@5": 0.16666666666666666,
+      "recall@10": 0.16666666666666666,
+      "ndcg@5": 0.3391602052736161,
+      "ndcg@10": 0.3026024134988135,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 60,
+      "category": "methodology",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "source_specific",
+        "evidence_attribution"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.5,
+      "recall@3": 0.5,
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "ndcg@5": 0.6131471927654584,
+      "ndcg@10": 0.7903864795495061,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 64,
+      "category": "controversies",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.25,
+      "recall@3": 0.75,
+      "recall@5": 0.75,
+      "recall@10": 0.75,
+      "ndcg@5": 0.8318724637288826,
+      "ndcg@10": 0.8318724637288826,
+      "precision@5": 0.6
+    },
+    {
+      "qid": 65,
+      "category": "controversies",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.1,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.2890648263178879,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 67,
+      "category": "controversies",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.3333333333333333,
+      "recall@1": 0.0,
+      "recall@3": 0.3333333333333333,
+      "recall@5": 0.6666666666666666,
+      "recall@10": 1.0,
+      "ndcg@5": 0.4367467095119258,
+      "ndcg@10": 0.5723986829443736,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 70,
+      "category": "iconography",
+      "flags": [
+        "possibly_ambiguous"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.14285714285714285,
+      "recall@3": 0.42857142857142855,
+      "recall@5": 0.5714285714285714,
+      "recall@10": 0.5714285714285714,
+      "ndcg@5": 0.8687949224876582,
+      "ndcg@10": 0.7041249493150388,
+      "precision@5": 0.8
+    },
+    {
+      "qid": 71,
+      "category": "iconography",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 0.3333333333333333,
+      "recall@5": 0.6666666666666666,
+      "recall@10": 1.0,
+      "ndcg@5": 0.4776237035032179,
+      "ndcg@10": 0.618890676363047,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 72,
+      "category": "iconography",
+      "flags": [],
+      "retrieval_types": [
+        "semantic"
+      ],
+      "mrr": 0.125,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.5,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.19342640361727081,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 73,
+      "category": "scholars",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.1,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.3333333333333333,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.13565197343244778,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 74,
+      "category": "scholars",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 0.25,
+      "recall@5": 0.25,
+      "recall@10": 0.25,
+      "ndcg@5": 0.24630238874073,
+      "ndcg@10": 0.24630238874073,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 75,
+      "category": "scholars",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.3333333333333333,
+      "recall@1": 0.0,
+      "recall@3": 0.14285714285714285,
+      "recall@5": 0.14285714285714285,
+      "recall@10": 0.42857142857142855,
+      "ndcg@5": 0.16958010263680806,
+      "ndcg@10": 0.31480817123988064,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 76,
+      "category": "scholars",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.6309297535714575,
+      "ndcg@10": 0.6309297535714575,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 77,
+      "category": "scholars",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 78,
+      "category": "scholars",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 80,
+      "category": "scholars",
+      "flags": [
+        "contested_interpretation",
+        "possibly_ambiguous"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    }
+  ],
+  "legacy_dense_slotwaste": [
+    {
+      "qid": 6,
+      "category": "sites",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.25,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.43067655807339306,
+      "ndcg@10": 0.43067655807339306,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 8,
+      "category": "sites",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "multi_hop"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 11,
+      "category": "seals",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.2,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.25,
+      "recall@10": 0.75,
+      "ndcg@5": 0.15101961822780524,
+      "ndcg@10": 0.4202024810692814,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 13,
+      "category": "seals",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 0.3333333333333333,
+      "recall@5": 0.3333333333333333,
+      "recall@10": 0.6666666666666666,
+      "ndcg@5": 0.2960819109658652,
+      "ndcg@10": 0.431733884398313,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 14,
+      "category": "seals",
+      "flags": [
+        "possibly_ambiguous"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 15,
+      "category": "seals",
+      "flags": [
+        "contested_interpretation",
+        "very_short_reference_answer"
+      ],
+      "retrieval_types": [
+        "lexical"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 0.5,
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "ndcg@5": 0.38685280723454163,
+      "ndcg@10": 0.5640920940185894,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 18,
+      "category": "seals",
+      "flags": [],
+      "retrieval_types": [
+        "semantic"
+      ],
+      "mrr": 0.25,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.43067655807339306,
+      "ndcg@10": 0.43067655807339306,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 20,
+      "category": "seals",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.5,
+      "recall@3": 0.5,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.8772153153380493,
+      "ndcg@10": 0.8772153153380493,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 21,
+      "category": "script",
+      "flags": [
+        "contested_interpretation",
+        "very_short_reference_answer"
+      ],
+      "retrieval_types": [
+        "lexical"
+      ],
+      "mrr": 0.16666666666666666,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.6666666666666666,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.3152014104491349,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 23,
+      "category": "script",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.25,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "ndcg@5": 0.2640681225725909,
+      "ndcg@10": 0.448643819352159,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 25,
+      "category": "script",
+      "flags": [
+        "possibly_ambiguous"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 0.2857142857142857,
+      "recall@5": 0.42857142857142855,
+      "recall@10": 0.42857142857142855,
+      "ndcg@5": 0.5147714448836774,
+      "ndcg@10": 0.4172025044756148,
+      "precision@5": 0.6
+    },
+    {
+      "qid": 27,
+      "category": "script",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 32,
+      "category": "trade",
+      "flags": [
+        "very_short_reference_answer"
+      ],
+      "retrieval_types": [
+        "lexical"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.5,
+      "recall@3": 0.5,
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "ndcg@5": 0.6131471927654584,
+      "ndcg@10": 0.8175295903539445,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 34,
+      "category": "trade",
+      "flags": [],
+      "retrieval_types": [
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.3333333333333333,
+      "recall@3": 0.6666666666666666,
+      "recall@5": 0.6666666666666666,
+      "recall@10": 0.6666666666666666,
+      "ndcg@5": 0.7039180890341347,
+      "ndcg@10": 0.7039180890341347,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 35,
+      "category": "trade",
+      "flags": [],
+      "retrieval_types": [
+        "semantic"
+      ],
+      "mrr": 0.2,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "ndcg@5": 0.23719771276929622,
+      "ndcg@10": 0.42177340954886444,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 38,
+      "category": "trade",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.3333333333333333,
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.5,
+      "ndcg@10": 0.5,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 39,
+      "category": "trade",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.06666666666666667,
+      "recall@3": 0.2,
+      "recall@5": 0.26666666666666666,
+      "recall@10": 0.4,
+      "ndcg@5": 0.8687949224876582,
+      "ndcg@10": 0.7058075148678525,
+      "precision@5": 0.8
+    },
+    {
+      "qid": 40,
+      "category": "trade",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.125,
+      "recall@3": 0.375,
+      "recall@5": 0.375,
+      "recall@10": 0.75,
+      "ndcg@5": 0.7227265726449519,
+      "ndcg@10": 0.7865342126285454,
+      "precision@5": 0.6
+    },
+    {
+      "qid": 43,
+      "category": "religion",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical"
+      ],
+      "mrr": 1.0,
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 1.0,
+      "ndcg@10": 1.0,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 44,
+      "category": "religion",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.125,
+      "recall@3": 0.25,
+      "recall@5": 0.375,
+      "recall@10": 0.875,
+      "ndcg@5": 0.6548086577531307,
+      "ndcg@10": 0.8075052731453509,
+      "precision@5": 0.6
+    },
+    {
+      "qid": 47,
+      "category": "religion",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.14285714285714285,
+      "recall@3": 0.14285714285714285,
+      "recall@5": 0.2857142857142857,
+      "recall@10": 0.5714285714285714,
+      "ndcg@5": 0.48522855511632257,
+      "ndcg@10": 0.5706291306523891,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 48,
+      "category": "decline",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.14285714285714285,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.3333333333333333,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 51,
+      "category": "decline",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "source_specific"
+      ],
+      "mrr": 0.16666666666666666,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.25,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.13905617951077562,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 54,
+      "category": "methodology",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.25,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.25,
+      "recall@10": 0.5,
+      "ndcg@5": 0.16812753627111746,
+      "ndcg@10": 0.28097267762005274,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 59,
+      "category": "methodology",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.16666666666666666,
+      "recall@3": 0.16666666666666666,
+      "recall@5": 0.16666666666666666,
+      "recall@10": 0.16666666666666666,
+      "ndcg@5": 0.3391602052736161,
+      "ndcg@10": 0.3026024134988135,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 60,
+      "category": "methodology",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "source_specific",
+        "evidence_attribution"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.5,
+      "recall@3": 0.5,
+      "recall@5": 0.5,
+      "recall@10": 1.0,
+      "ndcg@5": 0.6131471927654584,
+      "ndcg@10": 0.7903864795495061,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 64,
+      "category": "controversies",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.25,
+      "recall@3": 0.75,
+      "recall@5": 0.75,
+      "recall@10": 0.75,
+      "ndcg@5": 0.8318724637288826,
+      "ndcg@10": 0.8318724637288826,
+      "precision@5": 0.6
+    },
+    {
+      "qid": 65,
+      "category": "controversies",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 67,
+      "category": "controversies",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.3333333333333333,
+      "recall@1": 0.0,
+      "recall@3": 0.3333333333333333,
+      "recall@5": 0.6666666666666666,
+      "recall@10": 1.0,
+      "ndcg@5": 0.4367467095119258,
+      "ndcg@10": 0.5723986829443736,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 70,
+      "category": "iconography",
+      "flags": [
+        "possibly_ambiguous"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 1.0,
+      "recall@1": 0.14285714285714285,
+      "recall@3": 0.42857142857142855,
+      "recall@5": 0.5714285714285714,
+      "recall@10": 0.5714285714285714,
+      "ndcg@5": 0.8687949224876582,
+      "ndcg@10": 0.7041249493150388,
+      "precision@5": 0.8
+    },
+    {
+      "qid": 71,
+      "category": "iconography",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 0.3333333333333333,
+      "recall@5": 0.6666666666666666,
+      "recall@10": 1.0,
+      "ndcg@5": 0.4776237035032179,
+      "ndcg@10": 0.618890676363047,
+      "precision@5": 0.4
+    },
+    {
+      "qid": 72,
+      "category": "iconography",
+      "flags": [],
+      "retrieval_types": [
+        "semantic"
+      ],
+      "mrr": 0.125,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.5,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.19342640361727081,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 73,
+      "category": "scholars",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.1,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.3333333333333333,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.13565197343244778,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 74,
+      "category": "scholars",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 0.25,
+      "recall@5": 0.25,
+      "recall@10": 0.25,
+      "ndcg@5": 0.24630238874073,
+      "ndcg@10": 0.24630238874073,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 75,
+      "category": "scholars",
+      "flags": [
+        "contested_interpretation"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.3333333333333333,
+      "recall@1": 0.0,
+      "recall@3": 0.14285714285714285,
+      "recall@5": 0.14285714285714285,
+      "recall@10": 0.42857142857142855,
+      "ndcg@5": 0.16958010263680806,
+      "ndcg@10": 0.31480817123988064,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 76,
+      "category": "scholars",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "ndcg@5": 0.6309297535714575,
+      "ndcg@10": 0.6309297535714575,
+      "precision@5": 0.2
+    },
+    {
+      "qid": 77,
+      "category": "scholars",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 78,
+      "category": "scholars",
+      "flags": [],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    },
+    {
+      "qid": 80,
+      "category": "scholars",
+      "flags": [
+        "contested_interpretation",
+        "possibly_ambiguous"
+      ],
+      "retrieval_types": [
+        "lexical",
+        "semantic",
+        "evidence_attribution"
+      ],
+      "mrr": 0.0,
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 0.0,
+      "precision@5": 0.0
+    }
+  ]
+}

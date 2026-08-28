@@ -1,79 +1,50 @@
----
-title: Indus Valley AI
-emoji: 🏺
-colorFrom: yellow
-colorTo: red
-sdk: static
-pinned: true
-license: mit
-short_description: Indus Valley AI research assistant
+# IVA: Indus Valley AI 🏛️
+
+An end-to-end, locally-hosted, citation-grounded research assistant for the Corpus of Indus Seals and Inscriptions (CISI). Built 100% locally to provide auditable, page-level answers without relying on paid, closed cloud APIs.
+
+## ⚡ The Quick Pitch
+General-purpose LLMs hallucinate wild decipherment claims, fake dates, and non-existent sites because they lack dense pretraining data on the Indus Valley script. IVA solves this by using a local OCR-to-Retrieval pipeline that forces an open-weight model to only generate answers backed by verifiable page-level evidence.
+
 ---
 
-# Indus Valley AI
+##  Tech Stack & Architecture
 
-A **domain-restricted research assistant** for the Indus / Harappan Civilization
-(c. 3300–1300 BCE), built end-to-end from scratch by **AI Hub, Mahindra University**.
+### Core Engineering Environment
+*   **Target Machine:** Optimized for local consumer hardware (Tested on Apple Silicon M2, 16GB Unified Memory).
+*   **LLM Runtime:** Ollama via native Apple Metal GPU acceleration.
+*   **LLM Backbone:** Gemma 3 4B (Selected for native multimodal support, permissive license, and low memory footprint).
 
-> **Zero external paid APIs.** Runs entirely in your browser. 100% private.
+### Data Pipeline & Retrieval Backend
+*   **OCR Engine:** `OCRmyPDF` (with a Tesseract 5 backend) to generate a hidden searchable text layer over out-of-print, image-only PDFs.
+*   **Chunking Strategy:** Custom sliding-window token splitter (~380 words per chunk, 60-word overlap) preserving source and page metadata.
+*   **Vector Search Matrix:** `BAAI/bge-small-en-v1.5` dense embeddings (384-dimensions, L2-normalized) feeding a local **FAISS** `IndexFlatIP` database.
 
-## What it does
+---
 
-- Answers Indus / Harappan questions from a hand-curated **71-topic scholarly knowledge base**
-- Uses on-device **Gemini Nano** (Chrome 127+) for free LLM enrichment
-- Real-time **3D WebGL** scenes (procedural unicorn seal + trade-routes globe)
-- **92 real Harappan seal photographs** in a clickable gallery
-- **Computational script analysis** dashboard (frequency, positional, bigram, Z-score)
-- Client-side image classification (no upload, no vision API)
-- 5-part academic answer structure: *Direct Answer · Evidence · Interpretation · Alternative · Limitation*
+##  Repository Structure
 
-## What it does NOT do
+*   `/backend/` — Main server logic, local pipeline setups, and OCR intake scripts.
+*   `/training/` — Code tracking the experimental fine-tuning pipeline and data maps.
+*   `/assets/` — Visual assets, project logs, and high-resolution seal data photographs.
+*   `app.js` / `index.html` — The localized user deployment interface and configuration.
+*   `rag-client.js` — Client connection interface handling live semantic search requests.
+*   `three-routes.js` / `three-scene.js` — Core routing logic and interactive visual scenes.
+*   `script-analysis.js` — Data analysis tools evaluating local index statistics and runtimes.
 
-- No external paid API calls — everything runs locally
-- No data leaves your device
-- No video / multimedia generation
-- No phonetic readings of the (still-undeciphered) Indus script
-- No out-of-domain answers — politely refused
+---
 
-## Tech stack
+##  Anti-Hallucination Guardrails
 
-| Layer | Technology |
-|---|---|
-| Frontend | Vanilla HTML5 / CSS3 / JS (zero build step) |
-| 3D | Three.js 0.160 |
-| On-device LLM | Gemini Nano (`window.LanguageModel`) |
-| Knowledge base | 71 hand-written scholarly topics |
-| Vision | HTML Canvas pixel statistics |
+To preserve academic integrity, this codebase implements three strict programmatic guardrails:
+1.  **Mathematical Refusal Gate ($\tau = 0.30$):** If the top-1 cosine similarity score from the FAISS database drops below `0.30`, retrieval aborts and returns an explicit refusal message rather than invoking the language model.
+2.  **Structural Output Prompt Constraints:** The system prompt restricts generation to a hard-coded 5-part layout (*Direct Answer*, *Evidence* with inline `[source, page]` tags, *Interpretation*, *Alternative View*, and a hedged academic *Limitation* clause).
+3.  **Regex Domain Filter:** Validates incoming text against a domain keyword whitelist and active regex blocklist to drop off-topic requests (e.g., cryptocurrency, coding) at the gate.
 
-A complete optional **RAG backend** with FastAPI + FAISS + Ollama (LLaMA 3.2) + CLIP
-exists in the repo for ingesting scholarly PDFs locally. It is intentionally not
-deployed here — the curated KB is the public-facing path.
+---
 
-## Sources
+##  Setting Up Locally
 
-The knowledge base draws on:
-
-- Marshall 1931 *Mohenjo-daro and the Indus Civilization* (PD)
-- Mackay 1937–38 *Further Excavations at Mohenjo-daro* (PD)
-- Vats 1940 *Excavations at Harappa* (PD)
-- Wheeler 1947 ASI reports (PD)
-- Mahadevan 1977 *Indus Script Concordance* (PD ASI)
-- Parpola 1994 *Deciphering the Indus Script* (cited)
-- Shinde et al. 2019 *Cell* (Rakhigarhi aDNA, open access)
-- Yajnadevam *Indus Inscriptions*
-- Authority Structure & Evolution of Early Writing Systems
-
-## Project documents
-
-- `HOW_IT_WORKS.md` — full technical explanation
-- `Indus_Valley_AI_Project_Report.pdf` — publication-grade report
-
-## Author
-
-**Mohammed Majeed Khan** — President, AI Hub, Mahindra University, Hyderabad
-Computer Science · Google Student Ambassador
-`majeedkhan2005.cc@gmail.com`
-
-## License
-
-MIT for code. Knowledge-base content cites primary public-domain sources or
-academic open-access papers.
+### Prerequisites
+Make sure you have Ollama installed and running with Apple Metal support active:
+```bash
+ollama pull gemma3:4b

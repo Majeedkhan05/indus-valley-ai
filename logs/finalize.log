@@ -1,0 +1,20 @@
+tables -> research/results/tables/all_tables.md
+figure -> research/results/figures/fig1_retrieval_comparison.png
+figure -> research/results/figures/fig2_source_bias.png
+figure -> research/results/figures/fig3_corpus_integrity.png
+figure -> research/results/figures/fig4_error_taxonomy.png
+figure -> research/results/figures/fig5_legacy_citations.png
+figure -> research/results/figures/fig6_perturbation.png
+wrote research/paper/paper.md  (2371 words)
+wrote research/research_questions_final.json
+scanning research/paper/paper.md (15619 chars)
+  pass  personal name
+  pass  institution
+  pass  github identity
+  pass  huggingface space
+  pass  email
+  pass  absolute home path
+  pass  acknowledgement
+
+ANONYMITY: PASS
+FINALIZE_DONE Sun Aug 23 18:51:31 IST 2026

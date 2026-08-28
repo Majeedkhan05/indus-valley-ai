@@ -1,0 +1,72 @@
+{
+  "n_answers": 80,
+  "hedging_compliance": {
+    "system_prompt_requires": "cautious/hedged language and at least one alternative view",
+    "mean_hedging_rate": 0.2235714285714286,
+    "answers_with_zero_hedging": 36,
+    "share_with_zero_hedging": 0.45,
+    "contested_questions": {
+      "n": 22,
+      "mean_hedging_rate": 0.24220779220779223
+    },
+    "other_questions": {
+      "n": 58,
+      "mean_hedging_rate": 0.21650246305418716
+    },
+    "difference": 0.025705329153605072,
+    "finding": "The prompt's epistemic-caution instruction is largely not complied with: 36/80 answers contain no hedging at all, and contested questions are hedged barely more than uncontested ones."
+  },
+  "citation_behaviour": {
+    "mean_citations": 5.925,
+    "citation_validity": 1.0,
+    "answers_with_zero_citations": 1,
+    "zero_citation_questions": [
+      {
+        "qid": 37,
+        "question": "What is Sutkagan-Dor?",
+        "in_domain": false
+      }
+    ],
+    "out_of_domain_refusals": 1,
+    "note": "Zero-citation answers coincide with the domain guard firing; that is the guard working as designed, not a citation failure."
+  },
+  "unsupported_content": {
+    "mean_rate": 0.33375934158330633,
+    "median_rate": 0.2697566311184031,
+    "excluding_out_of_domain": 0.3253259155273988,
+    "top_offenders": [
+      {
+        "qid": 37,
+        "question": "What is Sutkagan-Dor?",
+        "unsupported_rate": 1.0
+      },
+      {
+        "qid": 10,
+        "question": "How many wells did Mohenjo-daro have?",
+        "unsupported_rate": 0.898876404494382
+      },
+      {
+        "qid": 66,
+        "question": "What is the Dancing Girl?",
+        "unsupported_rate": 0.8888888888888888
+      },
+      {
+        "qid": 4,
+        "question": "What is Lothal's most distinctive feature?",
+        "unsupported_rate": 0.8309859154929577
+      },
+      {
+        "qid": 34,
+        "question": "What is Dilmun?",
+        "unsupported_rate": 0.8
+      }
+    ],
+    "caveat": "Measured as answer content-words absent from the retrieved evidence. This is a LEXICAL proxy: correct paraphrase counts as unsupported, so the true unsupported rate is lower. It is an upper bound, not a hallucination rate."
+  },
+  "latency": {
+    "median_s": 15.780000000000001,
+    "mean_s": 33.41825,
+    "max_s": 529.81,
+    "note": "CPU-only inference; the mean is skewed by a single 530 s outlier."
+  }
+}

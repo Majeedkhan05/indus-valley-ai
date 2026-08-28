@@ -1463,3 +1463,17 @@ em { font-style: italic; color: var(--gold-soft); font-weight: 400; }
 .rag-cite-doc   { color: var(--ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .rag-cite-page  { color: var(--ink-mute); }
 .rag-cite-score { color: var(--gold); font-weight: 600; }
+
+
+/* Expandable citation evidence — added for evidence inspectability.
+   Purely additive; no existing rule is modified. */
+.rag-cite > summary { cursor: pointer; list-style: none; display: flex; gap: .5rem;
+  align-items: baseline; }
+.rag-cite > summary::-webkit-details-marker { display: none; }
+.rag-cite > summary::before { content: '▸'; color: var(--gold, #C2A878); font-size: .8em;
+  transition: transform .15s ease; }
+.rag-cite[open] > summary::before { transform: rotate(90deg); }
+.rag-cite-snippet { margin: .45rem 0 .6rem 1.15rem; padding: .55rem .7rem;
+  border-left: 2px solid rgba(194,168,120,.35); background: rgba(255,255,255,.03);
+  border-radius: 4px; font-size: .82em; line-height: 1.55; color: #b9b9c6;
+  white-space: pre-wrap; max-height: 11rem; overflow: auto; }

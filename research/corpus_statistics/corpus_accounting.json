@@ -1,0 +1,63 @@
+{
+  "raw_rows": 2112,
+  "unique_texts": 1199,
+  "duplicate_rows": 913,
+  "deduplicated_rows": 1199,
+  "arithmetic_check": true,
+  "by_source_raw": {
+    "Indus Inscriptions by Yajnadevam.pdf": {
+      "chunks": 1212,
+      "share": 0.5738636363636364
+    },
+    "CISI_3.1_Mohenjodaro_and_Harappa.pdf": {
+      "chunks": 298,
+      "share": 0.14109848484848486
+    },
+    "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf": {
+      "chunks": 276,
+      "share": 0.13068181818181818
+    },
+    "CISI_2_Collections_in_Pakistan.pdf": {
+      "chunks": 186,
+      "share": 0.08806818181818182
+    },
+    "CISI_1_Collections_in_India.pdf": {
+      "chunks": 132,
+      "share": 0.0625
+    },
+    "Authority Structure and the Evolution of Early Writing Systems 2.pdf": {
+      "chunks": 8,
+      "share": 0.003787878787878788
+    }
+  },
+  "by_source_deduplicated": {
+    "Indus Inscriptions by Yajnadevam.pdf": {
+      "chunks": 303,
+      "share": 0.2527105921601334
+    },
+    "CISI_3.1_Mohenjodaro_and_Harappa.pdf": {
+      "chunks": 298,
+      "share": 0.24854045037531275
+    },
+    "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf": {
+      "chunks": 276,
+      "share": 0.23019182652210174
+    },
+    "CISI_2_Collections_in_Pakistan.pdf": {
+      "chunks": 186,
+      "share": 0.15512927439532945
+    },
+    "CISI_1_Collections_in_India.pdf": {
+      "chunks": 132,
+      "share": 0.11009174311926606
+    },
+    "Authority Structure and the Evolution of Early Writing Systems 2.pdf": {
+      "chunks": 4,
+      "share": 0.003336113427856547
+    }
+  },
+  "recomputed": {
+    "yajnadevam_share": 0.2527105921601334,
+    "cisi_share": 0.74395329441201
+  }
+}

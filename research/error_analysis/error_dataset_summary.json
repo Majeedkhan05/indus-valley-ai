@@ -1,0 +1,45 @@
+{
+  "schema": [
+    "question_id",
+    "system",
+    "rank",
+    "expected_source",
+    "retrieved_source",
+    "error_category",
+    "severity",
+    "notes"
+  ],
+  "top_k_examined": 5,
+  "n_records": 553,
+  "primary_category_counts": {
+    "EVALUATION_ERROR": 123,
+    "SOURCE_ATTRIBUTION": 169,
+    "PAGE_ATTRIBUTION": 65,
+    "SEMANTIC_MISMATCH": 190,
+    "OTHER": 4,
+    "CONTESTED_INTERPRETATION": 2
+  },
+  "multilabel_counts": {
+    "SOURCE_ATTRIBUTION": 311,
+    "MULTI_HOP": 15,
+    "CHUNKING": 54,
+    "OCR": 89,
+    "PAGE_ATTRIBUTION": 107,
+    "SEMANTIC_MISMATCH": 190,
+    "AMBIGUITY": 41,
+    "CORPUS_BIAS": 21,
+    "INSUFFICIENT_EVIDENCE": 37,
+    "CONTESTED_INTERPRETATION": 110,
+    "OTHER": 4
+  },
+  "severity_counts": {
+    "HIGH": 237,
+    "MEDIUM": 209,
+    "LOW": 107
+  },
+  "by_system": {
+    "bm25": 182,
+    "dense": 190,
+    "hybrid_rrf": 181
+  }
+}

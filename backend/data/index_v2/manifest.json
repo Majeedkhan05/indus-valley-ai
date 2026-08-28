@@ -1,0 +1,10 @@
+{
+  "built_from": "/Users/majeedkhan2005/Desktop/majeedkhanwebsite/indus-valley/backend/data/index/chunks.jsonl",
+  "model": "BAAI/bge-small-en-v1.5",
+  "dim": 384,
+  "input_rows": 2112,
+  "duplicates_dropped": 913,
+  "vectors": 1199,
+  "alignment": "vector[i] corresponds exactly to chunks.jsonl line i+1",
+  "build_seconds": 151.6
+}

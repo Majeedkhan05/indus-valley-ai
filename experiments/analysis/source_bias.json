@@ -1,0 +1,116 @@
+{
+  "Indus Inscriptions by Yajnadevam.pdf": {
+    "corpus_share": 0.2527105921601334,
+    "BM25": {
+      "retrieved_share": 0.08165997322623829,
+      "ratio": 0.3231363296972268
+    },
+    "VECTOR": {
+      "retrieved_share": 0.03625,
+      "ratio": 0.1434447194719472
+    },
+    "VECTOR+PREFIX": {
+      "retrieved_share": 0.05625,
+      "ratio": 0.22258663366336637
+    },
+    "HYBRID_RRF": {
+      "retrieved_share": 0.0575,
+      "ratio": 0.22753300330033008
+    }
+  },
+  "CISI_3.1_Mohenjodaro_and_Harappa.pdf": {
+    "corpus_share": 0.24854045037531275,
+    "BM25": {
+      "retrieved_share": 0.30120481927710846,
+      "ratio": 1.2118945580981646
+    },
+    "VECTOR": {
+      "retrieved_share": 0.30625,
+      "ratio": 1.2321937919463088
+    },
+    "VECTOR+PREFIX": {
+      "retrieved_share": 0.30875,
+      "ratio": 1.2422525167785237
+    },
+    "HYBRID_RRF": {
+      "retrieved_share": 0.28875,
+      "ratio": 1.1617827181208054
+    }
+  },
+  "CISI_3.2_Recent_Findings_from_India___Pakistan.pdf": {
+    "corpus_share": 0.23019182652210174,
+    "BM25": {
+      "retrieved_share": 0.1713520749665328,
+      "ratio": 0.7443881807422928
+    },
+    "VECTOR": {
+      "retrieved_share": 0.23625,
+      "ratio": 1.0263179347826088
+    },
+    "VECTOR+PREFIX": {
+      "retrieved_share": 0.19625,
+      "ratio": 0.8525498188405798
+    },
+    "HYBRID_RRF": {
+      "retrieved_share": 0.20875,
+      "ratio": 0.9068523550724638
+    }
+  },
+  "CISI_2_Collections_in_Pakistan.pdf": {
+    "corpus_share": 0.15512927439532945,
+    "BM25": {
+      "retrieved_share": 0.2034805890227577,
+      "ratio": 1.3116840120337983
+    },
+    "VECTOR": {
+      "retrieved_share": 0.215,
+      "ratio": 1.3859408602150536
+    },
+    "VECTOR+PREFIX": {
+      "retrieved_share": 0.23125,
+      "ratio": 1.4906922043010753
+    },
+    "HYBRID_RRF": {
+      "retrieved_share": 0.2125,
+      "ratio": 1.3698252688172041
+    }
+  },
+  "CISI_1_Collections_in_India.pdf": {
+    "corpus_share": 0.11009174311926606,
+    "BM25": {
+      "retrieved_share": 0.23159303882195448,
+      "ratio": 2.1036367692994196
+    },
+    "VECTOR": {
+      "retrieved_share": 0.1925,
+      "ratio": 1.7485416666666667
+    },
+    "VECTOR+PREFIX": {
+      "retrieved_share": 0.1975,
+      "ratio": 1.7939583333333333
+    },
+    "HYBRID_RRF": {
+      "retrieved_share": 0.22125,
+      "ratio": 2.0096875
+    }
+  },
+  "Authority Structure and the Evolution of Early Writing Systems 2.pdf": {
+    "corpus_share": 0.003336113427856547,
+    "BM25": {
+      "retrieved_share": 0.0107095046854083,
+      "ratio": 3.210174029451138
+    },
+    "VECTOR": {
+      "retrieved_share": 0.01375,
+      "ratio": 4.1215625000000005
+    },
+    "VECTOR+PREFIX": {
+      "retrieved_share": 0.01,
+      "ratio": 2.9975
+    },
+    "HYBRID_RRF": {
+      "retrieved_share": 0.01125,
+      "ratio": 3.3721875
+    }
+  }
+}
